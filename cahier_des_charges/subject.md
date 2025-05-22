@@ -1,7 +1,7 @@
 <img src="https://www.univ-nantes.fr/medias/photo/logotype-nantes-u-noir-72dpi_1638965800927-png?ID_FICHE=1482184" alt="Nantes Université" width="200"/>
 <img src=../pictures/LOGO_PRINCIPAL_IUT_NANTES_CMJN.png alt="IUT Nantes" width="200"/>
 
-# Mini-projet de GPO2 d'année BUT1-Info 2025 (SAE 2.5): APPLICATION INTELLIGENTE DE SUIVI DES RÈGLES HACCP EN CUISINE COLLECTIVE
+# Mini-projet de SAE 2.5 d'année BUT1-Info 2025 (R210 etc.): APPLICATION INTELLIGENTE DE SUIVI DES RÈGLES HACCP EN CUISINE COLLECTIVE
 
 La sécurité alimentaire est une préoccupation majeure dans les cuisines collectives, où la préparation de repas pour un grand nombre de personnes nécessite une vigilance accrue. La méthode HACCP (Hazard Analysis Critical Control Point) est une approche systématique visant à identifier, évaluer et maîtriser les dangers significatifs au regard de la sécurité des aliments. Son application rigoureuse est essentielle pour prévenir les risques sanitaires et assurer la conformité aux réglementations en vigueur.
 
