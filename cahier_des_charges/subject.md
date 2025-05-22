@@ -19,6 +19,76 @@ Imaginons que votre équipe (**obligatoirement 4-5 personnes**) est la première
 
 Dans le cadre d'un projet de Recherche & Développement, l'objectif est de développer une application mobile intelligente qui facilite le respect et le suivi des règles HACCP dans les cuisines collectives. Cette application devra intégrer une approche multifactorielle en prenant en compte les facteurs environnementaux (température des enceintes froides, humidité, etc.), opérationnels (respect des procédures de nettoyage, traçabilité des aliments, etc.) et comportementaux (formation du personnel, respect des protocoles, etc.). Les données seront collectées à l'aide de capteurs IoT et de questionnaires intégrés à l'application, et analysées par des algorithmes prédictifs utilisant l'Intelligence Artificielle. L'application devra offrir aux gestionnaires de cuisine un suivi adapté grâce à une prévention personnalisée et ciblée des non-conformités, favorisant ainsi une meilleure observance des protocoles HACCP. Elle fournira également aux autorités sanitaires des indications pour un meilleur suivi et une meilleure évaluation des pratiques en vigueur.
 
+**Description du projet :**
+
+Ce projet se concrétisera sous la forme d'une application mobile qui devra :
+
+Collecter des données :
+
+* Environnementales : à l'aide de capteurs (par exemple, des dispositifs placés dans les chambres froides) pour mesurer la température, l'humidité, etc. 
+* Opérationnelles : à l'aide de capteurs et de dispositifs connectés pour mesurer le respect des procédures de nettoyage, la traçabilité des aliments (via des étiquettes RFID ou des codes-barres), etc.
+* Comportementales : à l'aide de questionnaires sur l'application pour collecter des données sur les pratiques du personnel, leur formation, leur respect des protocoles, etc.
+
+À partir de ces données, l'application devra :
+
+* Fournir un tableau de bord à la demande aux gestionnaires de la cuisine sur l'état de conformité aux règles HACCP (températures des enceintes froides, respect des procédures de nettoyage, traçabilité des aliments, etc.).
+* À partir d'algorithmes d'apprentissage, établir un profil de risque de non-conformité et prévenir en amont les responsables de la cuisine.
+* Alerter les responsables en cas de rupture de protocole (non-respect des procédures de nettoyage, par exemple).
+* Fournir des informations et des rappels sur les bonnes pratiques d'hygiène et de sécurité alimentaire.
+* Envoyer les données pertinentes aux autorités sanitaires compétentes, conformément aux réglementations en vigueur.
+* Garantir le respect des règles édictées par le RGPD sur les données de santé et de sécurité alimentaire.
+
+Cette application est un cas d'IA embarquée sur une application mobile. Plusieurs solutions sont néanmoins possibles : pas de serveurs du tout, un serveur au niveau de l’établissement, un serveur chez le prestataire. Dans tous les cas, il faut envisager : confidentialité, sécurité et respect de la règlementation nationale et européenne. Ce projet relève directement de la conception d'un dispositif de suivi des normes sanitaires. En ce sens, il doit répondre à un nombre conséquent de règles (dont le RGPD sur les données de santé) sur les dispositifs de sécurité alimentaire.
+
+Données à collecter obligatoirement :
+
+Vous aurez à collecter plusieurs données importantes au moyen de capteurs. En voici une première liste, que vous pourrez potentiellement compléter :
+
+* Température des enceintes froides (réfrigérateurs, congélateurs) 
+* Humidité des locaux 
+* Respect des procédures de nettoyage (via des capteurs de présence ou des systèmes de validation)
+* Traçabilité des aliments (via des étiquettes RFID ou des codes-barres)
+* Formation et pratiques du personnel (via des questionnaires intégrés)
+
+Réglementation HACCP et hygiène alimentaire :
+
+* Règlement (CE) n° 852/2004 du Parlement européen et du Conseil du 29 avril 2004 relatif à l'hygiène des denrées alimentaires : https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX%3A32004R0852
+* Règlement (CE) n° 178/2002 du 28 janvier 2002 établissant les principes généraux de la législation alimentaire : https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX%3A32002R0178
+* Règles d'hygiène dans la restauration et les commerces alimentaires : https://entreprendre.service-public.fr/vosdroits/F32189
+* Les principales règles d'hygiène en restauration collective : https://opti-marche.com/blog/les-principales-regles-dhygiene-en-restauration-collective/
+* La restauration collective et la méthode HACCP : https://www.wikiterritorial.cnfpt.fr/xwiki/bin/view/vitrine/La%20restauration%20collective%20et%20la%20m%C3%A9thode%20HACCP/
+
+Applications et outils pour la gestion HACCP :
+
+* Traqfood : https://www.traqfood.com/fr/
+* HACCP Facile : https://www.haccp-facile.com/
+* Eezytrace : https://www.eezytrace.com/
+* Wektoo : https://www.wektoo.com/wek-haccp
+* Hygie HACCP : https://hygiesolution.com/telecharger-application-haccp-hygie/
+* eEAT : https://eeat-haccp.io/
+
+Autres ressources :
+
+1. https://www.qualineo.io/post/haccp-ehpad-contre-risques-intoxications-alimentaires
+2.	https://www.nelinkia.com/blog/normes/methode-haccp-restauration-collective.html
+3.	https://octopus-haccp.com/normes-haccp-tout-ce-qui-et-a-savoir-sur-les-regles-dhygiene/
+4.	https://impactance.fr/formations/item/143-la-methode-haccp-en-ehpad-connaitre-et-maitriser-les-dangers-alimentaires.html
+5.	https://eeat-haccp.io/haccp-secteur/restauration-collective/guide-restauration-collective
+6.	https://octopus-haccp.com/lhaccp-en-restauration-collective/
+7.	https://agriculture.gouv.fr/restauration-quelles-obligations-en-matiere-de-formation-lhygiene-alimentaire
+8.	https://agriculture.gouv.fr/guides-de-bonnes-pratiques-dhygiene-gbph
+9.	https://documentation.ehesp.fr/doc_num.php?explnum_id=6875
+10.	https://entreprendre.service-public.fr/vosdroits/F32189
+11.	https://www.cdg76.fr/wp-content/uploads/2023/06/guide-restauration-collective-V2-2023.pdf
+12.	https://www.has-sante.fr/upload/docs/application/pdf/2018-10/fiche-repere_haccp.pdf
+13.	https://www.cdg60.com/wp-content/uploads/2021/04/fiche_pratique_cdg60_-_hygiene_alimentaire_-_010414_0.pdf
+14.	https://octopus-haccp.com/liaison-froide-liaison-chaude/
+15.	https://opti-marche.com/blog/guides-de-bonnes-pratiques-dhygiene-gbph-en-restauration-collective-pourquoi-et-comment-les-utiliser/
+16.	https://www.eezytrace.com/solution-par-secteur/haccp-ehpad---restauration-securite-alimentaire-eezytrace
+17.	https://www.innovorder.com/blog/haccp-restauration-collective
+18.	https://www.referentiel-restauration-collective.fr/plan-maitrise-sanitaire/
+
+
 
 ## Déroulement du travail.
 
