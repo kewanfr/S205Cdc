@@ -24,21 +24,21 @@ Dans le cadre d'un projet de Recherche & Développement, l'objectif est de déve
 
 Le travail à réaliser ici correspond au **WP0*, le premier workpackage du projet, celui qui correspond à la rédaction du cahier des charges et plus tard à la gestion du projet.
 
-Vous devrez mettre en oeuvre l'ensemble des techniques vues en GPI en produisant un cahier des charges. C'est un travail réalisable en **60 heures.etudiants** (à répartir entre 4-5 étudiants et dont les 2/3 seront faites pendant des créneaux avec un enseignant).
+Vous devrez mettre en oeuvre l'ensemble des techniques vues en R210 - GPI en produisant un cahier des charges. C'est un travail réalisable en **60 heures.etudiants** (à répartir entre 4-5 étudiants et dont les 2/3 seront faites pendant des créneaux avec un enseignant).
 La date de rendu est le **vendredi 13 juin 2024, à 19h**.
 
-Votre travail sera à rendre dans gitlab, l'enseignant récupérera votre travail à cette date. Même si vous faites quelque chose ensuite, il peut choisir la version qu'il évalue. Si vous avez vraiment besoin qu'il considère une version en retard, il faudra lui demander et il y aura des pénalités (comme dans tout projet industriel, à priori 1 point par jour de retard).
-
-Nous préférons mettre une note par équipe, mais nous aurons accès à votre travail individuel et des disparités anormales seront prises en compte. **Merci d'indiquer à la fin de votre document ce que chacun a fait avec son volume horaire**.
+Votre travail ne sera pas à rendre explicitement, il s'agira juste d'un dépot gitlab qui sera à utiliser pour le travail en continue, selon les bonnes pratiques de génie logiciel. L'enseignant récupérera votre travail à cette date. Même si vous faites quelque chose ensuite, il peut choisir la version qu'il évalue. Si vous avez vraiment besoin qu'il considère une version en retard, il faudra lui demander et il y aura des pénalités (comme dans tout projet industriel, à priori 1 point par jour de retard).
 
 Vous allez utiliser les outils vues en TD (youtrack et les outils de uncloud.univ-nantes.fr : traitement de texte, tableur, diagramme, mindmap/WBS) pour faire votre étude, mais le rendu se fera dans un fichier du même type que celui que vous êtes en train de lire : au format markdown (https://support.zendesk.com/hc/fr/articles/4408846544922-Formatage-de-texte-avec-Markdown#topic_xqx_mvc_43__row_ppv_wln_1n). Il s'agit d'un langage basique pour mettre en forme du texte grâce à des caractères spéciaux (cela à l'avantage d'être du texte brut facilement versionnable avec git).
 
 Dans les "files" du "repository", vous trouverez un dossier cahier_des_charges. S'y trouve un fichier préformé de cahier des charges, nommé *cahier_des_charges.md*. Ce sera à vous de le modifier et de le versionner dans votre propre projet gitlab une fois que vous aurez fait un fork de ce projet (comme déjà fait en TD de GPO2 : un étudiant fait le fork et ajoute les autres membres de l'équipe, le chargé de séance et M. Mottu en Maintener/Chargé de Maitnenance).
 
-**A la fin des séances SAE** Semaine 25, le dernier créneau sera consacré à une discussion avec votre chagé de séance et M. Mottu où
+**A la fin des séances SAE2.5** Semaine 24, le dernier créneau sera consacré à une discussion avec un chargé de séance (M. Aimé ou M. El Mamouni) et M. Mottu où
 - vous présenterez les résultats de votre équipe
 - chacun présentera son travail personnel
 - vous répondrez à des questions (des modalités vous seront données en séance).
+
+Nous préférons mettre une note par équipe, mais nous aurons accès à votre travail individuel et nous vous questionnerons individuellement : des disparités anormales seront prises en compte. **Merci d'indiquer à la fin de votre document ce que chacun a fait avec son volume horaire**.
 
 ## Contraintes ##
 
@@ -52,4 +52,3 @@ Vous devrez dans tous les cas maitriser ce que vous écrivez ; l'exercice oral e
 
 Votre état de l'art (étude de l'existant, sur l'asthme etc.) devra **obligatoirement** être sourcé, c'est-à-dire que nous devrons avoir les références que vous aurez trouvées.
 
-La note finale sera individuelle.
