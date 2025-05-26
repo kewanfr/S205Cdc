@@ -120,5 +120,5 @@ Vous pouvez l'utiliser pour résumer des contenus ou pour avoir des idées que v
 
 Vous devrez dans tous les cas maitriser ce que vous écrivez ; l'exercice oral et les questions que nous vous poserons auront pour objet de vérifier cette maîtrise.
 
-Votre état de l'art (étude de l'existant, sur l'asthme etc.) devra **obligatoirement** être sourcé, c'est-à-dire que nous devrons avoir les références que vous aurez trouvées.
+Votre état de l'art (étude de l'existant, sur la restauration collective, etc.) devra **obligatoirement** être sourcé, c'est-à-dire que nous devrons avoir les références que vous aurez trouvées.
 
