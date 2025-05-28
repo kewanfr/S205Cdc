@@ -1,13 +1,10 @@
-*Ce document est une structure de base, classique pour rédiger un cahier des charges. Elle est un peu différente de celle vue en séance. Elle n’est pas tout à fait standard non plus en couvrant davantage d’éléments qu’un cahier des charges normal (en particulier le Gantt est fait plus tard normalement, à part ses jalons).
-Tout ce qui est en italique doit être remplacé. Chaque section doit contenir au moins un paragraphe (même une section qui contient une sous-section). Certaines choses sont à imaginer, en se documentant un minimum pour être réaliste.*
-
 <img src=../pictures/LOGO_PRINCIPAL_IUT_NANTES_CMJN.png alt="IUT Nantes" width="200"/>
 
-# Cahier des charges fonctionnel - *CAS_D_ETUDE*
+# Cahier des charges fonctionnel - Application HACCP pour les cuisines collectives
 
 ## Entête
 - Groupe de TD : 4
-- Date de démarrage : 28 mai 2025
+- Date de démarrage : 28 mai 2025 15h
 - Version : 0.1.0  *Il s'agit d'un numéro de version logique en visant d'arriver à la version 1.0 le jour du rendu (git gère une autre numérotation pour le versionnage*) 
 - Destinataire : EL MAMOUNI Saïd
 
