@@ -11,11 +11,15 @@ Tout ce qui est en italique doit être remplacé. Chaque section doit contenir a
 - Version : 0.1.0  *Il s'agit d'un numéro de version logique en visant d'arriver à la version 1.0 le jour du rendu (git gère une autre numérotation pour le versionnage*) 
 - Destinataire : EL MAMOUNI Saïd
 
-|Nom | Prénom | mail
-| ------ | ------ | ------ |
-| *Etudiant 1* | *cell* | *cell* |
-| *cell* | *cell* | *cell* |
-| *cell* | *cell* | *cell* |
+
+| Nom               | Prénom  | Mail                                        |
+| ----------------- | ------- | ------------------------------------------- |
+| BERNIER           | Kéwan   | kewan.bernier@etu.univ-nantes.fr            |
+| BLANCHET          | Alex    | alex.blanchet@etu.univ-nantes.fr            |
+| MORICEAU--MOINARD | Pacôme  | pacome.moriceau--moinard@etu.univ-nantes.fr |
+| RAYNARD           | Livio   | livio.raynard@etu.univ-nantes.fr            |
+| GALLY             | Chianti | chianti.gally@etu.univ-nantes.fr            |
+
 
 
 ## 1. Présentation générale du problème
