@@ -38,6 +38,29 @@ Tout ce qui est en italique doit être remplacé. Chaque section doit contenir a
 *(finalités du produit pour le futur utilisateur tel que prévu par le demandeur)*
 ### 1.4 Environnement du produit recherché
 #### 1.4.1 Listes exhaustives des éléments *(personnes, équipements, matières…)* et contraintes *(e.g. environnement)*
+##### Capteurs connectés (IoT)
+
+L’application repose sur un réseau de capteurs connectés (IoT) permettant la collecte automatisée des données critiques en lien avec les exigences HACCP. Ces capteurs doivent être sélectionnés en fonction des contraintes spécifiques des cuisines collectives, à savoir : humidité, température extrême, graisses, nettoyages fréquents, connexions instables.
+
+**Types de capteurs envisagés** :
+
+- **Capteurs de température** : placés dans les réfrigérateurs, congélateurs ou chambres froides pour vérifier le respect de la chaîne du froid.
+- **Capteurs d’humidité** : mesurent l’hygrométrie ambiante pour éviter les zones favorables au développement microbien.
+- **Capteurs de présence / mouvement** : détectent les interventions de nettoyage ou les ouvertures de portes.
+- **Lecteurs RFID / codes-barres** : assurent la traçabilité des denrées alimentaires.
+
+**Contraintes fonctionnelles et techniques** :
+
+- **Connectivité** : Bluetooth Low Energy (BLE) pour compatibilité mobile, WiFi si disponible ; possibilité d’extension à LoRa dans des environnements plus vastes.
+- **Autonomie** : minimum 6 mois avec batterie intégrée, fréquence d’envoi ajustable selon le niveau de criticité des données.
+- **Robustesse** : matériel certifié IP65 ou plus (résistance à l’eau, à la vapeur, aux projections de graisse).
+- **Fiabilité** : précision attendue de ±0,5 °C pour les capteurs de température, fiabilité de transmission supérieure à 98 %.
+- **Sécurité** : chiffrement des données (AES-256), appairage sécurisé, identification unique des capteurs.
+
+**Fonctionnement hors-ligne** : les capteurs doivent pouvoir continuer à stocker ou transmettre leurs données à l’application même en cas de perte de réseau, avec synchronisation dès rétablissement de la connexion.
+
+Ces capteurs forment la base technique de la surveillance HACCP automatisée. Leur sélection devra répondre aux exigences de fiabilité, d’autonomie et de sécurité tout en respectant les contraintes d’environnement des cuisines collectives.
+
 #### 1.4.2 Caractéristiques pour chaque élément de l’environnement
 
 ## 2. Expression fonctionnelle du besoin
