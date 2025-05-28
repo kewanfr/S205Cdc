@@ -49,6 +49,10 @@ L’application repose sur un réseau de capteurs connectés (IoT) permettant la
 - **Capteurs de présence / mouvement** : détectent les interventions de nettoyage ou les ouvertures de portes.
 - **Lecteurs RFID / codes-barres** : assurent la traçabilité des denrées alimentaires.
 
+
+
+#### 1.4.2 Caractéristiques pour chaque élément de l’environnement
+##### Capteurs connectés (IoT)
 **Contraintes fonctionnelles et techniques** :
 
 - **Connectivité** : Bluetooth Low Energy (BLE) pour compatibilité mobile, WiFi si disponible ; possibilité d’extension à LoRa dans des environnements plus vastes.
@@ -60,8 +64,6 @@ L’application repose sur un réseau de capteurs connectés (IoT) permettant la
 **Fonctionnement hors-ligne** : les capteurs doivent pouvoir continuer à stocker ou transmettre leurs données à l’application même en cas de perte de réseau, avec synchronisation dès rétablissement de la connexion.
 
 Ces capteurs forment la base technique de la surveillance HACCP automatisée. Leur sélection devra répondre aux exigences de fiabilité, d’autonomie et de sécurité tout en respectant les contraintes d’environnement des cuisines collectives.
-
-#### 1.4.2 Caractéristiques pour chaque élément de l’environnement
 
 ## 2. Expression fonctionnelle du besoin
 
