@@ -6,10 +6,10 @@ Tout ce qui est en italique doit être remplacé. Chaque section doit contenir a
 # Cahier des charges fonctionnel - *CAS_D_ETUDE*
 
 ## Entête
-- Groupe de TD : 
-- Date de démarrage :
-- Version : *Il s'agit d'un numéro de version logique en visant d'arriver à la version 1.0 le jour du rendu (git gère une autre numérotation pour le versionnage*
-- Destinataire : *votre chargé de TD*
+- Groupe de TD : 4
+- Date de démarrage : 28 mai 2025
+- Version : 0.1.0  *Il s'agit d'un numéro de version logique en visant d'arriver à la version 1.0 le jour du rendu (git gère une autre numérotation pour le versionnage*) 
+- Destinataire : EL MAMOUNI Saïd
 
 |Nom | Prénom | mail
 | ------ | ------ | ------ |
