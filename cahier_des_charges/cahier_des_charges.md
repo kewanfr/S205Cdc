@@ -5,7 +5,8 @@
 ## Entête
 - Groupe de TD : 4
 - Date de démarrage : 28 mai 2025 15h
-- Version : 0.1.0  *Il s'agit d'un numéro de version logique en visant d'arriver à la version 1.0 le jour du rendu (git gère une autre numérotation pour le versionnage*) 
+- Version : 0.1.1
+*Il s'agit d'un numéro de version logique en visant d'arriver à la version 1.0 le jour du rendu (git gère une autre numérotation pour le versionnage*) 
 - Destinataire : EL MAMOUNI Saïd
 
 
@@ -21,8 +22,21 @@
 
 ## 1. Présentation générale du problème
 ### 1.1 Projet
+
+*A Remplir*
+
 #### 1.1.1 Finalités
+Ce projet a pour objectif de développer une application mobile intelligente, destinée aux cuisines collectives afin de faciliter le respect des règles HACCP (Hazard Analysis Critical Control Point). Elle permettra de surveiller de manière en partie automatisée, et en temps réel les pratiques d'hygiène et de sécurité alimentaire à travers:
+- Une collecte de données (environnementales, opérationnelles et comportementales)
+  C'est à dire le suivi des températures et de l'humidité, la gestion des dates de peremtion, assurer la traçabilité des produits alimentaires, et la gestion des interventions de nettoyage.
+- Le traitement de toutes les données à l'aide d'algorithmes et d'Intelligence Artificielle
+- La génération d'alertes et de rapports à destination des gestionnaires et autorités compétentes.
+
 #### 1.1.2 Espérance de retour sur investissement
+
+Cette application vise à réduire les risques de non-conformité à l'HACCP. L'objectif est donc la sureté alimentaire pour les clients des cuisines collectives.
+En s'assurant de la conformité à l'HACCP, on limite les pertes alimentaires dues à des incidents (rupture de la chaine du froid, erreurs de traçabilité), améliore la productivité du personnel par l'automatisation de certaines tâches de contrôle, et renforce la sécurité sanitaire. Ces améliorations permettront à terme une réduction des coûts, moins d'efforts pour une mise en conformité avec la loi (et donc éviter des audits non réussis), ainsi qu'une meilleure réputation pour les établissements utilisateurs.
+
 ### 1.2 Contexte
 #### 1.2.1 Situation du projet par rapport aux autres projets de l’entreprise
 #### 1.2.2 Études déjà effectuées
