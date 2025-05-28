@@ -113,10 +113,22 @@ Ces capteurs forment la base technique de la surveillance HACCP automatisée. Le
 *Synthèse des jalons : __tables synthétiques des jalons__ du projet.*
 ### 3.1 *Pour chaque fonction : fonction 1*
 #### 3.1.1 Solution proposée
+*Fonctionnement prévu :*
+
+- Les capteurs mesurent les données toutes les 10 à 15 minutes (fréquence configurable).
+- L’application mobile interroge les capteurs à intervalles réguliers via BLE.
+- Les données sont stockées localement sur l’appareil mobile si la connexion internet est absente, puis synchronisées automatiquement avec le serveur dès rétablissement de la connexion.
+- En cas de dépassement des seuils critiques (ex. : température > 4 °C), une alerte immédiate est générée dans l’application.
+
 *Tâches à réaliser pour la solution -> __WBS__*
+1. Sélection de capteurs compatibles BLE/WiFi (normes IP65+, précision > 98 %).
+2. Développement du module d’appairage sécurisé avec l’application.
+3. Intégration du module de lecture périodique (avec journalisation locale).
+4. Déclenchement d’alertes conditionnelles sur seuils dépassés.
+5. Implémentation de la synchronisation des relevés vers le serveur cloud/local.
 
 *Description de __scénarios__ (potentiellement avec un Diagramme de séquence)*
-
+- Un capteur BLE placé dans une chambre froide envoie automatiquement les données toutes les 10 minutes. À 6h30, la température mesurée est de 7,2 °C. L’application reçoit la valeur, la compare au seuil critique (4 °C) et génère une notification d’alerte. Cette donnée est stockée localement et synchronisée avec le tableau de bord central dès que le réseau est disponible.
 *__Jalon__ : date à laquelle la fonction doit être livrée.*
 #### 3.1.2 Niveau atteint pour chaque critère d’appréciation de cette fonction et modalités de contrôle
 #### 3.1.3 Part du prix attribué à chaque fonction
