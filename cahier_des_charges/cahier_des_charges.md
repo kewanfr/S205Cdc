@@ -115,8 +115,9 @@ Ces capteurs forment la base technique de la surveillance HACCP automatisée. Le
 3. Intégration du module de lecture périodique (avec journalisation locale).
 4. Déclenchement d’alertes conditionnelles sur seuils dépassés.
 5. Implémentation de la synchronisation des relevés vers le serveur cloud/local.
+
 *Description de __scénarios__ (potentiellement avec un Diagramme de séquence)*
-> Un capteur BLE placé dans une chambre froide envoie automatiquement les données toutes les 10 minutes. À 6h30, la température mesurée est de 7,2 °C. L’application reçoit la valeur, la compare au seuil critique (4 °C) et génère une notification d’alerte. Cette donnée est stockée localement et synchronisée avec le tableau de bord central dès que le réseau est disponible.
+- Un capteur BLE placé dans une chambre froide envoie automatiquement les données toutes les 10 minutes. À 6h30, la température mesurée est de 7,2 °C. L’application reçoit la valeur, la compare au seuil critique (4 °C) et génère une notification d’alerte. Cette donnée est stockée localement et synchronisée avec le tableau de bord central dès que le réseau est disponible.
 *__Jalon__ : date à laquelle la fonction doit être livrée.*
 #### 3.1.2 Niveau atteint pour chaque critère d’appréciation de cette fonction et modalités de contrôle
 #### 3.1.3 Part du prix attribué à chaque fonction
