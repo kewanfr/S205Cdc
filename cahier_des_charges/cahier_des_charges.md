@@ -136,6 +136,25 @@ Ces capteurs forment la base technique de la surveillance HACCP automatisée. Le
 #### Etc.
 ### 3.x Pour l’ensemble du produit
 #### 3.x.1 Prix de la réalisation de la version de base
+##### Capteurs connectés (IoT)
+Le coût lié aux capteurs IoT représente une part significative du budget initial de l’application. Ce budget couvre l’acquisition de capteurs de température, d’humidité et de présence, nécessaires à la surveillance automatisée des paramètres HACCP en cuisine collective.
+
+**Estimation des coûts (à l’unité) :**
+
+| Type de capteur                   | Prix unitaire estimé | Quantité prévue | Sous-total |
+|----------------------------------|----------------------|------------------|------------|
+| Capteur de température BLE (IP65) | ~25 €                | 5                | 125 €      |
+| Capteur d’humidité / présence     | ~30 €                | 3                | 90 €       |
+| Lecteur RFID mobile (optionnel)   | ~40 €                | 1                | 40 €       |
+| **Total capteurs IoT**           |                      |                  | **255 €**  |
+
+**Références tarifaires** :
+- Capteurs consultés sur les catalogues fournisseurs (ex. : Distrelec, Seeed Studio, Yoctopuce).
+- Prix basés sur des modèles avec connectivité BLE, étanchéité IP65 minimum et compatibilité mobile.
+
+**Part du budget global estimé :** environ **30 % du coût total** de la solution de base (application + capteurs + hébergement serveur).
+
+Cette estimation pourra évoluer selon les sites pilotes (surface, nombre de chambres froides, besoins en redondance) et les choix de fournisseurs lors du prototypage.
 *Ici, il faut imaginer en faisant une petite étude de marchée (cf des sites marchands spécialisés)*
 #### 3.x.2 Options et variantes proposées non retenues au cahier des charges
 #### 3.x.3 Mesures prises pour respecter les contraintes et leurs conséquences économiques
