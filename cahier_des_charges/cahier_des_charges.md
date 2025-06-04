@@ -95,7 +95,31 @@ Ces capteurs forment la base technique de la surveillance HACCP automatisée. Le
 #### 2.1.1 Fonctions de service principales 
 *(qui sont la raison d’être du produit)*
 ##### 2.1.1.1 Description et détail
+##### Collecte des données
+La collecte des données est une fonction centrale de l’application, visant à garantir le respect des normes HACCP à travers une surveillance continue et automatisée. Trois grandes catégories de données sont collectées à l’aide de capteurs IoT et d’interfaces numériques.
 
+**1. Données environnementales :**
+- Température des enceintes froides (réfrigérateurs, congélateurs).
+- Humidité ambiante dans les cuisines et zones de stockage.
+- Conditions de ventilation ou d’atmosphère si nécessaire (extension possible).
+- Données recueillies automatiquement via des capteurs BLE/WiFi, installés sur site.
+
+**2. Données opérationnelles :**
+- Traçabilité des aliments à l’aide de codes-barres ou étiquettes RFID (lot, date, origine, DLC).
+- Détection de l’exécution des protocoles de nettoyage via capteurs de présence/mouvement ou validation manuelle sur tablette.
+- Informations associées à des points critiques (CCP) de la méthode HACCP.
+
+**3. Données comportementales :**
+- Réponses à des questionnaires intégrés (respect des procédures, formation du personnel).
+- Auto-évaluations des responsables HACCP.
+- Suivi de la sensibilisation à l’hygiène (score individuel ou équipe).
+
+**Méthodes de collecte :**
+- Automatisée pour les capteurs environnementaux et certains capteurs opérationnels.
+- Semi-automatique ou manuelle (via l’application) pour les aspects comportementaux.
+- Fonctionnement possible hors-ligne avec journalisation locale, puis synchronisation serveur.
+
+L’ensemble de ces données est centralisé, analysé en temps réel ou différé, et utilisé pour générer des alertes, des indicateurs de conformité, et des rapports exportables pour les autorités sanitaires.
 ##### 2.1.1.2 Critères d’appréciation et les niveaux qui les caractérisent 
 *(Niveaux dont l’obtention est imposée)*
 
@@ -140,6 +164,25 @@ Ces capteurs forment la base technique de la surveillance HACCP automatisée. Le
 #### Etc.
 ### 3.x Pour l’ensemble du produit
 #### 3.x.1 Prix de la réalisation de la version de base
+##### Capteurs connectés (IoT)
+Le coût lié aux capteurs IoT représente une part significative du budget initial de l’application. Ce budget couvre l’acquisition de capteurs de température, d’humidité et de présence, nécessaires à la surveillance automatisée des paramètres HACCP en cuisine collective.
+
+**Estimation des coûts (à l’unité) :**
+
+| Type de capteur                   | Prix unitaire estimé | Quantité prévue | Sous-total |
+|----------------------------------|----------------------|------------------|------------|
+| Capteur de température BLE (IP65) | ~25 €                | 5                | 125 €      |
+| Capteur d’humidité / présence     | ~30 €                | 3                | 90 €       |
+| Lecteur RFID mobile (optionnel)   | ~40 €                | 1                | 40 €       |
+| **Total capteurs IoT**           |                      |                  | **255 €**  |
+
+**Références tarifaires** :
+- Capteurs consultés sur les catalogues fournisseurs (ex. : Distrelec, Seeed Studio, Yoctopuce).
+- Prix basés sur des modèles avec connectivité BLE, étanchéité IP65 minimum et compatibilité mobile.
+
+**Part du budget global estimé :** environ **30 % du coût total** de la solution de base (application + capteurs + hébergement serveur).
+
+Cette estimation pourra évoluer selon les sites pilotes (surface, nombre de chambres froides, besoins en redondance) et les choix de fournisseurs lors du prototypage.
 *Ici, il faut imaginer en faisant une petite étude de marchée (cf des sites marchands spécialisés)*
 #### 3.x.2 Options et variantes proposées non retenues au cahier des charges
 #### 3.x.3 Mesures prises pour respecter les contraintes et leurs conséquences économiques
