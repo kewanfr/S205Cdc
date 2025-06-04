@@ -39,7 +39,11 @@ En s'assurant de la conformité à l'HACCP, on limite les pertes alimentaires du
 
 ### 1.2 Contexte
 #### 1.2.1 Situation du projet par rapport aux autres projets de l’entreprise
+
+Ce projet de Recherche et Développement s'inscrit dans une démarche scolaire d'innovation sur une entreprise fictive. Cette entreprise fictive a pour seul projet actuel de concevoir une application simplifiant la gestion de règles de HACCP dans des lieux de restauration, plus précisément dans des cuisines collectives.
+C'est donc le premier projet, et initiateur de l'entreprise fictive, qui pourrait par la suite en développer d'autres.
 #### 1.2.2 Études déjà effectuées
+Nous avons effectués des recherches préliminaires pour identifier les différentes exigences HACCP dans les règlements CE 178/2002 et CE 852/2004, ainsi que les pratiques courantes dans la restauration collective.
 #### 1.2.3 Études menées sur des sujets voisins
 #### 1.2.4 Suites prévues
 #### 1.2.5 Nature des prestations demandées
