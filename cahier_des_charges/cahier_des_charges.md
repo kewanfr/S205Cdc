@@ -45,8 +45,109 @@ C'est donc le premier projet, et initiateur de l'entreprise fictive, qui pourrai
 #### 1.2.2 Études déjà effectuées
 Nous avons effectués des recherches préliminaires pour identifier les différentes exigences HACCP dans les règlements CE 178/2002 et CE 852/2004, ainsi que les pratiques courantes dans la restauration collective.
 #### 1.2.3 Études menées sur des sujets voisins
+Afin d’enrichir la conception de l’application mobile HACCP, une étude comparative de plusieurs solutions existantes sur le marché a été menée. Cette analyse a permis d’identifier les fonctionnalités courantes, les manques fréquents, ainsi que les opportunités d’innovation.
+
+#### Applications étudiées
+
+---
+
+**Traqfood**
+- **Description** : Solution HACCP utilisée dans les cuisines professionnelles.
+- **Fonctionnalités** :
+    - Relevés de température via capteurs Bluetooth.
+    - Fiches d’hygiène et de traçabilité numériques.
+    - Génération d’alertes en temps réel.
+- **Avantages** : Interface intuitive, automatisation poussée.
+- **Limites** : Peu de personnalisation, dépendance au réseau.
+- **Source** : [https://www.traqfood.com/fr](https://www.traqfood.com/fr)
+
+---
+
+**Eezytrace**
+- **Description** : Plateforme complète pour la gestion HACCP dans les établissements collectifs.
+- **Fonctionnalités** :
+    - Suivi de température, nettoyage, traçabilité.
+    - Historique d’actions et rapports d’audit.
+- **Avantages** : Solution robuste et conforme aux normes.
+- **Limites** : Interface complexe, coût élevé.
+- **Source** : [https://www.eezytrace.com](https://www.eezytrace.com)
+
+---
+
+**HACCP Facile**
+- **Description** : Application mobile légère destinée aux petits établissements.
+- **Fonctionnalités** :
+    - Checklists HACCP.
+    - Saisie manuelle des températures.
+    - Alertes basiques.
+- **Avantages** : Simplicité, coût très abordable.
+- **Limites** : Pas de capteurs, peu de fonctions avancées.
+- **Source** : [https://www.haccp-facile.com](https://www.haccp-facile.com)
+
+---
+
+#### Tableau comparatif
+
+| Critère                              | Traqfood | Eezytrace | HACCP Facile |
+|--------------------------------------|---|-----|----------|
+| Capteurs connectés                  | oui | oui | non      |
+| Alertes automatiques                 | oui | oui  | non         |
+| Historique des actions               | oui | oui  | non         |
+| Analyse prédictive / IA              | non  | non    | non         |
+| Mode hors-ligne                      | non  | non    | oui  partiel |
+| Interface intuitive                  | oui | non    | oui      |
+| Personnalisation secteur             | non  | oui  partiel | non         |
+| Coût                                 | Moyen | Élevé | Faible   |
+
+---
+
+#### Enseignements pour notre projet
+
+L’étude des solutions existantes met en évidence plusieurs opportunités d’amélioration :
+
+- Intégrer une **analyse prédictive** à l’aide d’algorithmes d’IA pour prévenir les non-conformités.
+- Offrir une **interface personnalisable** selon les types d’établissements (EHPAD, cantines scolaires, hôpitaux).
+- Assurer un fonctionnement en **mode hors-ligne** avec synchronisation différée.
+- Maintenir une **interface simple et accessible** tout en répondant aux exigences HACCP.
+
+Ces éléments différenciateurs permettront à notre solution de répondre de manière plus ciblée aux besoins spécifiques des cuisines collectives.
+
 #### 1.2.4 Suites prévues
 #### 1.2.5 Nature des prestations demandées
+dans le cadre de cette phase de cadrage du projet, la principale prestation attendue est **l’étude approfondie des applications existantes dédiées à la gestion HACCP**. Cette étude vise à analyser les solutions actuellement disponibles sur le marché afin d’identifier les meilleures pratiques, les fonctionnalités clés, les manques à combler, et les opportunités d’innovation pour le futur développement de l’application.
+
+Cette prestation comprend les actions suivantes :
+
+####  Recensement et sélection d’applications pertinentes
+
+- Identifier les principales solutions logicielles utilisées dans la restauration collective ou commerciale pour le suivi HACCP.
+- Sélectionner des applications représentatives selon différents critères : niveau d’automatisation, secteur cible, accessibilité, modèle économique.
+
+#### Analyse fonctionnelle des applications
+
+Pour chaque application étudiée (ex. : Traqfood, Eezytrace, HACCP Facile) :
+- Décrire les fonctionnalités disponibles : relevés automatiques, traçabilité, alertes, rapports, tutoriels, etc.
+- Évaluer l’ergonomie et la simplicité d’utilisation.
+- Repérer les éléments techniques (présence de capteurs, fonctionnement hors-ligne, interfaces, export de données).
+- Apprécier le respect des normes (HACCP, RGPD).
+
+####  Comparaison des forces et faiblesses
+
+- Dresser un tableau comparatif des solutions analysées.
+- Identifier les avantages compétitifs de chaque application.
+- Mettre en lumière les limites récurrentes : absence d’IA, manque de personnalisation, complexité d’usage, non prise en charge du mode hors-ligne, etc.
+
+#### Recommandations pour le futur prototype
+
+- Dégager des axes d’amélioration ou d’innovation à partir de l’étude de l’existant.
+- Proposer des fonctionnalités différenciantes pour la future application, notamment :
+    - Intégration d’une **analyse prédictive basée sur l’IA**.
+    - Personnalisation selon le type d’établissement (école, EHPAD, hôpital).
+    - **Robustesse en environnement contraint** (mode hors-ligne, interface simplifiée).
+    - Conformité stricte aux **exigences HACCP et RGPD**.
+
+Cette prestation analytique constitue une base stratégique pour le futur développement logiciel. Elle permettra à l’équipe de développement SAE5/SAE6 d’éviter les erreurs de conception courantes et de se positionner dès le départ avec une solution pertinente, innovante et adaptée au terrain.
+
 #### 1.2.6 Parties concernées par le déroulement du projet et ses résultats (demandeurs, utilisateurs)
 #### 1.2.7 Caractère confidentiel s'il y a lieu
 ### 1.3 Énoncé du besoin 
@@ -64,6 +165,43 @@ L’application repose sur un réseau de capteurs connectés (IoT) permettant la
 - **Capteurs de présence / mouvement** : détectent les interventions de nettoyage ou les ouvertures de portes.
 - **Lecteurs RFID / codes-barres** : assurent la traçabilité des denrées alimentaires.
 
+L’environnement dans lequel sera utilisée l’application mobile impose un ensemble de contraintes spécifiques, liées aux conditions physiques, au contexte professionnel, et à l’usage sur le terrain. Le produit devra être conçu pour être **robuste, accessible et fiable** dans un cadre de travail contraint, typique des cuisines collectives.
+
+####  Conditions physiques d’utilisation
+
+- **Milieu humide et chaud/froid** : l’application sera utilisée dans des environnements comportant de la vapeur, de l’humidité, voire du froid extrême (chambres froides).
+- **Surfaces glissantes ou grasses** : manipulations parfois difficiles, nécessité d’une interface résistante aux fausses manipulations.
+- **Utilisation avec des gants ou des mains mouillées** : exige une interface à boutons larges et des zones de clic étendues.
+
+####  Appareils utilisés
+
+- **Smartphones et tablettes professionnels** : matériel Android ou iOS, souvent en coque durcie.
+- Résolution d’écran variable, parfois réduite : l’interface doit être **responsive** et adaptée à différents formats.
+- Risque de chute ou d’usage intensif : application conçue pour un usage rapide, avec **accès direct aux fonctions critiques**.
+
+####  Contexte de connectivité
+
+- **Réseau instable ou absent** dans certaines zones (cuisines en sous-sol, murs épais, zones rurales).
+- L’application devra être utilisable **en mode hors-ligne**, avec une **synchronisation automatique des données** dès retour de la connexion.
+
+####  Sécurité des données
+
+- Présence de **données sensibles** (identité de l’utilisateur, données de formation, informations sanitaires).
+- Application soumise au **RGPD**, avec :
+    - chiffrement local des données (ex : AES-256),
+    - anonymisation partielle des profils,
+    - consentement utilisateur obligatoire à la première utilisation.
+
+####  Contexte d’usage
+
+- Utilisateurs à profils variés : agents de cuisine, gestionnaires, inspecteurs – tous avec des niveaux de compétence numérique hétérogènes.
+- Application utilisée dans un cadre **professionnel normé** (HACCP), parfois sous contrôle d’audits ou d’autorités sanitaires.
+- Nécessité d’une **prise en main rapide**, avec interface simplifiée, **multilingue** et **accessibilité renforcée**.
+
+---
+
+**Conclusion** :  
+Le produit devra être adapté à un **environnement opérationnel contraint**, tant sur le plan physique que numérique. L’interface et l’architecture logicielle devront être pensées pour garantir **fiabilité, simplicité et sécurité** dans ces conditions spécifiques.
 
 
 #### 1.4.2 Caractéristiques pour chaque élément de l’environnement
@@ -79,6 +217,49 @@ L’application repose sur un réseau de capteurs connectés (IoT) permettant la
 **Fonctionnement hors-ligne** : les capteurs doivent pouvoir continuer à stocker ou transmettre leurs données à l’application même en cas de perte de réseau, avec synchronisation dès rétablissement de la connexion.
 
 Ces capteurs forment la base technique de la surveillance HACCP automatisée. Leur sélection devra répondre aux exigences de fiabilité, d’autonomie et de sécurité tout en respectant les contraintes d’environnement des cuisines collectives.
+
+L’application mobile HACCP sera utilisée dans des environnements professionnels exigeants tels que les cuisines collectives. Les caractéristiques des éléments constitutifs de la solution doivent permettre un usage **fluide, sécurisé et fiable**, malgré les contraintes physiques, techniques et humaines du terrain.
+
+####  Interfaces utilisateurs
+
+Les interfaces devront être pensées pour une **utilisation rapide et intuitive** dans des environnements de travail où les utilisateurs sont soumis à des contraintes physiques et temporelles.
+
+- **Ergonomie tactile renforcée** : grands boutons, navigation simplifiée, menus déroulants adaptés à une manipulation avec gants ou mains mouillées.
+- **Affichage adaptatif (responsive)** : l’application s’ajuste automatiquement à la taille et à l’orientation des écrans de smartphones ou tablettes.
+- **Mode sombre / contraste élevé** : visibilité optimale dans des environnements à éclairage variable.
+- **Multilingue** : au minimum français et anglais, avec possibilité d’extensions selon les utilisateurs.
+- **Accessibilité** : prise en charge des bonnes pratiques d’accessibilité numérique (polices lisibles, navigation au doigt, alternatives textuelles aux icônes).
+
+####  Architecture logicielle adaptée
+
+L’application devra fonctionner dans des contextes **avec ou sans connexion Internet stable**. L’architecture doit donc permettre un **mode dégradé temporaire** sans perte de données.
+
+- **Stockage local sécurisé** : les données doivent être enregistrées temporairement en local en cas de déconnexion, avec chiffrement (ex : AES-256).
+- **Synchronisation différée** : automatique dès détection d’une connexion, avec gestion des conflits si plusieurs utilisateurs modifient les données.
+- **Modularité** : architecture capable de désactiver certaines fonctionnalités non critiques si l’environnement réseau ou matériel l’exige.
+
+####  Sécurité et conformité
+
+- **Conformité RGPD** : gestion des droits utilisateurs, traçabilité des actions, consentement explicite à la première utilisation.
+- **Chiffrement des échanges et stockage** : HTTPS pour la transmission, chiffrement local pour les données sensibles.
+- **Journalisation** : tous les accès sensibles et modifications critiques doivent être tracés et consultables.
+
+####  Profil utilisateur hétérogène
+
+L’application sera utilisée par :
+- Des **agents de cuisine**, avec peu de temps disponible et parfois peu formés au numérique.
+- Des **gestionnaires HACCP**, plus à l’aise avec les outils, mais exigeant des données synthétiques claires.
+- Éventuellement des **inspecteurs ou autorités sanitaires**, avec besoin d’accès ponctuel, sécurisé et en lecture seule.
+
+La conception devra donc proposer :
+- Des **profils utilisateurs distincts** (droits, vues, actions autorisées).
+- Une **interface épurée**, focalisée sur les actions prioritaires selon le profil connecté.
+
+---
+
+**Conclusion** :  
+Les caractéristiques logicielles et ergonomiques de l’application doivent tenir compte de la réalité du terrain : contraintes physiques, instabilité réseau, hétérogénéité des utilisateurs. La robustesse de l’expérience utilisateur est un enjeu central de la réussite du projet.
+
 
 ## 2. Expression fonctionnelle du besoin
 
@@ -125,8 +306,95 @@ L’ensemble de ces données est centralisé, analysé en temps réel ou différ
 
 *(Niveaux souhaités mais révisables)*
 #### 2.1.2 Fonctions de service complémentaires 
-*(qui améliorent, facilitent ou complètent le service rendu)*
+L’analyse comparative des solutions HACCP actuelles a permis d’identifier plusieurs fonctions de service dites complémentaires. Celles-ci ne sont pas toujours présentes, mais peuvent représenter une **valeur ajoutée stratégique** pour améliorer l’utilisabilité, l’autonomie du personnel et la personnalisation de l’application. Voici une synthèse des fonctions complémentaires observées chez trois outils majeurs du marché.
+
+#### Tableau comparatif des fonctions complémentaires
+
+| Fonction complémentaire                   | Traqfood | Eezytrace | HACCP Facile | État dans notre projet |
+|-------------------------------------------|-----|--------|----------|-------------------------|
+| Tutoriels intégrés (formation, rappels)   | non | oui partiel | non      | oui (interactifs et contextualisés) |
+| Historique des alertes/actions            | oui    | oui      | non      | oui (consultable + exportable)   |
+| Mode hors-ligne                           | non    | non    | oui partiel | oui (avec synchronisation automatique) |
+| Personnalisation selon le type de cuisine | non    | oui partiel | non      | oui (profils : scolaire, EHPAD, hôpital) |
+| Documentation intégrée                    | non    | oui       | non      | oui (règlementation HACCP intégrée) |
+
+---
+
+#### Enseignements et positionnement de notre application
+
+Aucune des applications étudiées ne propose **l’ensemble de ces fonctions complémentaires** de manière intégrée, intuitive et modulaire. Notre projet vise donc à se différencier en :
+
+- Proposant une **interface personnalisable** selon le contexte d’utilisation (secteur, utilisateurs).
+- Intégrant un **système de tutoriels interactifs** pour accompagner le personnel dans l’adoption des bonnes pratiques HACCP.
+- Offrant une **gestion complète de l’historique** avec possibilité d’export pour audits internes ou externes.
+- Garantissant un **mode hors-ligne fiable**, indispensable en environnement à connectivité limitée.
+- Centralisant une **documentation contextuelle** directement accessible dans l’application.
+
+Ces fonctions complémentaires ne sont pas acc*(qui améliorent, facilitent ou complètent le service rendu)*essoires : elles participent à la **pérennité**, la **conformité** et la **bonne adoption** de la solution sur le terrain.
+
 ##### 2.1.2.1 Description et détail
+
+Outre les fonctions principales indispensables au respect des règles HACCP, l’application devra proposer plusieurs **fonctions de service complémentaires**. Ces fonctionnalités, bien que non essentielles au strict fonctionnement du système, apporteront une **valeur ajoutée significative** en termes d’utilisabilité, d’autonomie, de conformité et d’adoption par les utilisateurs.
+
+---
+
+**1. Tutoriels et rappels intégrés**
+
+- **Objectif** : Accompagner les utilisateurs dans la prise en main de l’application et le respect des bonnes pratiques d’hygiène.
+- **Contenu** :
+    - Modules interactifs ou textes illustrés.
+    - Rappels sur les normes HACCP (nettoyage, températures, stockage…).
+    - Possibilité de consultation libre ou notifications contextuelles.
+- **Bénéfice** : Réduction des erreurs humaines, auto-formation continue du personnel.
+
+---
+
+**2. Historique des alertes et actions correctives**
+
+- **Objectif** : Permettre la **traçabilité complète** des anomalies détectées et des mesures prises pour les corriger.
+- **Fonctionnement** :
+    - Journal détaillé et horodaté de toutes les alertes.
+    - Archivage des actions entreprises (responsable, type d’action, délai de réaction).
+    - Exportation possible pour les audits (PDF, Excel).
+- **Bénéfice** : Amélioration de la transparence et de la conformité réglementaire.
+
+---
+
+**3. Mode hors-ligne avec synchronisation différée**
+
+- **Objectif** : Garantir le fonctionnement continu de l’application même en l’absence de connexion Internet.
+- **Fonctionnement** :
+    - Enregistrement local des données sur le terminal.
+    - Synchronisation automatique dès que la connexion est rétablie.
+    - Notifications d’échec de synchronisation ou de conflit.
+- **Bénéfice** : Fiabilité accrue dans des environnements à faible connectivité (sous-sols, zones rurales…).
+
+---
+
+**4. Personnalisation des indicateurs et de l’interface**
+
+- **Objectif** : Adapter l’application au **contexte métier** spécifique de chaque établissement (école, EHPAD, hôpital…).
+- **Fonctionnement** :
+    - Choix de seuils critiques selon les normes en vigueur dans l’établissement.
+    - Personnalisation des catégories (zones, types d’aliments, plans de nettoyage).
+    - Affichage sur-mesure dans le tableau de bord.
+- **Bénéfice** : Pertinence accrue des informations affichées, meilleure appropriation par les utilisateurs.
+
+---
+
+**5. Documentation contextuelle**
+
+- **Objectif** : Fournir un accès immédiat à des informations réglementaires ou techniques selon l’écran affiché.
+- **Fonctionnement** :
+    - Bouton d’aide ou info-bulle sur chaque écran.
+    - Liens vers extraits de réglementation (CE 852/2004, guides HACCP).
+    - Mises à jour possibles en ligne.
+- **Bénéfice** : Autonomie renforcée des utilisateurs, cohérence réglementaire facilitée.
+
+---
+
+Ces fonctions complémentaires contribueront à faire de l’application un **véritable assistant numérique** pour les cuisines collectives, en améliorant à la fois **l’usage quotidien**, **la conformité réglementaire** et **l’expérience utilisateur**.
+
 
 ##### 2.1.2.2 Critères d’appréciation et les niveaux qui les caractérisent 
 *(Niveaux dont l’obtention est imposée)*
@@ -141,22 +409,61 @@ L’ensemble de ces données est centralisé, analysé en temps réel ou différ
 *Synthèse des jalons : __tables synthétiques des jalons__ du projet.*
 ### 3.1 *Pour chaque fonction : fonction 1*
 #### 3.1.1 Solution proposée
-*Fonctionnement prévu :*
+##### Collecte des données et capteurs IoT
+La collecte des données critiques liées à la sécurité alimentaire repose sur un système hybride combinant capteurs connectés (IoT), modules de traçabilité, et interfaces utilisateurs. Cette solution garantit une surveillance continue, une traçabilité fiable et une remontée d’information conforme aux exigences HACCP.
 
-- Les capteurs mesurent les données toutes les 10 à 15 minutes (fréquence configurable).
-- L’application mobile interroge les capteurs à intervalles réguliers via BLE.
-- Les données sont stockées localement sur l’appareil mobile si la connexion internet est absente, puis synchronisées automatiquement avec le serveur dès rétablissement de la connexion.
-- En cas de dépassement des seuils critiques (ex. : température > 4 °C), une alerte immédiate est générée dans l’application.
+---
 
-*Tâches à réaliser pour la solution -> __WBS__*
-1. Sélection de capteurs compatibles BLE/WiFi (normes IP65+, précision > 98 %).
-2. Développement du module d’appairage sécurisé avec l’application.
-3. Intégration du module de lecture périodique (avec journalisation locale).
-4. Déclenchement d’alertes conditionnelles sur seuils dépassés.
-5. Implémentation de la synchronisation des relevés vers le serveur cloud/local.
+**1. Collecte des données environnementales :**
+- Déploiement de capteurs IoT connectés (BLE ou WiFi) dans les enceintes froides et zones de stockage.
+- Paramètres mesurés : **température**, **humidité**, parfois **vibrations** (ex. panne de machine).
+- Lecture automatisée toutes les 10 à 15 minutes.
+- Données stockées localement en cas de coupure réseau, puis synchronisées avec le serveur.
 
-*Description de __scénarios__ (potentiellement avec un Diagramme de séquence)*
-- Un capteur BLE placé dans une chambre froide envoie automatiquement les données toutes les 10 minutes. À 6h30, la température mesurée est de 7,2 °C. L’application reçoit la valeur, la compare au seuil critique (4 °C) et génère une notification d’alerte. Cette donnée est stockée localement et synchronisée avec le tableau de bord central dès que le réseau est disponible.
+> *Exemple :* Un capteur BLE placé dans une chambre froide envoie une température de 7,2 °C. L'application la reçoit, compare au seuil critique (4 °C), et déclenche une alerte immédiate.
+
+---
+
+**2. Collecte des données opérationnelles :**
+- **Traçabilité alimentaire** assurée par lecture de codes-barres ou étiquettes RFID (lot, origine, DLC).
+- **Détection des procédures de nettoyage** via capteurs de présence ou validation manuelle sur l’application.
+- Enregistrement automatique ou semi-automatique des événements critiques (nettoyage, réception marchandise).
+
+---
+
+**3. Collecte des données comportementales :**
+- Intégration de **questionnaires numériques** dans l’application.
+- Suivi des **pratiques du personnel** : respect des protocoles, formations suivies.
+- Saisie manuelle, avec enregistrement horodaté, signature numérique et anonymisation RGPD si nécessaire.
+
+---
+
+**Architecture fonctionnelle de la collecte :**
+
+1. **Capteurs → application mobile** :
+   - Lecture via BLE/WiFi → stockage local → synchronisation serveur.
+2. **Systèmes de traçabilité** :
+   - Scan RFID ou code-barres → enregistrement événement produit.
+3. **Interface utilisateur** :
+   - Questionnaire ou validation manuelle → stockage → analyse locale → envoi serveur.
+
+---
+
+**Sécurité & confidentialité :**
+- Chiffrement AES-256 des données transmises et stockées.
+- Appairage sécurisé des capteurs.
+- Consentement utilisateur requis pour toute donnée personnelle.
+- Journalisation et logs d’accès activés.
+
+---
+
+**Points forts de la solution proposée :**
+- Collecte multi-source : environnementale, opérationnelle, comportementale.
+- Fonctionnement **hors-ligne assuré** avec reprise automatique.
+- Intégration **modulaire**, adaptable à différents établissements (EHPAD, scolaire, hospitalier).
+- Système d’alertes immédiates en cas de non-conformité détectée.
+
+Cette architecture permet un contrôle rigoureux, automatisé et intelligent du respect des normes HACCP, tout en restant simple à déployer et à maintenir.
 *__Jalon__ : date à laquelle la fonction doit être livrée.*
 #### 3.1.2 Niveau atteint pour chaque critère d’appréciation de cette fonction et modalités de contrôle
 #### 3.1.3 Part du prix attribué à chaque fonction
