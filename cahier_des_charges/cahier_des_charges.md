@@ -5,7 +5,7 @@
 ## Entête
 - Groupe de TD : 4
 - Date de démarrage : 28 mai 2025 15h
-- Version : 0.1.1
+- Version : 0.1.2
 *Il s'agit d'un numéro de version logique en visant d'arriver à la version 1.0 le jour du rendu (git gère une autre numérotation pour le versionnage*) 
 - Destinataire : EL MAMOUNI Saïd
 
@@ -26,11 +26,29 @@
 *A Remplir*
 
 #### 1.1.1 Finalités
-Ce projet a pour objectif de développer une application mobile intelligente, destinée aux cuisines collectives afin de faciliter le respect des règles HACCP (Hazard Analysis Critical Control Point). Elle permettra de surveiller de manière en partie automatisée, et en temps réel les pratiques d'hygiène et de sécurité alimentaire à travers:
-- Une collecte de données (environnementales, opérationnelles et comportementales)
-  C'est à dire le suivi des températures et de l'humidité, la gestion des dates de peremtion, assurer la traçabilité des produits alimentaires, et la gestion des interventions de nettoyage.
-- Le traitement de toutes les données à l'aide d'algorithmes et d'Intelligence Artificielle
-- La génération d'alertes et de rapports à destination des gestionnaires et autorités compétentes.
+
+Le projet est de concevoir une application, permettant d'assurer un suivi intelligent et en temps réel des protocoles HACCP (Hazard Analysis Critical Control Point) dans les cuisines collectives.
+
+Ses objectifs sont:
+- La surveillance automatisée des paramètres critiques de sureté alimentaire.
+	- Nous utiliserons pour cela un réseau de capteurs et de données renseignées par les utilisateurs. Notre application doit effectuer un suivi en continu des températures (chambres froides, congélateurs, plats de présentations, etc.), de l'humidité ambiante et d'autres indicateurs possibles (par exemple: taux de CO2, taux de particules dans l'air). Cela permet de superviser le respect de la **chaîne du froid** et du fonctionnement constant des infrastructures, sans nécessiter la présence d'un humain.
+	Si des données venaient à changer de manière brutale, ou ne pas être conforme aux normes exigées par le HACCP, alors une alerte en temps réel est envoyée aux gestionnaires.
+- La Traçabilité des produits et la gestion de l'hygiène
+	- Elle permet de faciliter la traçabilité des aliments via différents fonctionnalitées (dates de péremption, suivi des lots et d'origine des produits). Cela se fera par étiquettes sur les produits (QR Codes, etiquettes RFID, codes barre) et scans via l'appareil de l'utilisateur.
+	- L'application permet de respecter les bonnes pratiques d'hygiène: enregistrement et suvii des tâches de nettoyage ou relevé quotidiens d'informations.
+	- Ces données seront toutes enregistrés avec un historique et centralisés sur l'application, permettant d'en effectuer des rapports aux gestionnaires ou autorités (lors d'un contrôle par exemple).
+- L'analyse des données et décisions avec IA.
+	- Les différentes données collectés seront analysées et utilisées par des algorithmes et des intelligences artificielles. Notre IA apprend des tendances, des règles et des valeurs critiques. Elle préviendra de dérives ou d'anomalies. 
+	- Cela permet une meilleure anticipation et évite des problèmes critiques.
+	- L'intelligence Artificielle établit des points forts et des points faibles, suggérant par la suite des actions préventives. L'objectif n'est pas seulement de constater les incidents, mais les empêcher avant qu'ils n'arrivent, ou les gérer au plus tot.
+- Alerter en temps réel, produire des rapports et fournir un tableau de bord
+	- Dès qu'un élément semble non conforme (problème de température ou humidité, nettoyage non conforme ou autre manquement), l'application envoie des alertes immédiatement.
+	- Ces alertes peuvent prendre plusieurs formes: notifications mobiles, par SMS ou par e-mail. 
+	- De plus, un tableau de bord centralise la vue d'ensemble des systèmes et de l'hygiène des cuisines.
+	- Des rapports automatisés et périodiques peuvent également être utilisés.
+
+Pour résumer, l'application fourni un pilotage, un contrôle et une analyse intelligente, automatisée au maximum et pratique pour les utilisateurs. 
+Elle vise à garantir l'application des principes de la réglementation HACCP, pour alléger la charge de travail du personnel et renforcer la conformité sanitaire.
 
 #### 1.1.2 Espérance de retour sur investissement
 
