@@ -481,6 +481,31 @@ La collecte des données critiques liées à la sécurité alimentaire repose su
 - Intégration **modulaire**, adaptable à différents établissements (EHPAD, scolaire, hospitalier).
 - Système d’alertes immédiates en cas de non-conformité détectée.
 
+**Scénarios d’usage**
+
+**Scénario 1 – Alerte de dépassement de température (capteur IoT)**
+- Le capteur BLE de la chambre froide relève une température de 6,8 °C à 6h30.
+- L’application détecte que le seuil critique de 4 °C est dépassé.
+- Une **alerte immédiate** est affichée sur l’écran du responsable cuisine.
+- L’utilisateur accède à l’historique, déclenche une vérification et enregistre une action corrective dans l’application.
+
+**Scénario 2 – Validation automatique du nettoyage**
+- Un capteur de présence est installé dans la zone plonge.
+- Le planning prévoit un nettoyage à 15h30.
+- À 15h45, aucune détection n’a eu lieu : l’application déclenche une **alerte de tâche non effectuée**.
+- Si présence détectée entre 15h30 et 16h, la tâche est automatiquement validée dans le tableau de bord.
+
+**Scénario 3 – Saisie d’un questionnaire personnel**
+- Un employé ouvre l’application sur tablette.
+- Il complète un **questionnaire de 5 questions** sur les règles d’hygiène en poste froid.
+- Les réponses sont enregistrées localement puis transmises au serveur.
+- Un score est généré, consultable par le responsable HACCP.
+
+---
+
+**WBS – Collecte des données HACCP**
+<img src=img/export.png>
+
 Cette architecture permet un contrôle rigoureux, automatisé et intelligent du respect des normes HACCP, tout en restant simple à déployer et à maintenir.
 *__Jalon__ : date à laquelle la fonction doit être livrée.*
 #### 3.1.2 Niveau atteint pour chaque critère d’appréciation de cette fonction et modalités de contrôle
