@@ -667,7 +667,7 @@ Le module "tableau de bord" est au cœur de la **stratégie UX de l’applicatio
 ### 4.2 Prévision des défaillances
 *Table de défaillance pour chaque fonction de service avec un paragraphe commentant chaque défaillance et/ou chaque cause/effet/détection d’importance notable*
 
-![[diagramme_usecase.png]]
+<img src=img/diagramme_usecase.png>
 ### 4.3 Gestion des défaillances
 
 *La __Matrice de criticité__*
