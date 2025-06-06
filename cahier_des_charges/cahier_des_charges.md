@@ -290,6 +290,8 @@ Les caractéristiques logicielles et ergonomiques de l’application doivent ten
 - *niveau de flexibilité (« 90% dans l’intervalle, 10% à 1 sec. au delà »)*
 *On peut regrouper les fonctions dans le __tableau fonctionnel__ selon ces critères puis détailler chacune des fonctions dans les sous-sections suivantes*
 
+<img src=img/diagramme_usecase.png>
+
 ### 2.1 Fonctions de service et de contrainte
 #### 2.1.1 Fonctions de service principales 
 *(qui sont la raison d’être du produit)*
@@ -518,7 +520,7 @@ Le tableau de bord est l’interface centrale de l’application. Il doit permet
 
 L’UX/UI proposée s’appuie sur les principes de **clarté, synthèse, hiérarchisation visuelle** et **accessibilité rapide à l’information critique**.
 
-##### 🔷 Structure du tableau de bord
+##### Structure du tableau de bord
 
 - **Affichage principal** sous forme de **vignettes** ou **cartes thématiques**, représentant les grandes familles de données :
   - Températures des enceintes froides
@@ -547,13 +549,13 @@ L’UX/UI proposée s’appuie sur les principes de **clarté, synthèse, hiéra
 
 - **Notifications visuelles et sonores** en cas de changement d’état (ex : dépassement de seuil).
 
-##### 🧑‍💼 Personnalisation
+##### Personnalisation
 
 - Choix de l’affichage par **établissement, zone, période, utilisateur**.
 - Possibilité de filtrer et trier les indicateurs.
 - Mise à jour automatique des données affichées à chaque synchronisation.
 
-##### 📱 UX mobile
+##### UX mobile
 
 - Affichage **responsive** (smartphone/tablette).
 - **Navigation simplifiée** : interaction à une main, boutons larges, interface tactile optimisée.
@@ -667,7 +669,7 @@ Le module "tableau de bord" est au cœur de la **stratégie UX de l’applicatio
 ### 4.2 Prévision des défaillances
 *Table de défaillance pour chaque fonction de service avec un paragraphe commentant chaque défaillance et/ou chaque cause/effet/détection d’importance notable*
 
-<img src=img/diagramme_usecase.png>
+
 ### 4.3 Gestion des défaillances
 
 *La __Matrice de criticité__*
@@ -680,5 +682,7 @@ Le module "tableau de bord" est au cœur de la **stratégie UX de l’applicatio
 ## 5 Annexe
 *Le planning ne fait pas partie de la norme car sa décomposition n’importe pas au client à cette phase du projet. Il n’est alors intéressé que par les jalons qui ponctuent la réalisation des différentes fonctionnalités.
 Nous placerons donc le __diagrammes de Gantt__ ici.*
+
+<img src=img/diagramme_gantt.png>
 
 
