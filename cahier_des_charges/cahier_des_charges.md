@@ -290,14 +290,14 @@ Les caractéristiques logicielles et ergonomiques de l’application doivent ten
 - *niveau de flexibilité (« 90% dans l’intervalle, 10% à 1 sec. au delà »)*
 *On peut regrouper les fonctions dans le __tableau fonctionnel__ selon ces critères puis détailler chacune des fonctions dans les sous-sections suivantes*
 
-<img src=img/diagramme_usecase.png>
-
 ### 2.1 Fonctions de service et de contrainte
 #### 2.1.1 Fonctions de service principales 
 *(qui sont la raison d’être du produit)*
 ##### 2.1.1.1 Description et détail
 ##### Collecte des données
 La collecte des données est une fonction centrale de l’application, visant à garantir le respect des normes HACCP à travers une surveillance continue et automatisée. Trois grandes catégories de données sont collectées à l’aide de capteurs IoT et d’interfaces numériques.
+
+L’application collecte automatiquement les températures, l’humidité et la traçabilité via des capteurs IoT (BLE/WiFi). Les questionnaires intégrés permettent de suivre les pratiques du personnel. Toutes les données sont centralisées et analysées pour générer des alertes en temps réel.
 
 **1. Données environnementales :**
 - Température des enceintes froides (réfrigérateurs, congélateurs).
@@ -323,7 +323,9 @@ La collecte des données est une fonction centrale de l’application, visant à
 L’ensemble de ces données est centralisé, analysé en temps réel ou différé, et utilisé pour générer des alertes, des indicateurs de conformité, et des rapports exportables pour les autorités sanitaires.
 ##### 2.1.1.2 Critères d’appréciation et les niveaux qui les caractérisent 
 *(Niveaux dont l’obtention est imposée)*
-
+- Temps de réponse : < 3 secondes pour l’affichage d’une alerte.
+- Fiabilité des capteurs : précision ±0,5°C, taux de transmission >98%.
+- Accessibilité : interface utilisable avec gants, multilingue.
 *(Niveaux souhaités mais révisables)*
 #### 2.1.2 Fonctions de service complémentaires 
 L’analyse comparative des solutions HACCP actuelles a permis d’identifier plusieurs fonctions de service dites complémentaires. Celles-ci ne sont pas toujours présentes, mais peuvent représenter une **valeur ajoutée stratégique** pour améliorer l’utilisabilité, l’autonomie du personnel et la personnalisation de l’application. Voici une synthèse des fonctions complémentaires observées chez trois outils majeurs du marché.
@@ -520,7 +522,7 @@ Le tableau de bord est l’interface centrale de l’application. Il doit permet
 
 L’UX/UI proposée s’appuie sur les principes de **clarté, synthèse, hiérarchisation visuelle** et **accessibilité rapide à l’information critique**.
 
-##### Structure du tableau de bord
+##### 🔷 Structure du tableau de bord
 
 - **Affichage principal** sous forme de **vignettes** ou **cartes thématiques**, représentant les grandes familles de données :
   - Températures des enceintes froides
@@ -549,13 +551,13 @@ L’UX/UI proposée s’appuie sur les principes de **clarté, synthèse, hiéra
 
 - **Notifications visuelles et sonores** en cas de changement d’état (ex : dépassement de seuil).
 
-##### Personnalisation
+##### 🧑‍💼 Personnalisation
 
 - Choix de l’affichage par **établissement, zone, période, utilisateur**.
 - Possibilité de filtrer et trier les indicateurs.
 - Mise à jour automatique des données affichées à chaque synchronisation.
 
-##### UX mobile
+##### 📱 UX mobile
 
 - Affichage **responsive** (smartphone/tablette).
 - **Navigation simplifiée** : interaction à une main, boutons larges, interface tactile optimisée.
@@ -669,7 +671,7 @@ Le module "tableau de bord" est au cœur de la **stratégie UX de l’applicatio
 ### 4.2 Prévision des défaillances
 *Table de défaillance pour chaque fonction de service avec un paragraphe commentant chaque défaillance et/ou chaque cause/effet/détection d’importance notable*
 
-
+<img src=img/diagramme_usecase.png>
 ### 4.3 Gestion des défaillances
 
 *La __Matrice de criticité__*
@@ -682,7 +684,5 @@ Le module "tableau de bord" est au cœur de la **stratégie UX de l’applicatio
 ## 5 Annexe
 *Le planning ne fait pas partie de la norme car sa décomposition n’importe pas au client à cette phase du projet. Il n’est alors intéressé que par les jalons qui ponctuent la réalisation des différentes fonctionnalités.
 Nous placerons donc le __diagrammes de Gantt__ ici.*
-
-<img src=img/diagramme_gantt.png>
 
 
