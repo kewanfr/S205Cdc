@@ -319,6 +319,23 @@ Les caractéristiques logicielles et ergonomiques de l’application doivent ten
 *On peut regrouper les fonctions dans le __tableau fonctionnel__ selon ces critères puis détailler chacune des fonctions dans les sous-sections suivantes*
 
 ### 2.1 Fonctions de service et de contrainte
+
+Le diagramme de cas d’utilisation ci-dessous permet de visualiser les interactions entre les différents utilisateurs de l’application HACCP et les fonctionnalités proposées. Il constitue une représentation synthétique du périmètre fonctionnel de l’application, en lien direct avec les besoins exprimés dans les sections précédentes.
+
+Ce diagramme suit la notation UML et identifie les **acteurs** principaux du système (agents de cuisine, responsables HACCP, gestionnaires d’établissement, autorités sanitaires, systèmes externes) ainsi que les **cas d’utilisation** (ou scénarios d’interaction) qui leur sont accessibles.
+
+Les relations de **généralisation entre acteurs** sont également représentées, afin de clarifier les rôles hiérarchiques et les droits d’accès. Les flèches de généralisation indiquent qu’un acteur spécialisé hérite des fonctionnalités accessibles à un acteur plus général (ex. : un gestionnaire hérite des fonctions du responsable HACCP, qui hérite lui-même de celles de l’agent de cuisine).
+
+Des relations de type `include` et `extend` sont aussi présentes entre certains cas d’utilisation, pour refléter des **fonctionnalités partagées** ou **optionnelles** selon le contexte.
+
+Ce diagramme aide à :
+- clarifier les frontières du système,
+- structurer le développement fonctionnel,
+- et faciliter la compréhension du rôle de chaque utilisateur.
+
+Il servira de base pour la conception détaillée de l’architecture logicielle de l’application lors des phases ultérieures du projet.
+
+<img src=img/diagramme_usecase.png>
 #### 2.1.1 Fonctions de service principales 
 *(qui sont la raison d’être du produit)*
 ##### 2.1.1.1 Description et détail
@@ -550,7 +567,7 @@ Le tableau de bord est l’interface centrale de l’application. Il doit permet
 
 L’UX/UI proposée s’appuie sur les principes de **clarté, synthèse, hiérarchisation visuelle** et **accessibilité rapide à l’information critique**.
 
-##### 🔷 Structure du tableau de bord
+##### Structure du tableau de bord
 
 - **Affichage principal** sous forme de **vignettes** ou **cartes thématiques**, représentant les grandes familles de données :
   - Températures des enceintes froides
@@ -579,13 +596,13 @@ L’UX/UI proposée s’appuie sur les principes de **clarté, synthèse, hiéra
 
 - **Notifications visuelles et sonores** en cas de changement d’état (ex : dépassement de seuil).
 
-##### 🧑‍💼 Personnalisation
+##### Personnalisation
 
 - Choix de l’affichage par **établissement, zone, période, utilisateur**.
 - Possibilité de filtrer et trier les indicateurs.
 - Mise à jour automatique des données affichées à chaque synchronisation.
 
-##### 📱 UX mobile
+##### UX mobile
 
 - Affichage **responsive** (smartphone/tablette).
 - **Navigation simplifiée** : interaction à une main, boutons larges, interface tactile optimisée.
@@ -698,8 +715,6 @@ Le module "tableau de bord" est au cœur de la **stratégie UX de l’applicatio
 *__Profils de risques__ pour chaque fonction de service*
 ### 4.2 Prévision des défaillances
 *Table de défaillance pour chaque fonction de service avec un paragraphe commentant chaque défaillance et/ou chaque cause/effet/détection d’importance notable*
-
-<img src=img/diagramme_usecase.png>
 ### 4.3 Gestion des défaillances
 
 *La __Matrice de criticité__*
@@ -712,5 +727,27 @@ Le module "tableau de bord" est au cœur de la **stratégie UX de l’applicatio
 ## 5 Annexe
 *Le planning ne fait pas partie de la norme car sa décomposition n’importe pas au client à cette phase du projet. Il n’est alors intéressé que par les jalons qui ponctuent la réalisation des différentes fonctionnalités.
 Nous placerons donc le __diagrammes de Gantt__ ici.*
+
+Le diagramme de Gantt ci-dessous présente le **planning prévisionnel du développement de l’application mobile HACCP**, en lien avec les objectifs du projet définis dans ce cahier des charges.
+
+Chaque tâche est représentée sous forme de barre horizontale, positionnée selon sa date de début et sa durée estimée. Cette visualisation permet de :
+
+- Suivre la **séquence logique des étapes** du projet,
+- Identifier les **phases critiques** et les chevauchements,
+- Anticiper les **ressources nécessaires** à chaque moment.
+
+Le planning est structuré autour de **dix grandes étapes**, depuis l’analyse des exigences jusqu’à la livraison finale du prototype fonctionnel. Il inclut notamment :
+- La définition des besoins,
+- La conception UX/UI,
+- Le développement modulaire (capteurs, alertes, tableau de bord, mode hors-ligne),
+- La mise en conformité RGPD,
+- Les phases de tests et d’ajustements,
+- La livraison du prototype.
+
+Certaines tâches sont parallélisables, tandis que d’autres suivent des **dépendances logiques** (par exemple, les tests ne peuvent être effectués qu’après le développement des modules).
+
+Ce diagramme constitue un outil essentiel pour le **pilotage du projet**, en assurant une vision globale de son avancement, et en facilitant la coordination entre les membres de l’équipe.
+
+<img src=img/diagramme_gantt.png>
 
 
