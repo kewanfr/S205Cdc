@@ -325,6 +325,8 @@ Les caractéristiques logicielles et ergonomiques de l’application doivent ten
 ##### Collecte des données
 La collecte des données est une fonction centrale de l’application, visant à garantir le respect des normes HACCP à travers une surveillance continue et automatisée. Trois grandes catégories de données sont collectées à l’aide de capteurs IoT et d’interfaces numériques.
 
+L’application collecte automatiquement les températures, l’humidité et la traçabilité via des capteurs IoT (BLE/WiFi). Les questionnaires intégrés permettent de suivre les pratiques du personnel. Toutes les données sont centralisées et analysées pour générer des alertes en temps réel.
+
 **1. Données environnementales :**
 - Température des enceintes froides (réfrigérateurs, congélateurs).
 - Humidité ambiante dans les cuisines et zones de stockage.
@@ -349,7 +351,9 @@ La collecte des données est une fonction centrale de l’application, visant à
 L’ensemble de ces données est centralisé, analysé en temps réel ou différé, et utilisé pour générer des alertes, des indicateurs de conformité, et des rapports exportables pour les autorités sanitaires.
 ##### 2.1.1.2 Critères d’appréciation et les niveaux qui les caractérisent 
 *(Niveaux dont l’obtention est imposée)*
-
+- Temps de réponse : < 3 secondes pour l’affichage d’une alerte.
+- Fiabilité des capteurs : précision ±0,5°C, taux de transmission >98%.
+- Accessibilité : interface utilisable avec gants, multilingue.
 *(Niveaux souhaités mais révisables)*
 #### 2.1.2 Fonctions de service complémentaires 
 L’analyse comparative des solutions HACCP actuelles a permis d’identifier plusieurs fonctions de service dites complémentaires. Celles-ci ne sont pas toujours présentes, mais peuvent représenter une **valeur ajoutée stratégique** pour améliorer l’utilisabilité, l’autonomie du personnel et la personnalisation de l’application. Voici une synthèse des fonctions complémentaires observées chez trois outils majeurs du marché.
@@ -539,7 +543,72 @@ Cette architecture permet un contrôle rigoureux, automatisé et intelligent du 
 #### 3.1.2 Niveau atteint pour chaque critère d’appréciation de cette fonction et modalités de contrôle
 #### 3.1.3 Part du prix attribué à chaque fonction
 ### 3.2 *Pour chaque fonction : fonction 2*
-#### Etc.
+
+#### 3.2.1 Solution proposée
+
+Le tableau de bord est l’interface centrale de l’application. Il doit permettre aux gestionnaires et aux agents de cuisine de **visualiser rapidement l’état global de conformité HACCP**, de **réagir efficacement en cas de non-conformité**, et de **gérer les actions à entreprendre**.
+
+L’UX/UI proposée s’appuie sur les principes de **clarté, synthèse, hiérarchisation visuelle** et **accessibilité rapide à l’information critique**.
+
+##### 🔷 Structure du tableau de bord
+
+- **Affichage principal** sous forme de **vignettes** ou **cartes thématiques**, représentant les grandes familles de données :
+  - Températures des enceintes froides
+  - Procédures de nettoyage
+  - Traçabilité des aliments
+  - Historique des alertes
+  - Niveau de conformité global
+
+- **Système de couleurs type "feux tricolores"** pour chaque vignette :
+  - Conforme (vert)
+  - A surveiller / en attente (jaune)
+  - Non conforme (rouge)
+
+- **Accès rapide** à chaque section via un **menu horizontal ou une barre latérale** :
+  - Tableau synthétique
+  - Données détaillées
+  - Historique
+  - Export / rapport
+
+- **Indicateurs clés** visibles en un coup d’œil :
+  - % de conformité général
+  - Nombre d’anomalies actives
+  - Alertes non résolues
+  - Dernière synchronisation
+  - Profil de risque actuel
+
+- **Notifications visuelles et sonores** en cas de changement d’état (ex : dépassement de seuil).
+
+##### 🧑‍💼 Personnalisation
+
+- Choix de l’affichage par **établissement, zone, période, utilisateur**.
+- Possibilité de filtrer et trier les indicateurs.
+- Mise à jour automatique des données affichées à chaque synchronisation.
+
+##### 📱 UX mobile
+
+- Affichage **responsive** (smartphone/tablette).
+- **Navigation simplifiée** : interaction à une main, boutons larges, interface tactile optimisée.
+- **Mode hors-ligne** : accès au dernier état synchronisé avec message "données en attente de mise à jour".
+
+---
+
+#### 3.2.2 Niveau atteint
+
+- **Temps de chargement** : < 3 secondes sur la majorité des terminaux Android/iOS.
+- **Taux de satisfaction** visé sur la navigation UX : ≥ 90% (évaluation via questionnaire utilisateur intégré).
+- **Mises à jour** en temps réel ou différé selon la connectivité.
+
+---
+
+#### 3.2.3 Coût estimé
+
+- Estimation : **20 % du budget total**.
+- Inclus : conception UX, développement front-end, animations, personnalisation, documentation intégrée.
+
+---
+
+Le tableau de bord représente la **porte d’entrée principale** vers la donnée critique. Il doit être **lisible, modulaire et réactif**, conçu pour des utilisateurs en environnement contraint, avec une **expérience fluide**, même sous stress ou contrainte de temps.
 ### 3.x Pour l’ensemble du produit
 #### 3.x.1 Prix de la réalisation de la version de base
 ##### Capteurs connectés (IoT)
@@ -566,12 +635,71 @@ Cette estimation pourra évoluer selon les sites pilotes (surface, nombre de cha
 #### 3.x.3 Mesures prises pour respecter les contraintes et leurs conséquences économiques
 #### 3.x.4 Outils d’installation, de maintenance … à prévoir
 #### 3.x.5 Décomposition en modules, sous-ensembles
+
+L’application sera composée de plusieurs modules fonctionnels, organisés de manière modulaire afin de faciliter le développement, l’entretien et l’évolution de la solution. Parmi eux, le **module tableau de bord** est un point central de l’expérience utilisateur.
+
+#### Liste des modules fonctionnels principaux
+
+- **Module Capteurs** : collecte des données environnementales (température, humidité, etc.).
+- **Module Traçabilité** : suivi des produits via RFID, codes-barres.
+- **Module Nettoyage** : validation et contrôle des procédures d’hygiène.
+- **Module Questionnaires** : recueil des données comportementales.
+- **Module Alertes** : détection, gestion et suivi des non-conformités.
+- **Module Synchronisation** : gestion du mode hors-ligne et des connexions serveur.
+- **Module RGPD** : conformité réglementaire, anonymisation, gestion des accès.
+- **Module Tableau de bord** : **interface centrale de visualisation et de pilotage**.
+
+---
+
+#### Module "Tableau de bord" – Proposition UX
+
+Ce module est conçu comme le **centre de contrôle visuel** de l'application. Il offre à l’utilisateur une vision synthétique, claire et immédiate de la situation HACCP de la cuisine.
+
+##### Objectifs UX/UI :
+
+- Permettre une **lecture rapide** de l’état global de conformité.
+- Offrir des **indicateurs visuels clairs** (codes couleur, pictogrammes).
+- Faciliter l’accès aux données détaillées sans surcharge cognitive.
+- Fonctionner **efficacement en mobilité**, avec un design adapté aux environnements contraints (gants, bruit, stress, humidité).
+
+##### Composants UX clés :
+
+- **Cartes thématiques (widgets)** avec couleur de statut : conforme (vert), à surveiller (jaune), non conforme (rouge).
+- **Graphiques simples et dynamiques** : courbes de température, taux de conformité sur 7 jours, nombre d’alertes par zone.
+- **Filtres rapides** : par date, zone, type de donnée, niveau de risque.
+- **Affichage hiérarchisé** : données critiques en haut, informations secondaires repliées.
+- **Bouton "Exporter le rapport"** visible et rapide d’accès.
+- **Notifications contextuelles** intégrées dans l’interface.
+
+##### UX mobile :
+
+- Design **responsive**, testée sur écrans ≥ 5 pouces.
+- Utilisation possible à **une main** avec gestuelle simple.
+- Mode hors-ligne avec données conservées localement + alerte de synchronisation.
+
+---
+
+#### Résumé UX du module
+
+| Critère                   | Spécification UX attendue                    |
+| ------------------------- | -------------------------------------------- |
+| Temps d’accès aux données | < 3 secondes                                 |
+| Taux de clarté perçue     | ≥ 90 % (test utilisateur)                    |
+| Navigation mobile         | Optimisée pour écran tactile + gants         |
+| Visibilité des alertes    | Immédiate (signal visuel/sonore)             |
+| Accessibilité             | Texte lisible, contraste élevé, pictogrammes |
+
+---
+
+Le module "tableau de bord" est au cœur de la **stratégie UX de l’application**. Il doit garantir à l’utilisateur une **expérience fluide, rassurante et efficace**, même en situation de stress ou de surcharge opérationnelle.
 #### 3.x.7 Perspectives d’évolution technologique
 ## 4 Prévisions de fiabilité – Gestions des risques
 ### 4.1 Risques à la réalisation
 *__Profils de risques__ pour chaque fonction de service*
 ### 4.2 Prévision des défaillances
 *Table de défaillance pour chaque fonction de service avec un paragraphe commentant chaque défaillance et/ou chaque cause/effet/détection d’importance notable*
+
+<img src=img/diagramme_usecase.png>
 ### 4.3 Gestion des défaillances
 
 *La __Matrice de criticité__*
