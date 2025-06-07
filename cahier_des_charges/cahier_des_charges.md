@@ -5,7 +5,7 @@
 ## Entête
 - Groupe de TD : 4
 - Date de démarrage : 28 mai 2025 15h
-- Version : 0.1.2
+- Version : 0.1.3
 *Il s'agit d'un numéro de version logique en visant d'arriver à la version 1.0 le jour du rendu (git gère une autre numérotation pour le versionnage*) 
 - Destinataire : EL MAMOUNI Saïd
 
@@ -52,15 +52,43 @@ Elle vise à garantir l'application des principes de la réglementation HACCP, p
 
 #### 1.1.2 Espérance de retour sur investissement
 
-Cette application vise à réduire les risques de non-conformité à l'HACCP. L'objectif est donc la sureté alimentaire pour les clients des cuisines collectives.
-En s'assurant de la conformité à l'HACCP, on limite les pertes alimentaires dues à des incidents (rupture de la chaine du froid, erreurs de traçabilité), améliore la productivité du personnel par l'automatisation de certaines tâches de contrôle, et renforce la sécurité sanitaire. Ces améliorations permettront à terme une réduction des coûts, moins d'efforts pour une mise en conformité avec la loi (et donc éviter des audits non réussis), ainsi qu'une meilleure réputation pour les établissements utilisateurs.
 
+Le déploiement de cette application pourrait permettre de générer des bénéfices importants pour les utilisateurs (cantines collectives).
+Les gains attendus sont:
+- Gain de temps et d'efficacité
+	- La gestion et le suivi des règles d'hygiène HACCP peut être long et chronophage. La gestion automatique via cette application permet d'éviter certaines taches manuelles. Par exemple, générer automatiquement des étiquettes de traçabilité et les suivre, remonter les températures et autres données en temps réel (évitant de les relever manuellement).
+	- Ce temps gagné permet au personnel d'effectuer d'autres taches dans les cuisines.
+- Réduire les pertes liés aux non conformités
+	- Sécuriser la chaîne du froid et détecter les anomalies permet d'éviter le gaspillage de nourriture. Par exemple, si une panne est détectée sur un frigo dès le départ, on peut rapidement mettre les aliments ailleurs, la chaîne du froid n'est ainsi pas cassée.
+	- On limite les pertes financières directes pour la nourriture jetée (problème de température, date de péremption, etc..).
+	- Cela limite également les pertes financières liés à des problèmes plus graves. Exemple: une intoxication alimentaire, qui entrainerait des soins importants et d'indemniser la victime.
+	- Une fermeture administration pour non respect des réglementations peut également être évitée.
+- Faciliter le contrôle
+	- L'utilisation de l'application garanti que la plupart des règles HACCP sont respectées en continue, évitant les problèmes lors d'inspections sanitaires.
+	- De plus, cela permet un gain de temps car il est possible de présenter l'historique et les rapports complets effectués par l'application aux autorités, permettant de renforcer leur confiance. Il faut bien sur pour cela que l'application soit reconnue comme fiable et réputée.
+ - La satisfaction des clients et une amélioration de l'image
+	 - En assurant la sécurité alimentaire dans l'établissement, à travers ce système moderne, l'établissement envoie une confiance importante aux usagers. Les usagers seront mieux satisfaits des services, ce qui améliore la réputation de l'établissement.
+	 - Cela a bien sur des répercussions économiques.
+
+En conclusion,
+Le retour sur investissement de ce projet est principalement une amélioration de la productivité du personnel, un renforcement du climat de confiance et une diminution des coûts liés aux risques sanitaires.
+
+Sources: [traqfood](https://www.traqfood.com/fr/blog-methode-haccp/normes-haccp/article/les-avantages-des-solutions-digitales-haccp-en-restauration/), (formation-haccp)[https://formation-haccp.info/reglementation-hygiene-alimentaire/], (traqfood)[https://www.traqfood.com/fr/blog-methode-haccp/actualites-hygiene-alimentaire/article/ia-et-securite-alimentaire-comment-l-ia-transforme-la-gestion-haccp-en/]
+L'IA générative à été utilisée à des fins de résumés des sources et de reformulations.
 ### 1.2 Contexte
 #### 1.2.1 Situation du projet par rapport aux autres projets de l’entreprise
 
 Ce projet de Recherche et Développement s'inscrit dans une démarche scolaire d'innovation sur une entreprise fictive. Cette entreprise fictive a pour seul projet actuel de concevoir une application simplifiant la gestion de règles de HACCP dans des lieux de restauration, plus précisément dans des cuisines collectives.
+
+On peut considérer ce projet comme pilote de la société fictive. L'objectif est de simuler les conditions d'une jeune entreprise innovante. Il montre la faisabilité et l'intérêt du suivi des règles HACCP de manière intelligente. 
 C'est donc le premier projet, et initiateur de l'entreprise fictive, qui pourrait par la suite en développer d'autres.
+C'est un projet important pour cette entreprise, car il s'agira à la fois d'un essai technique des capacités technologiques de celle-ci, mais aussi d'une vitrine de son savoir faire.
 #### 1.2.2 Études déjà effectuées
+
+Pour la rédaction de ce cahier des charges, nous avons mené plusieurs étudies préliminaires, pour s'assurer de la pertinence et la viabilité de cette application.
+Différentes analyses des textes de loi ont été effectués, en partie à l'aide de LLMs.
+Une analyse détaillée
+
 Nous avons effectués des recherches préliminaires pour identifier les différentes exigences HACCP dans les règlements CE 178/2002 et CE 852/2004, ainsi que les pratiques courantes dans la restauration collective.
 #### 1.2.3 Études menées sur des sujets voisins
 Afin d’enrichir la conception de l’application mobile HACCP, une étude comparative de plusieurs solutions existantes sur le marché a été menée. Cette analyse a permis d’identifier les fonctionnalités courantes, les manques fréquents, ainsi que les opportunités d’innovation.
