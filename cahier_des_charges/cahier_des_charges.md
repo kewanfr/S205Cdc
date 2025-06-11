@@ -5,7 +5,7 @@
 ## Entête
 - Groupe de TD : 4
 - Date de démarrage : 28 mai 2025 15h
-- Version : 0.2.1
+- Version : 0.2.4
 *Il s'agit d'un numéro de version logique en visant d'arriver à la version 1.0 le jour du rendu (git gère une autre numérotation pour le versionnage*) 
 - Destinataire : EL MAMOUNI Saïd
 
@@ -23,7 +23,11 @@
 ## 1. Présentation générale du problème
 ### 1.1 Projet
 
-*A Remplir*
+Dans le cadre d'un projet de Recherche & Développement, l'objectif est de développer une application mobile intelligente qui facilite le respect et le suivi des règles HACCP dans les cuisines collectives.
+Cette application devra intégrer une approche multifactorielle en prenant en compte les facteurs environnementaux (température des enceintes froides, humidité, etc.), opérationnels (respect des procédures de nettoyage, traçabilité des aliments, etc.) et comportementaux (formation du personnel, respect des protocoles, etc.).
+Les données seront collectées à l'aide de capteurs IoT et de questionnaires intégrés à l'application, et analysées par des algorithmes prédictifs utilisant l'Intelligence Artificielle.
+**L'application devra offrir aux gestionnaires de cuisine un suivi adapté grâce à une prévention personnalisée et ciblée des non-conformités, favorisant ainsi une meilleure observance des protocoles HACCP.**
+Elle fournira également aux autorités sanitaires des indications pour un meilleur suivi et une meilleure évaluation des pratiques en vigueur.
 
 #### 1.1.1 Finalités
 
