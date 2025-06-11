@@ -348,8 +348,7 @@ Il servira de base pour la conception détaillée de l’architecture logicielle
 <img src=img/diagramme_usecase.png>
 
 #### 2.1.1 Fonctions de service principales 
-*(qui sont la raison d’être du produit)*
-##### 2.1.1.1 Description et détail
+Ce sont les fonctions qui constituent la raison d'être du produit.
 ##### Collecte des données
 La collecte des données est une fonction centrale de l’application, visant à garantir le respect des normes HACCP à travers une surveillance continue et automatisée. Trois grandes catégories de données sont collectées à l’aide de capteurs IoT et d’interfaces numériques.
 
@@ -377,14 +376,90 @@ L’application collecte automatiquement les températures, l’humidité et la 
 - Fonctionnement possible hors-ligne avec journalisation locale, puis synchronisation serveur.
 
 L’ensemble de ces données est centralisé, analysé en temps réel ou différé, et utilisé pour générer des alertes, des indicateurs de conformité, et des rapports exportables pour les autorités sanitaires.
+
+▪
+2.1.1.1 Description et détail
+•
+Collecte des données : Fonction centrale garantissant le respect HACCP via surveillance continue et automatisée
+. Trois catégories de données sont collectées via capteurs IoT et interfaces numériques
+.
+◦
+Données environnementales : Température (enceintes froides), humidité ambiante, conditions de ventilation (extension possible). Recueillies automatiquement via capteurs BLE/WiFi
+.
+◦
+Données opérationnelles : Traçabilité aliments (codes-barres, RFID), détection protocoles nettoyage (capteurs présence/mouvement ou validation manuelle), informations points critiques (CCP)
+.
+◦
+Données comportementales : Réponses questionnaires intégrés (procédures, formation), auto-évaluations, suivi sensibilisation hygiène
+.
+•
+Méthodes de collecte : Automatisée (capteurs), Semi-automatique/manuelle (application). Fonctionnement possible hors-ligne avec journalisation locale, puis synchronisation
+.
+•
+L'ensemble des données est centralisé, analysé (temps réel/différé), utilisé pour générer alertes, indicateurs conformité, rapports exportables
+.
+•
+(La solution détaillée pour la collecte est également décrite en 3.1.1
+).
+
 ##### 2.1.1.2 Critères d’appréciation et les niveaux qui les caractérisent 
 *(Niveaux dont l’obtention est imposée)*
 - Temps de réponse : < 3 secondes pour l’affichage d’une alerte.
 - Fiabilité des capteurs : précision ±0,5°C, taux de transmission >98%.
 - Accessibilité : interface utilisable avec gants, multilingue.
 *(Niveaux souhaités mais révisables)*
+
+▪
+2.1.1.2 Critères d’appréciation et les niveaux qui les caractérisent
+•
+(Niveaux dont l’obtention est imposée) :
+◦
+Temps de réponse : < 3 secondes pour l'affichage d'une alerte
+.
+◦
+Fiabilité des capteurs : précision ±0,5°C, taux de transmission >98%
+.
+◦
+Accessibilité : interface utilisable avec gants, multilingue
+.
+•
+(Niveaux souhaités mais révisables) : (Section présente dans le modèle mais non détaillée dans les sources fournies
+.)
 #### 2.1.2 Fonctions de service complémentaires 
 L’analyse comparative des solutions HACCP actuelles a permis d’identifier plusieurs fonctions de service dites complémentaires. Celles-ci ne sont pas toujours présentes, mais peuvent représenter une **valeur ajoutée stratégique** pour améliorer l’utilisabilité, l’autonomie du personnel et la personnalisation de l’application. Voici une synthèse des fonctions complémentaires observées chez trois outils majeurs du marché.
+
+◦
+2.1.2 Fonctions de service complémentaires
+▪
+Ces fonctions améliorent, facilitent ou complètent le service principal
+. Identifiées via l'analyse comparative des solutions existantes. Elles ne sont pas toujours présentes mais peuvent représenter une valeur ajoutée stratégique (utilisabilité, autonomie personnel, personnalisation)
+.
+▪
+Tableau comparatif des fonctions complémentaires
+ : (Le tableau est fourni dans la source
+ et peut être copié directement).
+▪
+Enseignements et positionnement de notre application
+ : Notre projet se différencie en proposant l'ensemble de ces fonctions de manière intégrée, intuitive et modulaire, contrairement aux applications étudiées
+.
+•
+Interface personnalisable selon le contexte (secteur, utilisateurs)
+.
+•
+Système de tutoriels interactifs
+.
+•
+Gestion complète de l'historique avec export pour audits
+.
+•
+Mode hors-ligne fiable
+.
+•
+Documentation contextuelle intégrée
+.
+▪
+Ces fonctions ne sont pas accessoires, elles participent à la pérennité, la conformité et la bonne adoption de la solution
+.
 
 #### Tableau comparatif des fonctions complémentaires
 
@@ -414,6 +489,26 @@ Ces fonctions complémentaires ne sont pas acc*(qui améliorent, facilitent ou c
 
 Outre les fonctions principales indispensables au respect des règles HACCP, l’application devra proposer plusieurs **fonctions de service complémentaires**. Ces fonctionnalités, bien que non essentielles au strict fonctionnement du système, apporteront une **valeur ajoutée significative** en termes d’utilisabilité, d’autonomie, de conformité et d’adoption par les utilisateurs.
 
+▪
+2.1.2.1 Description et détail
+•
+1. Tutoriels et rappels intégrés : Accompagner utilisateurs (prise en main, bonnes pratiques). Contenu interactif/textuel, rappels sur normes HACCP, consultation libre ou notifications contextuelles. Bénéfice : Réduction erreurs humaines, auto-formation
+.
+•
+2. Historique des alertes et actions correctives : Traçabilité complète des anomalies et mesures correctives. Journal détaillé/horodaté, archivage actions (responsable, type, délai), exportation (PDF, Excel) possible pour audits. Bénéfice : Amélioration transparence et conformité
+.
+•
+3. Mode hors-ligne avec synchronisation différée : Garantie fonctionnement continu sans connexion. Enregistrement local des données, synchronisation automatique dès connexion, notifications échec/conflit. Bénéfice : Fiabilité accrue en environnements à faible connectivité
+.
+•
+4. Personnalisation des indicateurs et de l’interface : Adapter l'application au contexte métier spécifique (école, EHPAD, hôpital). Choix des seuils critiques, personnalisation catégories (zones, aliments, nettoyage), affichage sur-mesure tableau de bord. Bénéfice : Pertinence accrue, meilleure appropriation
+.
+•
+5. Documentation contextuelle : Accès immédiat aux informations réglementaires/techniques (CE 852/2004, guides HACCP). Bouton d'aide/info-bulle, liens vers réglementation, mises à jour en ligne possibles. Bénéfice : Autonomie renforcée, cohérence réglementaire facilitée
+.
+•
+Ces fonctions font de l'application un véritable assistant numérique, améliorant l'usage quotidien, la conformité réglementaire et l'expérience utilisateur
+.
 ---
 
 **1. Tutoriels et rappels intégrés**
@@ -475,8 +570,12 @@ Ces fonctions complémentaires contribueront à faire de l’application un **v�
 
 
 ##### 2.1.2.2 Critères d’appréciation et les niveaux qui les caractérisent 
-*(Niveaux dont l’obtention est imposée)*
-
+•
+(Niveaux dont l’obtention est imposée) : (Section présente dans le modèle mais non détaillée dans les sources fournies
+.)
+•
+(Niveaux souhaités mais révisables) : (Section présente dans le modèle mais non détaillée dans les sources fournies
+.)
 *(Niveaux souhaités mais révisables)*
 #### 2.1.3 Contraintes 
 *(limitations à la liberté du concepteur-réalisateur)*
