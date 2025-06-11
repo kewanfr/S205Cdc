@@ -346,6 +346,7 @@ Ce diagramme aide à :
 Il servira de base pour la conception détaillée de l’architecture logicielle de l’application lors des phases ultérieures du projet.
 
 <img src=img/diagramme_usecase.png>
+
 #### 2.1.1 Fonctions de service principales 
 *(qui sont la raison d’être du produit)*
 ##### 2.1.1.1 Description et détail
@@ -759,5 +760,20 @@ Certaines tâches sont parallélisables, tandis que d’autres suivent des **dé
 Ce diagramme constitue un outil essentiel pour le **pilotage du projet**, en assurant une vision globale de son avancement, et en facilitant la coordination entre les membres de l’équipe.
 
 <img src=img/diagramme_gantt.png>
+
+
+
+#### Répartition du travail
+
+### Alex
+| Tâche                                   | Section             | Durée estimée |
+|-----------------------------------------|---------------------|---------------|
+| Etude des applications existantes       | 1.2.3 / 1.2.5 (LLM) | 30min         |
+| Synthèse comparative outils HACCP       | 1.2.3 / 2.1.2 (LLM) | 1h            |
+| Rédaction de l'environnement du produit | 1.4.1 / 1.4.2 (LLM) | 1h            |
+| Rédaction fonctions complémentaires     | 2.1.2.1             | 1h30          |
+| Diagramme de cas d'utilisation          | 2.1                 | 2h            |
+| Proposition de l'UX du tableau de bord  | 3.2 / 3.3.5         | 1h            |            
+| Diagramme de Gantt                      | 5 Annexe            | 1h30          |
 
 
