@@ -5,7 +5,7 @@
 ## Entête
 - Groupe de TD : 4
 - Date de démarrage : 28 mai 2025 15h
-- Version : 0.2.4
+- Version : 0.2.5
 *Il s'agit d'un numéro de version logique en visant d'arriver à la version 1.0 le jour du rendu (git gère une autre numérotation pour le versionnage*) 
 - Destinataire : EL MAMOUNI Saïd
 
@@ -370,6 +370,12 @@ L’application collecte automatiquement les températures, l’humidité et la 
 - Auto-évaluations des responsables HACCP.
 - Suivi de la sensibilisation à l’hygiène (score individuel ou équipe).
 
+**4. Transmission aux autorités sanitaires :**
+- **Génération des rapports :** L’application génère automatiquement des rapports périodiques (hebdomadaires, mensuels) à partir des données collectées. Les rapports peuvent également être générés manuellement pour des périodes spécifiques ou des événements particuliers. Les rapports sont générés dans des formats standardisés (PDF, CSV) conformes aux exigences des autorités sanitaires.
+- **Transmission sécurisée :** Les rapports sont chiffrés avant transmission pour garantir la confidentialité des données. Utilisation de protocoles sécurisés (HTTPS, SFTP) pour la transmission des rapports. Les autorités sanitaires sont authentifiées avant de pouvoir accéder aux rapports.
+- **Traçabilité et audit :** Toutes les transmissions de rapports sont journalisées pour assurer la traçabilité. L’application envoie un accusé de réception une fois le rapport transmis avec succès. Les utilisateurs peuvent consulter l’historique des transmissions pour vérifier que les rapports ont bien été envoyés et reçus.
+- **Conformité réglementaire :** La transmission des données est conforme à la RGPD. Les rapports générés respectent les normes HACCP et les exigences des autorités sanitaires.
+
 **Méthodes de collecte :**
 - Automatisée pour les capteurs environnementaux et certains capteurs opérationnels.
 - Semi-automatique ou manuelle (via l’application) pour les aspects comportementaux.
@@ -489,9 +495,6 @@ Ces fonctions complémentaires ne sont pas acc*(qui améliorent, facilitent ou c
 
 Outre les fonctions principales indispensables au respect des règles HACCP, l’application devra proposer plusieurs **fonctions de service complémentaires**. Ces fonctionnalités, bien que non essentielles au strict fonctionnement du système, apporteront une **valeur ajoutée significative** en termes d’utilisabilité, d’autonomie, de conformité et d’adoption par les utilisateurs.
 
-▪
-2.1.2.1 Description et détail
-•
 1. Tutoriels et rappels intégrés : Accompagner utilisateurs (prise en main, bonnes pratiques). Contenu interactif/textuel, rappels sur normes HACCP, consultation libre ou notifications contextuelles. Bénéfice : Réduction erreurs humaines, auto-formation
 .
 •
@@ -570,15 +573,13 @@ Ces fonctions complémentaires contribueront à faire de l’application un **v�
 
 
 ##### 2.1.2.2 Critères d’appréciation et les niveaux qui les caractérisent 
-•
-(Niveaux dont l’obtention est imposée) : (Section présente dans le modèle mais non détaillée dans les sources fournies
-.)
-•
-(Niveaux souhaités mais révisables) : (Section présente dans le modèle mais non détaillée dans les sources fournies
-.)
+*(Niveaux dont l’obtention est imposée)*
+
 *(Niveaux souhaités mais révisables)*
 #### 2.1.3 Contraintes 
-*(limitations à la liberté du concepteur-réalisateur)*
+Le développement de l’application mobile de suivi HACCP devra strictement respecter le règlement (CE) n°852/2004 relatif à l’hygiène des denrées alimentaires, applicable à toutes les étapes de la chaîne agroalimentaire . Cela implique la mise en place de procédures fondées sur l’analyse des dangers et la maîtrise des points critiques (HACCP), la tenue de guides de bonnes pratiques d’hygiène (notamment pour les entreprises de petite taille), ainsi que la conservation réglementaire des enregistrements : un an pour les relevés des CCP tels que les températures, et trois ans pour les documents liés au nettoyage, à la traçabilité et aux audits. Par ailleurs, conformément au règlement (CE) n°178/2002, l’exploitant est responsable de la sécurité alimentaire et doit assurer une traçabilité complète “de l’amont vers l’aval”, avec réactivité en cas de retrait ou de rappel de lots. L’utilisation de codes-barres, QR Codes ou RFID sera nécessaire pour enregistrer systématiquement lors de chaque scan l’origine, le numéro de lot et la date de péremption des produits.
+
+Sur le plan de la protection des données, l’application devra être conforme au RGPD(UE)2016/679. Les données collectées (identifiants, rôle, historiques de saisie) seront traitées uniquement dans un cadre clairement défini (suivi HACCP, audits, alertes), reposant sur les principes de licéité, transparence, limitation des finalités et minimisation . Les utilisateurs devront recevoir une information complète dès l’installation et donner leur consentement explicite. Ils auront également la possibilité d’exercer aisément leurs droits d’accès, de rectification, d’effacement, de portabilité, d’opposition et de limitation. L’architecture devra intégrer la protection dès la conception (privacy by design) avec chiffrement AES‑256 des données au repos et TLS1.2+ des échanges. La pseudonymisation, reconnue comme mesure de sécurité efficace, devra être mise en œuvre pour les exports à destination des audits . En outre, toute violation de données présentant un risque devra être notifiée à la CNIL dans un délai maximal de 72heures après constatation, avec explication des motifs en cas de retard, et documentée conformément à l’article 33 du RGPD. Enfin, l’application devra tenir à jour un registre des traitements, précisant finalités, catégories de données et mesures de sécurité, pour être prête en cas de contrôle par la CNIL.
 
 ## 3. Cadre de réponse
 *__Diagramme de classes métiers__ : à base de classes métiers (des concepts indépendants de la programmation, avec des attributs mais sans méthodes, ainsi que des relations entre les concepts sur les agissements des classes métiers les unes sur les autres)*
@@ -597,7 +598,7 @@ La collecte des données critiques liées à la sécurité alimentaire repose su
 - Lecture automatisée toutes les 10 à 15 minutes.
 - Données stockées localement en cas de coupure réseau, puis synchronisées avec le serveur.
 
-> *Exemple :* Un capteur BLE placé dans une chambre froide envoie une température de 7,2 °C. L'application la reçoit, compare au seuil critique (4 °C), et déclenche une alerte immédiate.
+> *Exemple :* Un capteur BLE placé dans une chambre froide envoie une température de 7,2°C. L'application la reçoit, compare au seuil critique (4°C), et déclenche une alerte immédiate.
 
 ---
 
@@ -643,7 +644,7 @@ La collecte des données critiques liées à la sécurité alimentaire repose su
 **Scénarios d’usage**
 
 **Scénario 1 – Alerte de dépassement de température (capteur IoT)**
-- Le capteur BLE de la chambre froide relève une température de 6,8 °C à 6h30.
+- Le capteur BLE de la chambre froide relève une température de 6,8°C à 6h30.
 - L’application détecte que le seuil critique de 4 °C est dépassé.
 - Une **alerte immédiate** est affichée sur l’écran du responsable cuisine.
 - L’utilisateur accède à l’historique, déclenche une vérification et enregistre une action corrective dans l’application.

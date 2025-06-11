@@ -513,7 +513,3 @@ La mise en œuvre rigoureuse de ces règles d’hygiène garantit la sécurité 
         
     - Mettre à jour les fiches techniques internes (ex. : chemins de circulation, protocoles de nettoyage) en cohérence avec les GBPH.
         
-
----
-
-En appliquant ces actions de manière structurée et continue, vous garantirez la conformité aux réglementations européennes et nationales, tout en assurant la sécurité sanitaire des convives.
