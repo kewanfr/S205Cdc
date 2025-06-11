@@ -87,7 +87,13 @@ C'est un projet important pour cette entreprise, car il s'agira à la fois d'un 
 
 Pour la rédaction de ce cahier des charges, nous avons mené plusieurs étudies préliminaires, pour s'assurer de la pertinence et la viabilité de cette application.
 Différentes analyses des textes de loi ont été effectués, en partie à l'aide de LLMs.
-Une analyse détaillée
+Une analyse détaillée de la règlementation en vigueur à propos des règlements européens (CE) n°178/2002 et n°852/2004 a été effectuée pour en extraire les exigences utiles et nécessaires à notre application.
+
+Le règlement 178/2002, appelé plus communément *Food Law* permet de poser des principes généraux des lois sur l'alimentation. Il impose notamment la traçabilité des aliments tout au long de la chaîne. Ensuite, le règlement 852/2004 est relatif à l'hygiène des denrées alimenataires. Il rend obligatoire la mise en places de procédures basées sur le HACCP dans tous les établissements de restauration européens. Ces textes imposent notamment de surveiller tous les points critiques et de tenir des fichiers et rapports contenant tout l'historique des données et des actions effectuées.
+Nous avons identifié les différents obligations pouvant être intégrées à notre produit: contrôle des températures et autre données, plan de nettoyage avec contrôle des actions, formationn 
+
+Nous avons également consultés et analyses les règles en cuisine collectives (GBPH), qui ont notamment été présentés dans le "Paquet Hygiène", règlementation européenne de Janvier 2006.
+
 
 Nous avons effectués des recherches préliminaires pour identifier les différentes exigences HACCP dans les règlements CE 178/2002 et CE 852/2004, ainsi que les pratiques courantes dans la restauration collective.
 #### 1.2.3 Études menées sur des sujets voisins
