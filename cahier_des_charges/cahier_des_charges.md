@@ -5,7 +5,7 @@
 ## Entête
 - Groupe de TD : 4
 - Date de démarrage : 28 mai 2025 15h
-- Version : 0.1.3
+- Version : 0.2.4
 *Il s'agit d'un numéro de version logique en visant d'arriver à la version 1.0 le jour du rendu (git gère une autre numérotation pour le versionnage*) 
 - Destinataire : EL MAMOUNI Saïd
 
@@ -23,7 +23,11 @@
 ## 1. Présentation générale du problème
 ### 1.1 Projet
 
-*A Remplir*
+Dans le cadre d'un projet de Recherche & Développement, l'objectif est de développer une application mobile intelligente qui facilite le respect et le suivi des règles HACCP dans les cuisines collectives.
+Cette application devra intégrer une approche multifactorielle en prenant en compte les facteurs environnementaux (température des enceintes froides, humidité, etc.), opérationnels (respect des procédures de nettoyage, traçabilité des aliments, etc.) et comportementaux (formation du personnel, respect des protocoles, etc.).
+Les données seront collectées à l'aide de capteurs IoT et de questionnaires intégrés à l'application, et analysées par des algorithmes prédictifs utilisant l'Intelligence Artificielle.
+**L'application devra offrir aux gestionnaires de cuisine un suivi adapté grâce à une prévention personnalisée et ciblée des non-conformités, favorisant ainsi une meilleure observance des protocoles HACCP.**
+Elle fournira également aux autorités sanitaires des indications pour un meilleur suivi et une meilleure évaluation des pratiques en vigueur.
 
 #### 1.1.1 Finalités
 
@@ -87,7 +91,13 @@ C'est un projet important pour cette entreprise, car il s'agira à la fois d'un 
 
 Pour la rédaction de ce cahier des charges, nous avons mené plusieurs étudies préliminaires, pour s'assurer de la pertinence et la viabilité de cette application.
 Différentes analyses des textes de loi ont été effectués, en partie à l'aide de LLMs.
-Une analyse détaillée
+Une analyse détaillée de la règlementation en vigueur à propos des règlements européens (CE) n°178/2002 et n°852/2004 a été effectuée pour en extraire les exigences utiles et nécessaires à notre application.
+
+Le règlement 178/2002, appelé plus communément *Food Law* permet de poser des principes généraux des lois sur l'alimentation. Il impose notamment la traçabilité des aliments tout au long de la chaîne. Ensuite, le règlement 852/2004 est relatif à l'hygiène des denrées alimenataires. Il rend obligatoire la mise en places de procédures basées sur le HACCP dans tous les établissements de restauration européens. Ces textes imposent notamment de surveiller tous les points critiques et de tenir des fichiers et rapports contenant tout l'historique des données et des actions effectuées.
+Nous avons identifié les différents obligations pouvant être intégrées à notre produit: contrôle des températures et autre données, plan de nettoyage avec contrôle des actions, formationn 
+
+Nous avons également consultés et analyses les règles en cuisine collectives (GBPH), qui ont notamment été présentés dans le "Paquet Hygiène", règlementation européenne de Janvier 2006.
+
 
 Nous avons effectués des recherches préliminaires pour identifier les différentes exigences HACCP dans les règlements CE 178/2002 et CE 852/2004, ainsi que les pratiques courantes dans la restauration collective.
 #### 1.2.3 Études menées sur des sujets voisins
