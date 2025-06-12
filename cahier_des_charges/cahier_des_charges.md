@@ -5,7 +5,7 @@
 ## Entête
 - Groupe de TD : 4
 - Date de démarrage : 28 mai 2025 15h
-- Version : 0.4.2
+- Version : 0.5.0
 - Destinataire : EL MAMOUNI Saïd
 
 
@@ -229,7 +229,109 @@ L’étude des solutions existantes met en évidence plusieurs opportunités d�
 
 Ces éléments différenciateurs permettront à notre solution de répondre de manière plus ciblée aux besoins spécifiques des cuisines collectives.
 
-#### 1\.2.3 Études menées sur des sujets voisins
+
+#### 1.2.3 Études menées sur des sujets voisins
+#### Protection des données (RGPD)
+(Règlement Général sur la Protection des Données)
+
+- **Data Legal Drive** – Plateforme SaaS française (EQS Group) de gouvernance RGPD. Elle offre diagnostic de conformité, registres de traitement collaboratifs, gestion automatisée des demandes de droits, gestion des incidents (failles), veille juridique, et rapports centralisés  
+  https://appvizer.fr  
+  Plus de 20 000 utilisateurs (DPO de grandes entreprises) l’utilisent  
+  https://ccistore.fr  
+  Tarifs :
+    - TPE (≤250 personnes) : 195 €/mois
+    - PME (≤1000) : 375 €/mois
+    - ETI (≤2500) : 775 €/mois (grandes entreprises sur devis)
+
+- **Dastra** – Plateforme RGPD made in France, didactique et modulable  
+  https://appvizer.fr  
+  Fonctions : registre des traitements, gestion des droits (accès, rectification…), PIA, déclaration d’incidents, audits internes, plan d’action, veille RGPD.  
+  Versions :
+    - Starter (gratuite) : registre, planification, cartographie des données, veille, gestion documentaire
+    - Pro : + AIPD, gestion des droits, incidents, audits
+    - Entreprise : + gestion des risques, portail privacy, reporting personnalisés, SSO, etc.  
+      https://dastra.eu  
+      Tarifs : sur devis.
+
+- **Mission RGPD** – Plateforme tout-en-un et DPO externalisé. Elle combine logiciel RGPD (audits, registres, plan d’actions, documents réglementaires) et sensibilisation (e-learning RGPD)  
+  https://mission-rgpd.com  
+  Plus de 1000 structures en Europe.  
+  Tarifs PME (jusqu’à 50 salariés) :
+    - Solo : 139 €HT/mois
+    - Coach : 239 €HT/mois
+    - Academy : 199 €HT/mois
+    - DPO Externe : 439 €HT/mois  
+      https://donnees.net
+
+- **Witik** – Plateforme RGPD collaborative française (leur RGPD + module IA Act, Sapin II, etc.)  
+  https://witik.io  
+  Plan Starter (gratuit) : jusqu’à 30 traitements créés, 2 PIA, 2 audits, 10 demandes de droits/an, 10 incidents/an  
+  Plan Premium (engagement 36 mois) à partir de 240 €HT/mois : fonctionnalités illimitées (registres, PIA, audits, droits, incidents, etc.)  
+  Version d’essai 14 jours disponible.
+
+- **OneTrust** – Solution internationale de Privacy Management (RGPD, LGPD, CCPA, ePrivacy…) très utilisée.  
+  Modules : registres, consentements, cartographie des données, audits, reporting.  
+  Plusieurs éditions disponibles (gestion programme de confidentialité, privacy marketing, etc.)  
+  https://appvizer.fr  
+  Version de démonstration gratuite 14 jours.  
+  Tarifs : sur devis.
+
+#### Sécurité au travail
+
+- **TEEXMA for EHS (Bassetti Group)** – Suite QHSE modulable. Modules :
+    - Évaluation des risques chimiques (référentiel substances, FDS, calcul INRS CLP)
+    - Document unique (DUERP, RPS)
+    - Accidents du travail (déclarations AT/MP)
+    - Suivi des habilitations, formations, vérifications périodiques (VPR), indicateurs QHSE  
+      https://bassetti-group.com  
+      Tarifs : sur devis (licences modulaires)
+
+- **SIGMA-RH (suite SST)** – Logiciel HSE modulaire. Modules :
+    - Accidents du travail / maladies professionnelles
+    - DUERP et prévention
+    - Cotisations AT/MP
+    - Visites médicales, rappels de vaccination  
+      https://sigma-rh.com  
+      Automatise les déclarations réglementaires (accidents, DUERP, PAPRIPACT).  
+      Tarifs : sur devis
+
+- **Qualishare QHSE** – Plateforme française intégrée « tout-en-un » (Qualité, Sécurité, Environnement, RSE, RH).  
+  Paramétrable, compatible ISO 9001, 14001, 45001.  
+  Fonctionnalités : incidents, audits, CAPA, documents, tableaux de bord, etc.  
+  Intégration SharePoint possible  
+  https://qualishare.fr  
+  Tarifs : à partir de 99 €HT/mois (≤10 utilisateurs, 3 Go)  
+  Essai gratuit disponible.
+
+- **SafetyCulture (iAuditor)** – Application mobile d’inspection et d’audit de sécurité.  
+  Création de checklists personnalisées, contrôle qualité, prise de photos/vidéos d’incidents, actions correctives, analyses.  
+  https://safetyculture.com  
+  Version gratuite (≤10 utilisateurs), Premium ~24 $US/mois/siège.  
+  Essai gratuit 30 jours.
+
+#### Environnement (ISO 14001, gestion des déchets)
+(Organisation internationale de normalisation)
+- **Nimonik** – Plateforme EHS/Q internationale.  
+  Gère les obligations légales et les normes ISO (14001, 45001), audits, veille réglementaire.  
+  https://nimonik.com  
+  Tarifs : licence de base ~$2000/an, audits internes ~500 $
+
+- **Quentic** – Plateforme allemande EHSQ/ESG.  
+  Module ISO 14001 complet : documentation, indicateurs, audits, amélioration continue.  
+  https://quentic.com  
+  Tarifs : sur demande.
+
+- **Symalean – Dyo Environnement** – Plateforme française ISO 14001/50001.  
+  Gère impacts environnementaux, risques, produits chimiques, déchets, incidents.  
+  https://symalean.com  
+  Tarifs : sur devis.
+
+- **BlueKanGo (module déchets)** – Module HSE de gestion des déchets.  
+  Traçabilité complète (bordereaux, registre, poids, transport, prestataires, traitement).  
+  Intégration nomenclature INERIS + reporting.  
+  https://bluekango.com  
+  Tarification personnalisée (intégré à suite QHSE/RSE).
+
 
 #### 1\.2.4 Suites prévues
 
@@ -746,6 +848,7 @@ La collecte automatique s’appuie sur les 7 sous-fonctions suivantes :
    - Gestion des droits (profils utilisateurs)  
    - Consentement utilisateur
 
+---
 
 **WBS – Collecte des données HACCP**
 <img src=img/export.png>
@@ -849,34 +952,20 @@ Le tableau de bord représente la **porte d’entrée principale** vers la donn�
 ### 3.x Pour l’ensemble du produit
 #### 3.x.1 Prix de la réalisation de la version de base
 ##### Capteurs connectés (IoT)
-a version de base de l’application HACCP repose sur un déploiement fonctionnel dans une cuisine collective de taille moyenne (type EHPAD, lycée, cuisine centrale). Elle inclut les capteurs environnementaux, les équipements mobiles, la connectivité, ainsi que l’infrastructure serveur et la maintenance initiale.
+Le coût lié aux capteurs IoT représente une part significative du budget initial de l’application. Ce budget couvre l’acquisition de capteurs de température, d’humidité et de présence, nécessaires à la surveillance automatisée des paramètres HACCP en cuisine collective.
 
----
+**Estimation des coûts (à l’unité) :**
 
-#####  Estimation des coûts – Matériel et services (HT)
+| Type de capteur                   | Prix unitaire estimé | Quantité prévue | Sous-total |
+|----------------------------------|----------------------|------------------|------------|
+| Capteur de température BLE (IP65) | ~25 €                | 5                | 125 €      |
+| Capteur d’humidité / présence     | ~30 €                | 3                | 90 €       |
+| Lecteur RFID mobile (optionnel)   | ~40 €                | 1                | 40 €       |
+| **Total capteurs IoT**           |                      |                  | **255 €**  |
 
-| Équipement / service                         | Qté | Prix unitaire (€ HT) | Coût total (€ HT) | Références / Remarques |
-|---------------------------------------------|-----|----------------------|--------------------|-------------------------|
-| **Capteurs (T°, H°, présence)**             | 7   | 25                   | 175 €              | Estimation basée sur capteurs BLE / RF 433 sur [AliExpress](https://fr.aliexpress.com/item/1005004905171281.html) |
-| **Lecteur RFID / code-barres**              | 1   | 90                   | 90 €               | Lecteur fixe ou mobile standard |
-| **Passerelles RF433**                       | 2   | 19                   | 38 €               | Sonoff RF Bridge R2 : [Domotique-store.fr](https://www.domotique-store.fr/domotique/types-d-objets/objets-connectes/gateways-passerelles/6598-sonoff-rf-bridge-r2-passerelle-433mhz-wifi.html) |
-| **Batteries rechargeables**                 | 7   | 5                    | 35 €               | Batterie Li-ion / CR2032 rechargeables |
-| **Chargeurs (USB)**                         | 2   | 15                   | 30 €               | Chargeurs doubles ou stations |
-| **Tablettes / smartphones durcis**          | 2   | 249,90               | 499,80 €           | Crosscall Core-M5 : [crosscall.com](https://www.crosscall.com/fr/produit/core-m5/) |
-| **Serveur local / mini-PC (type Raspberry)**| 1   | 200                  | 200 €              | Serveur local, stockage sécurisé |
-| **Installation initiale**                   | 1   | 300                  | 300 €              | Pose capteurs, appairage, test |
-| **Maintenance annuelle (estimée)**          | 1   | 200                  | 200 €              | Contrôle, support, remplacement |
-
-| **TOTAL ESTIMÉ HT**                         |     |                      | **1 567,80 €**     | Sans coûts de développement logiciel |
-
----
-
-##### Hypothèses
-
-- Capteurs BLE ou RF433 avec stockage local + synchronisation.
-- 2 tablettes durcies pour alternance ou multi-utilisateurs.
-- Passerelles RF433 pour zones métalliques.
-- Le serveur local assure la synchronisation des données chiffrées.
+**Références tarifaires** :
+- Capteurs consultés sur les catalogues fournisseurs (ex. : Distrelec, Seeed Studio, Yoctopuce).
+- Prix basés sur des modèles avec connectivité BLE, étanchéité IP65 minimum et compatibilité mobile.
 
 **Part du budget global estimé :** environ **30 % du coût total** de la solution de base (application + capteurs + hébergement serveur).
 
