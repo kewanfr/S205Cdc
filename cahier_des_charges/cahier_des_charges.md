@@ -5,7 +5,7 @@
 ## Entête
 - Groupe de TD : 4
 - Date de démarrage : 28 mai 2025 15h
-- Version : 0.6.0
+- Version : 0.7.0
 - Destinataire : EL MAMOUNI Saïd
 
 
@@ -492,14 +492,19 @@ I: Informed = Tenu au courant de toutes les avancées
 | Remplacement préventif ou curatif des capteurs     | I                           | C                       | R                                                 | A                       | I          |
 | Suivi des données                                  | A                           | R                       |                                                   |                         |            |
 | Mises à jours et corrections                       | A                           | R                       |                                                   | C                       | I          |
-|                                                    |                             |                         |                                                   |                         |            |
-|                                                    |                             |                         |                                                   |                         |            |
-|                                                    |                             |                         |                                                   |                         |            |
+
 
 
 #### 1.2.7 Caractère confidentiel s'il y a lieu
-rgpd
-depot de brevet, NDA, 
+Les données de ce projet peuvent être sensibles car elles incluent notamment des données précises sur l'environnement, les actions et procédures effectuées, la traçabilité des denrées et certaines informations sur le personnel.
+Nous utilisons également certaines données de santé, ex: accident en contact avec la nourriture sera journalisé et noté. Nous souhaitons en inclure d'autres, comme les restrictions alimentaires.
+À ce titre, nous devons pour ces données respecter l'article 4 du RGPD et être validé come Hébergeur de Données de Santé (HDS).
+
+En globalité, toutes les données qui incluent des données sur les utilisateurs doivent être soumis au RGPD, c'est à dire:
+Permettre l'accès, la modification et la suppression des données de chacun. Et informer sur chaque donnée enregistrée, les raisons de cette sauvegarde, et demander le consentement de l'utilisateur.
+
+À propos du projet en lui même, cela est un projet lourd et complexe à réaliser, il demande une lourde Recherche & Développement. Nous pensons que notre projet technique pourrait alors être sujet dépot d'un brevet si celui-ci est suffisamment innovant. Et d'une protection de droit d'auteur de l'application.
+
 ### 1.3 Énoncé du besoin 
 *(finalités du produit pour le futur utilisateur tel que prévu par le demandeur)*
 ### 1.4 Environnement du produit recherché
