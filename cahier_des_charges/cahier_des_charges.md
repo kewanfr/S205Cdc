@@ -5,7 +5,7 @@
 ## Entête
 - Groupe de TD : 4
 - Date de démarrage : 28 mai 2025 15h
-- Version : 0.8.5
+- Version : 0.9.0
 - Destinataire : EL MAMOUNI Saïd
 
 
@@ -33,7 +33,7 @@ Le projet est de concevoir une application, permettant d'assurer un suivi intell
 
 Ses objectifs sont:
 
-- La surveillance automatisée des paramètres critiques de sureté alimentaire. 
+- La surveillance automatisée des paramètres critiques de sûreté alimentaire. 
   - Nous utiliserons pour cela un réseau de capteurs et des données renseignées par les utilisateurs. 
     Nous installerons dans les cuisines (frigos, chambres froides, congélateurs, etc.) des capteurs de température et d'humidité, ainsi que d'autres capteurs selon les besoins (par exemple: taux de CO2, taux de particules dans l'air).
     Ces capteurs permettront de mesurer en continu les conditions de stockage des aliments et de garantir le respect de la chaîne du froid.
@@ -44,7 +44,7 @@ Ses objectifs sont:
     - Zone de cuisson : au-dessus de 60 °C (cuisson, maintien au chaud, etc.)
 
     Cela permet de superviser le fonctionnement constant des infrastructures, sans nécessiter la présence d'un humain.
-    Si des données venaient à changer de manière brutale, ou anormale, ou ne pas être conforme aux normes exigées par le HACCP, alors une alerte en temps réel est envoyée aux gestionnaires, avec des actions à effectuer.
+    Si des données venaient à changer de manière brutale, ou anormale, ou ne pas être conformes aux normes exigées par le HACCP, alors une alerte en temps réel est envoyée aux gestionnaires, avec des actions à effectuer.
 
 - La Traçabilité des produits et la gestion de l'hygiène 
   - Chaque aliment devra être tracé, de son origine à sa consommation. À chaque changement de condition, seront notés: 
@@ -52,14 +52,14 @@ Ses objectifs sont:
     - la date de fabrication
     - la date de péremption,
     - la température à ce moment là
-    - où d'autres informations (numéro de lot, fournisseur, etc.).
+    - ou d'autres informations (numéro de lot, fournisseur, etc.).
 
-  - Cela se fera par étiquettes sur les produits (QR Codes, etiquettes RFID, codes barre) et scans via l'appareil de l'utilisateur.
-    Il faut pour cela prévoir un/des appareils capables de lire ces étiquettes, et des étiquetteuses.
+  - Cela se fera par étiquettes sur les produits (QR Codes, étiquettes RFID, codes-barres) et scans via l'appareil de l'utilisateur.
+    Il faut pour cela prévoir un/des appareils capables de lire ces étiquettes, et des étiqueteuses.
 
-  - L'application permet de respecter les bonnes pratiques d'hygiène: enregistrement et suivi des tâches de nettoyage ou relevé quotidiens d'informations.
+  - L'application permet de respecter les bonnes pratiques d'hygiène: enregistrement et suivi des tâches de nettoyage ou relevés quotidiens d'informations.
 
-  - Ces données seront toutes enregistrées avec un historique et centralisés sur l'application.
+  - Ces données seront toutes enregistrées avec un historique et centralisées sur l'application.
 
 
 - Nous devons implémenter une IA et des algorithmes
@@ -82,22 +82,22 @@ Ses objectifs sont:
   - Des rapports automatisés et périodiques peuvent également être utilisés (notamment pour les autorités).
   
   - Il faut faire très attention aux faux positifs et faux négatifs, car ils peuvent entrainer des pertes de confiance dans l'application.
-    On pourrait ajouter par exemple un niveau de confiance à chaque alerte, donné par l'IA. On les analyserait ensuite et ferait apprendre à l'IA.
+    On pourrait ajouter par exemple: un niveau de confiance à chaque alerte, donné par l'IA. On les analyserait ensuite et ferait apprendre à l'IA.
 
-Pour résumer, l'application fourni un pilotage, un contrôle et une analyse intelligente, automatisée au maximum et pratique pour les utilisateurs.
+Pour résumer, l'application fournit un pilotage, un contrôle et une analyse intelligente, automatisée au maximum et pratique pour les utilisateurs.
 Elle vise à garantir l'application des principes de la réglementation HACCP, pour alléger la charge de travail du personnel et renforcer la conformité sanitaire.
 
 #### 1\.1.2 Espérance de retour sur investissement
 
-Notre application a un fort potentiel de retour sur investissement, de part sa nécessité dans de nombreux établissements en France.
+Notre application a un fort potentiel de retour sur investissement, de par sa nécessité dans de nombreux établissements en France.
 
-Il y a en effet en France environ *800 cuisines centrales*, c'est à dire des établissements qui produisent des plants en grande quantité qui sont ensuite livrés sur plusieurs sites
+Il y a en effet en France environ *800 cuisines centrales*, c'est-à-dire des établissements qui produisent des plats en grande quantité qui sont ensuite livrés sur plusieurs sites
 
-Mais on dénombre au total près de 90 000 restaurants collectifs (écoles, hôpitaux, EPHAD, entreprises, etc...). Ce sont toutes des cuisines collectives. C'est un terme générique désignant toute structure proposant des repas  "hors du foyer" pour une collectivité.
+Mais on dénombre au total près de 90 000 restaurants collectifs (écoles, hôpitaux, EHPAD, entreprises, etc.). Ce sont toutes des cuisines collectives. C'est un terme générique désignant toute structure proposant des repas  "hors du foyer" pour une collectivité.
 
 En France, près de *90 000 inspections sanitaires* sont effectuées chaque année dans les établissements alimentaires (pas uniquement des restaurants collectifs).
 
-Sur les 57 500 restaurants collectifs contrôlés, on estime près de 4 600 à 6 000 fermetures par an (8% des controles). Ce sont donc au moins 10 000 utilisateurs potentiels, ou restaurants collectifs ayant besoin d'une solution telle que celle-ci.
+Sur les 57 500 restaurants collectifs contrôlés, on estime près de 4 600 à 6 000 fermetures par an (8% des contrôles). Ce sont donc au moins 10 000 utilisateurs potentiels, ou restaurants collectifs ayant besoin d'une solution telle que celle-ci.
 
 ##### Modèle économique
 
@@ -120,13 +120,13 @@ Pour les cuisines centrales, avec 500€\*12 mois + 1200 €, le **chiffre d'aff
 Environ 42 cuisines centrales suffiraient à couvrir le coût R&D.
 Pour les cuisines moyennes, le **CA serait de 3 500 €**. Avec 86 clients, nous pouvons amortir la R&D. Il faudrait 334 petites cuisines pour cela.
 
-##### Croissances des clients
+##### Croissance des clients
 
-La première année consisterait en une béta avec 10 cuisines centrales, 20 moyennes et 50 petites. Ce qui constituerait un **CA de 187 000 €**.
+La première année consisterait en une bêta avec 10 cuisines centrales, 20 moyennes et 50 petites. Ce qui constituerait un **CA de 187 000 €**.
 
 La deuxième année on espère passer à 30 centrales, 200 moyennes et 100 petites. Ainsi notre CA serait de 840 k€/an. 
 
-Si l'on inclut le coût des capteurs et matériels. Les coûts pour une petite cuisine sont de 525 € de mise en place + 96 €/an. Nous serions donc en négatif sur les petites cuisines la première année. Pour une moyenne, le coût de première année serait 875€ de coût fixe + 96€/mois ) = +2 029€
+Si l'on inclut le coût des capteurs et matériels. Les coûts pour une petite cuisine sont de 525 € de mise en place + 96 €/an. Nous serions donc en négatif sur les petites cuisines la première année. Pour une moyenne, le coût de première année serait 875€ de coût fixe + 96€/mois = +2 029€
 
 Le résultat la première année serait de 79 070 €, puis de 522 320 € la deuxième année. Il faudrait environ 1 an et demi pour rembourser le coût R&D.
 
@@ -325,7 +325,7 @@ Ces éléments différenciateurs permettront à notre solution de répondre de m
 #### 1\.2.4 Suites prévues
 
 Ce projet doit contenir plusieurs fonctionnalités essentielles telles que: 
-- La collecte de données en temps réel via des capteurs IoT résistants, résiliants, performants et adaptés aux environnements de cuisine collective.
+- La collecte de données en temps réel via des capteurs IoT résistants, résilients, performants et adaptés aux environnements de cuisine collective.
 
 - Des opérations de maintenance prédictive pour les équipements de notre application, afin d'anticiper les pannes et garantir la continuité du service.
 - La traçabilité des aliments et la gestion de l'hygiène, simplifiée par des étiquettes et des scans.
@@ -342,7 +342,7 @@ Ce projet doit contenir plusieurs fonctionnalités essentielles telles que:
 - Un serveur local dans l'établissement, centralisant les données et permettant un fonctionnement en mode dégradé, sans connexion internet.
 
 Il s'agit d'un projet ambitieux, c'est pourquoi il faut le mener en plusieurs phases.
-La premières est celle décrit dans ce cahier des charges, mais certaines autres fonctionnalités pourraient être envisagées dans le futur, comme :
+La première est celle décrite dans ce cahier des charges, mais certaines autres fonctionnalités pourraient être envisagées dans le futur, comme :
 - Une synchronisation des données entre nos serveurs et le serveur local, pour garantir la continuité du service même en cas de coupure réseau, et une synchronisation en cas de problème.
 - Une interface web d'administration centralisée, permettant aux gestionnaires de visualiser et gérer les données de l'application depuis un navigateur.
 - Une fonctionnalité de gestion des allergies et des intolérances alimentaires, permettant de suivre les allergies des utilisateurs et de générer des alertes en cas de risque d'allergie
@@ -369,7 +369,7 @@ Dans le cadre de ce projet, certaines tâches seront confiées à des prestatair
     - Capteurs de température, humidité, ouverture de porte ou présence
     - Boîtiers robustes, étanches, résistants aux graisses et aux basses températures
 
-    - Autonomie minimale de 6 mois, connectivité BLE, RF433MhZ, WiFi ou autres protcoles adaptés
+    - Autonomie minimale de 6 mois, connectivité BLE, RF 433 MHz, WiFi ou autres protocoles adaptés
         - Prévoir un remplacement facile des piles ou batteries si nécessaire, avec une seconde batterie pour les capteurs critiques
             Permettant de ne pas perdre de données durant le remplacement de la pile.
         - Prévoir un système de notification pour alerter l'utilisateur lorsque la pile est faible.
@@ -377,8 +377,8 @@ Dans le cadre de ce projet, certaines tâches seront confiées à des prestatair
             en cas de coupure de courant.
     - Capteurs adaptés aux conditions extrêmes (températures de -40 °C à +100 °C, humidité élevée, atmosphère chargée en graisses)
     - Il faut trouver et prévoir une solution technique pour les zones blanches (chambres froides, sous-sols, etc.) où la connectivité est limitée.
-        Potentiellement des capteurs avec une connectivité RF433Mhz (onde pouvant traverser plus facilement une couche épaisse) et/ou des répéteurs de signal pour les zones où le signal est faible.
-        À développper en collaboration avec le fournisseur de capteurs.
+        Potentiellement des capteurs avec une connectivité RF 433 MHz (onde pouvant traverser plus facilement une couche épaisse) et/ou des répéteurs de signal pour les zones où le signal est faible.
+        À développer en collaboration avec le fournisseur de capteurs.
 
 - Personnalisation du firmware selon nos besoins :
     - Intervalle de mesure ajustable
@@ -420,7 +420,7 @@ Toutes les prestations doivent respecter les exigences fonctionnelles définies 
 
 Diagramme RACI des parties du projet et des étapes
 
-R: Responsible = Celui qui Réalise la tache
+R: Responsible = Celui qui Réalise la tâche
 A: Accountable = Décisionnaire, approuve le résultat
 C: Consulted = Consulté, doit donner son avis (expert)
 I: Informed = Tenu au courant de toutes les avancées
@@ -440,23 +440,23 @@ I: Informed = Tenu au courant de toutes les avancées
 | Préparation des capteurs et analyse sur le terrain | A                           | I                       | R                                                 | C                       | C          |
 | Installation de l'application                      | A                           | R                       |                                                   | I                       | I          |
 | Installation des capteurs                          | A                           | C                       | R                                                 | I                       | I          |
-| Tests d'utilisations                               | I                           | I                       | A                                                 | C                       | R          |
+| Tests d'utilisation                                | I                           | I                       | A                                                 | C                       | R          |
 | IV - Maintenance / Retour                          |                             |                         |                                                   |                         |            |
 | Remplacement préventif ou curatif des capteurs     | I                           | C                       | R                                                 | A                       | I          |
 | Suivi des données                                  | A                           | R                       |                                                   |                         |            |
-| Mises à jours et corrections                       | A                           | R                       |                                                   | C                       | I          |
+| Mises à jour et corrections                        | A                           | R                       |                                                   | C                       | I          |
 
 
 
 #### 1.2.7 Caractère confidentiel s'il y a lieu
 Les données de ce projet peuvent être sensibles car elles incluent notamment des données précises sur l'environnement, les actions et procédures effectuées, la traçabilité des denrées et certaines informations sur le personnel.
 Nous utilisons également certaines données de santé, ex: accident en contact avec la nourriture sera journalisé et noté. Nous souhaitons en inclure d'autres, comme les restrictions alimentaires.
-À ce titre, nous devons pour ces données respecter l'article 4 du RGPD et être validé come Hébergeur de Données de Santé (HDS).
+À ce titre, nous devons pour ces données respecter l'article 4 du RGPD et être validé comme Hébergeur de Données de Santé (HDS).
 
-En globalité, toutes les données qui incluent des données sur les utilisateurs doivent être soumis au RGPD, c'est à dire:
+En globalité, toutes les données qui incluent des données sur les utilisateurs doivent être soumises au RGPD, c'est-à-dire:
 Permettre l'accès, la modification et la suppression des données de chacun. Et informer sur chaque donnée enregistrée, les raisons de cette sauvegarde, et demander le consentement de l'utilisateur.
 
-À propos du projet en lui même, cela est un projet lourd et complexe à réaliser, il demande une lourde Recherche & Développement. Nous pensons que notre projet technique pourrait alors être sujet dépot d'un brevet si celui-ci est suffisamment innovant. Et d'une protection de droit d'auteur de l'application.
+À propos du projet en lui même, cela est un projet lourd et complexe à réaliser, il demande une lourde Recherche & Développement. Nous pensons que notre projet technique pourrait alors être sujet au dépôt d'un brevet si celui-ci est suffisamment innovant. Et d'une protection de droit d'auteur de l'application.
 
 ### 1.3 Énoncé du besoin 
 *(finalités du produit pour le futur utilisateur tel que prévu par le demandeur)*
@@ -473,7 +473,7 @@ La solution permet également d'être alerté en temps réel en cas de non-confo
 
 
 Le client attend une solution complète, robuste et intuitive, qui lui permettra de garantir la conformité aux normes HACCP tout en allégeant la charge de travail du personnel.
-Il doit aussi pouvoir réduire considérablement les riques sanitaires et alimentaires.
+Il doit aussi pouvoir réduire considérablement les risques sanitaires et alimentaires.
 
 ### 1.4 Environnement du produit recherché
 
@@ -576,7 +576,7 @@ Les interfaces devront être pensées pour une **utilisation rapide et intuitive
 
 L’application devra fonctionner dans des contextes **avec ou sans connexion Internet stable**. L’architecture doit donc permettre un **mode dégradé temporaire** sans perte de données.
 
-- **Stockage local sécurisé** : les données doivent être enregistrées temporairement en local avec un serveur ne exterieur en cas de déconnexion, avec chiffrement (ex : AES-256).
+- **Stockage local sécurisé** : les données doivent être enregistrées temporairement en local avec un serveur exterieur en cas de déconnexion, avec chiffrement (ex : AES-256).
 - **Synchronisation différée** : automatique dès détection d’une connexion, avec gestion des conflits si plusieurs utilisateurs modifient les données.
 - **Modularité** : architecture capable de désactiver certaines fonctionnalités non critiques si l’environnement réseau ou matériel l’exige.
 
@@ -715,7 +715,7 @@ Aucune des applications étudiées ne propose **l’ensemble de ces fonctions co
 - Garantissant un **mode hors-ligne fiable**, indispensable en environnement à connectivité limitée.
 - Centralisant une **documentation contextuelle** directement accessible dans l’application.
 
-Ces fonctions complémentaires ne sont pas acc*(qui améliorent, facilitent ou complètent le service rendu)*essoires : elles participent à la **pérennité**, la **conformité** et la **bonne adoption** de la solution sur le terrain.
+Ces fonctions complémentaires ne sont pas accessoires (qui améliorent, facilitent ou complètent le service rendu) : elles participent à la **pérennité**, la **conformité** et la **bonne adoption** de la solution sur le terrain.
 
 ##### 2.1.2.1 Description et détail
 
@@ -1011,7 +1011,7 @@ Le tableau de bord représente la **porte d’entrée principale** vers la donn�
 ### 3.3 Pour l’ensemble du produit
 #### 3.3.1 Prix de la réalisation de la version de base
 ##### Capteurs connectés (IoT)
-a version de base de l’application HACCP repose sur un déploiement fonctionnel dans une cuisine collective de taille moyenne (type EHPAD, lycée, cuisine centrale). Elle inclut les capteurs environnementaux, les équipements mobiles, la connectivité, ainsi que l’infrastructure serveur et la maintenance initiale.
+la version de base de l’application HACCP repose sur un déploiement fonctionnel dans une cuisine collective de taille moyenne (type EHPAD, lycée, cuisine centrale). Elle inclut les capteurs environnementaux, les équipements mobiles, la connectivité, ainsi que l’infrastructure serveur et la maintenance initiale.
 
 ---
 
@@ -1334,7 +1334,7 @@ Le planning est structuré autour de **dix grandes étapes**, depuis l’analyse
 - Les phases de tests et d’ajustements,
 - La livraison du prototype.
 
-Certaines tâches sont parallélisables, tandis que d’autres suivent des **dépendances logiques** (par exemple, les tests ne peuvent être effectués qu’après le développement des modules).
+Certaines tâches sont parallélisables, tandis que d’autres suivent des **dépendances logiques** (par exemple: les tests ne peuvent être effectués qu’après le développement des modules).
 
 Ce diagramme constitue un outil essentiel pour le **pilotage du projet**, en assurant une vision globale de son avancement, et en facilitant la coordination entre les membres de l’équipe.
 
