@@ -5,7 +5,7 @@
 ## Entête
 - Groupe de TD : 4
 - Date de démarrage : 28 mai 2025 15h
-- Version : 0.7.1
+- Version : 0.8.0
 - Destinataire : EL MAMOUNI Saïd
 
 
@@ -516,6 +516,11 @@ En réponse à cela, nous proposons ce produit innovant, une application mobile 
 Les capteurs IoT collecteront en temps réel les données critiques (température, humidité, etc.) et les transmettront au serveur.
 Les applications permettront d'enregistrer les procédures effectuées, de suivre les tâches de nettoyage, de gérer la traçabilité des denrées alimentaires et d'analyser les données collectées.
 
+La solution permet également d'être alerté en temps réel en cas de non-conformité, de générer des rapports et de fournir un tableau de bord centralisé pour les gestionnaires et les autorités sanitaires.
+
+
+Le client attend une solution complète, robuste et intuitive, qui lui permettra de garantir la conformité aux normes HACCP tout en allégeant la charge de travail du personnel.
+Il doit aussi pouvoir réduire considérablement les riques sanitaires et alimentaires.
 
 ### 1.4 Environnement du produit recherché
 
