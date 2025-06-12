@@ -5,7 +5,7 @@
 ## Entête
 - Groupe de TD : 4
 - Date de démarrage : 28 mai 2025 15h
-- Version : 0.5.1
+- Version : 0.5.2
 - Destinataire : EL MAMOUNI Saïd
 
 
@@ -81,20 +81,55 @@ Le projet est de concevoir une application, permettant d'assurer un suivi intell
 Ses objectifs sont:
 
 - La surveillance automatisée des paramètres critiques de sureté alimentaire. 
-  - Nous utiliserons pour cela un réseau de capteurs et de données renseignées par les utilisateurs. Notre application doit effectuer un suivi en continu des températures (chambres froides, congélateurs, plats de présentations, etc.), de l'humidité ambiante et d'autres indicateurs possibles (par exemple: taux de CO2, taux de particules dans l'air). Cela permet de superviser le respect de la **chaîne du froid** et du fonctionnement constant des infrastructures, sans nécessiter la présence d'un humain. Si des données venaient à changer de manière brutale, ou ne pas être conforme aux normes exigées par le HACCP, alors une alerte en temps réel est envoyée aux gestionnaires.
+  - Nous utiliserons pour cela un réseau de capteurs et des données renseignées par les utilisateurs. 
+    Nous installerons dans les cuisines (frigos, chambres froides, congélateurs, etc.) des capteurs de température et d'humidité, ainsi que d'autres capteurs selon les besoins (par exemple: taux de CO2, taux de particules dans l'air).
+    Ces capteurs permettront de mesurer en continu les conditions de stockage des aliments et de garantir le respect de la chaîne du froid.
+    Doivent être respectées ces 4 zones de température:
+    - Froid négatif : de -40 °C à 0 °C (chambres froides, congélateurs)
+    - Froid positif : de 0 °C à 5 °C (chambres froides positives, frigos)
+    - Zone de danger : de 5 °C à 60 °C (zone de préparation, cuisson, etc.)
+    - Zone de cuisson : au-dessus de 60 °C (cuisson, maintien au chaud, etc.)
+
+    Cela permet de superviser le fonctionnement constant des infrastructures, sans nécessiter la présence d'un humain.
+    Si des données venaient à changer de manière brutale, ou anormale, ou ne pas être conforme aux normes exigées par le HACCP, alors une alerte en temps réel est envoyée aux gestionnaires, avec des actions à effectuer.
+
 - La Traçabilité des produits et la gestion de l'hygiène 
-  - Elle permet de faciliter la traçabilité des aliments via différents fonctionnalitées (dates de péremption, suivi des lots et d'origine des produits). Cela se fera par étiquettes sur les produits (QR Codes, etiquettes RFID, codes barre) et scans via l'appareil de l'utilisateur.
-  - L'application permet de respecter les bonnes pratiques d'hygiène: enregistrement et suvii des tâches de nettoyage ou relevé quotidiens d'informations.
-  - Ces données seront toutes enregistrés avec un historique et centralisés sur l'application, permettant d'en effectuer des rapports aux gestionnaires ou autorités (lors d'un contrôle par exemple).
-- L'analyse des données et décisions avec IA. 
-  - Les différentes données collectés seront analysées et utilisées par des algorithmes et des intelligences artificielles. Notre IA apprend des tendances, des règles et des valeurs critiques. Elle préviendra de dérives ou d'anomalies.
-  - Cela permet une meilleure anticipation et évite des problèmes critiques.
-  - L'intelligence Artificielle établit des points forts et des points faibles, suggérant par la suite des actions préventives. L'objectif n'est pas seulement de constater les incidents, mais les empêcher avant qu'ils n'arrivent, ou les gérer au plus tot.
+  - Chaque aliment devra être tracé, de son origine à sa consommation. À chaque changement de condition, seront notés: 
+    - la date d'ouverture du produit,
+    - la date de fabrication
+    - la date de péremption,
+    - la température à ce moment là
+    - où d'autres informations (numéro de lot, fournisseur, etc.).
+
+  - Cela se fera par étiquettes sur les produits (QR Codes, etiquettes RFID, codes barre) et scans via l'appareil de l'utilisateur.
+    Il faut pour cela prévoir un/des appareils capables de lire ces étiquettes, et des étiquetteuses.
+
+  - L'application permet de respecter les bonnes pratiques d'hygiène: enregistrement et suvi des tâches de nettoyage ou relevé quotidiens d'informations.
+
+  - Ces données seront toutes enregistrés avec un historique et centralisés sur l'application.
+
+
+- Nous devons implémenter une IA et des algorithmes
+  - Capables d'analyser les données collectées, de détecter toute anomalie ou dérive, et de prévenir les gestionnaires en cas de non-conformité.
+  - L'IA doit apprendre des tendances et des règles, et suggérer des actions préventives pour éviter les problèmes critiques.
+  - L'objectif est d'anticiper les incidents avant qu'ils ne se produisent, ou de les gérer au plus tôt.
+  - Elle utilise pour cela les informations saisies dans le PMS. Elle apprend constamment.
+
+
+- Les chefs de cuisine ou gestionnaires pourront renseigner leur **Plan de Maîtrise Sanitaire (PMS)** et les procédures de nettoyage, ainsi que les tâches effectuées par le personnel.
+  - Ce PMS sera utilisé et analysé par l'IA pour vérifier la conformité des pratiques et des procédures.
+  - Il détaille les procédures de nettoyage, de désinfection, de stockage des aliments, de gestion des déchets, etc.
+  - Ainsi que tous les problèmes potentiels rencontrés, les solutions apportées et les mesures de prévention mises en place.
+
+
 - Alerter en temps réel, produire des rapports et fournir un tableau de bord 
   - Dès qu'un élément semble non conforme (problème de température ou humidité, nettoyage non conforme ou autre manquement), l'application envoie des alertes immédiatement.
   - Ces alertes peuvent prendre plusieurs formes: notifications mobiles, par SMS ou par e-mail.
   - De plus, un tableau de bord centralise la vue d'ensemble des systèmes et de l'hygiène des cuisines.
-  - Des rapports automatisés et périodiques peuvent également être utilisés.
+  - Des rapports automatisés et périodiques peuvent également être utilisés (notamment pour les autorités).
+  
+  - Il faut faire très attention aux faux positifs et faux négatifs, car ils peuvent entrainer des pertes de confiance dans l'application.
+    On pourrait ajouter par exemple un niveau de confiance à chaque alerte, donné par l'IA. On les analyserait ensuite et ferait apprendre à l'IA.
 
 Pour résumer, l'application fourni un pilotage, un contrôle et une analyse intelligente, automatisée au maximum et pratique pour les utilisateurs.
 Elle vise à garantir l'application des principes de la réglementation HACCP, pour alléger la charge de travail du personnel et renforcer la conformité sanitaire.
