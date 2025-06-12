@@ -757,6 +757,7 @@ Le module "tableau de bord" est au cœur de la **stratégie UX de l’applicatio
 ## 4 Prévisions de fiabilité – Gestions des risques
 ### 4.1 Risques à la réalisation
 *__Profils de risques__ pour chaque fonction de service*
+<img src=img/profil_de_risque.png>
 ### 4.2 Prévision des défaillances
 *Table de défaillance pour chaque fonction de service avec un paragraphe commentant chaque défaillance et/ou chaque cause/effet/détection d’importance notable*
 ### 4.3 Gestion des défaillances
