@@ -273,12 +273,12 @@ Ces éléments différenciateurs permettront à notre solution de répondre de m
 
 - **Data Legal Drive** – Plateforme SaaS française (EQS Group) de gouvernance RGPD. Elle offre diagnostic de conformité, registres de traitement collaboratifs, gestion automatisée des demandes de droits, gestion des incidents (failles), veille juridique, et rapports centralisés  
   https://appvizer.fr  
-  Plus de 20 000 utilisateurs (DPO de grandes entreprises) l’utilisent  
+  Plus de 20000 utilisateurs (DPO de grandes entreprises) l’utilisent  
   https://ccistore.fr  
   Tarifs :
-    - TPE (≤250 personnes) : 195 €/mois
-    - PME (≤1000) : 375 €/mois
-    - ETI (≤2500) : 775 €/mois (grandes entreprises sur devis)
+    - TPE (≤250 personnes) : 195€/mois
+    - PME (≤1000) : 375€/mois
+    - ETI (≤2500) : 775€/mois (grandes entreprises sur devis)
 
 - **Dastra** – Plateforme RGPD made in France, didactique et modulable  
   https://appvizer.fr  
@@ -294,16 +294,16 @@ Ces éléments différenciateurs permettront à notre solution de répondre de m
   https://mission-rgpd.com  
   Plus de 1000 structures en Europe.  
   Tarifs PME (jusqu’à 50 salariés) :
-    - Solo : 139 €HT/mois
-    - Coach : 239 €HT/mois
-    - Academy : 199 €HT/mois
-    - DPO Externe : 439 €HT/mois  
+    - Solo : 139€HT/mois
+    - Coach : 239€HT/mois
+    - Academy : 199€HT/mois
+    - DPO Externe : 439€HT/mois  
       https://donnees.net
 
 - **Witik** – Plateforme RGPD collaborative française (leur RGPD + module IA Act, Sapin II, etc.)  
   https://witik.io  
   Plan Starter (gratuit) : jusqu’à 30 traitements créés, 2 PIA, 2 audits, 10 demandes de droits/an, 10 incidents/an  
-  Plan Premium (engagement 36 mois) à partir de 240 €HT/mois : fonctionnalités illimitées (registres, PIA, audits, droits, incidents, etc.)  
+  Plan Premium (engagement 36 mois) à partir de 240€HT/mois : fonctionnalités illimitées (registres, PIA, audits, droits, incidents, etc.)  
   Version d’essai 14 jours disponible.
 
 - **OneTrust** – Solution internationale de Privacy Management (RGPD, LGPD, CCPA, ePrivacy…) très utilisée.  
@@ -337,13 +337,13 @@ Ces éléments différenciateurs permettront à notre solution de répondre de m
   Fonctionnalités : incidents, audits, CAPA, documents, tableaux de bord, etc.  
   Intégration SharePoint possible  
   https://qualishare.fr  
-  Tarifs : à partir de 99 €HT/mois (≤10 utilisateurs, 3 Go)  
+  Tarifs : à partir de 99€HT/mois (≤10 utilisateurs, 3Go)  
   Essai gratuit disponible.
 
 - **SafetyCulture (iAuditor)** – Application mobile d’inspection et d’audit de sécurité.  
   Création de checklists personnalisées, contrôle qualité, prise de photos/vidéos d’incidents, actions correctives, analyses.  
   https://safetyculture.com  
-  Version gratuite (≤10 utilisateurs), Premium ~24 $US/mois/siège.  
+  Version gratuite (≤10 utilisateurs), Premium ~24$US/mois/siège.  
   Essai gratuit 30 jours.
 
 #### Environnement (ISO 14001, gestion des déchets)
@@ -351,7 +351,7 @@ Ces éléments différenciateurs permettront à notre solution de répondre de m
 - **Nimonik** – Plateforme EHS/Q internationale.  
   Gère les obligations légales et les normes ISO (14001, 45001), audits, veille réglementaire.  
   https://nimonik.com  
-  Tarifs : licence de base ~$2000/an, audits internes ~500 $
+  Tarifs : licence de base ~$2000/an, audits internes ~500$
 
 - **Quentic** – Plateforme allemande EHSQ/ESG.  
   Module ISO 14001 complet : documentation, indicateurs, audits, amélioration continue.  
@@ -488,7 +488,7 @@ L’application repose sur un réseau de capteurs connectés (IoT) pour la colle
 
 ##### Conditions physiques d’utilisation
 
-- **Températures extrêmes** : de –40 °C (chambre froide) à **+100 °C** (zone cuisson, plonge).
+- **Températures extrêmes** : de –40°C (chambre froide) à **+100°C** (zone cuisson, plonge).
 - **Humidité élevée, vapeur, graisses** : zones lavables, atmosphère chargée.
 - **Surfaces glissantes / manipulabilité réduite** : nécessite interface robuste.
 - **Utilisation avec gants / mains mouillées** : ergonomie renforcée.
@@ -532,9 +532,9 @@ Les capteurs IoT, terminaux et modules doivent répondre à un ensemble de spéc
 
 | Critère                     | Exigence minimale attendue                                 |
 |-----------------------------|-------------------------------------------------------------|
-| Température supportée       | De –40 °C à **+100 °C** selon zone                         |
+| Température supportée       | De –40°C à **+100°C** selon zone                         |
 | Étanchéité                  | **IP65 minimum**, IP68 recommandé                          |
-| Précision capteurs          | ±0,5 °C (température), ±5 % HR (humidité)                 |
+| Précision capteurs          | ±0,5°C (température), ±5 % HR (humidité)                 |
 | Autonomie                   | ≥ 6 mois (objectif 2 à 5 ans sur pile) avec batterie de rechange et câble                 |
 | Stockage local              | ≥ 7 jours en cas de perte de liaison (jusqu’à 125 jours)  |
 | Connectivité radio          | BLE / RF 433 MHz selon cas                 |
@@ -547,8 +547,8 @@ Les capteurs IoT, terminaux et modules doivent répondre à un ensemble de spéc
 
 | Technologie | Usage recommandé | Portée / Fiabilité | Autonomie | Débit |
 |-------------|------------------|---------------------|----------|--------|
-| BLE         | Zones proches, compatibilité mobile | 10–50 m (obstacles sensibles) | Très bonne | Moyenne |
-| RF 433 MHz  | Chambres froides / métalliques | 50–100 m (très bonne traversée) | Bonne | Faible |
+| BLE         | Zones proches, compatibilité mobile | 10–50m (obstacles sensibles) | Très bonne | Moyenne |
+| RF 433 MHz  | Chambres froides / métalliques | 50–100m (très bonne traversée) | Bonne | Faible |
 
 ##### Sécurité, conformité et intégration
 
@@ -845,7 +845,7 @@ Assurer la **collecte automatisée, sécurisée et traçable** des données envi
 
 **Scénario 1 – Alerte de dépassement de température (capteur IoT)**  
 - 6h30 : le capteur BLE de la chambre froide enregistre 6,8 °C.  
-- Le seuil critique étant 4 °C, l’application déclenche une **alerte immédiate**.  
+- Le seuil critique étant 4°C, l’application déclenche une **alerte immédiate**.  
 - Le chef cuisine est notifié, accède à l’historique, confirme une action corrective.
 
 **Scénario 2 – Validation automatique du nettoyage**  
@@ -1014,17 +1014,17 @@ a version de base de l’application HACCP repose sur un déploiement fonctionne
 
 | Équipement / service                         | Qté | Prix unitaire (€ HT) | Coût total (€ HT) | Références / Remarques |
 |---------------------------------------------|-----|----------------------|--------------------|-------------------------|
-| **Capteurs (T°, H°, présence)**             | 7   | 25                   | 175 €              | Estimation basée sur capteurs BLE / RF 433 sur [AliExpress](https://fr.aliexpress.com/item/1005004905171281.html) |
-| **Lecteur RFID / code-barres**              | 1   | 90                   | 90 €               | Lecteur fixe ou mobile standard |
-| **Passerelles RF433**                       | 2   | 19                   | 38 €               | Sonoff RF Bridge R2 : [Domotique-store.fr](https://www.domotique-store.fr/domotique/types-d-objets/objets-connectes/gateways-passerelles/6598-sonoff-rf-bridge-r2-passerelle-433mhz-wifi.html) |
-| **Batteries rechargeables**                 | 7   | 5                    | 35 €               | Batterie Li-ion / CR2032 rechargeables |
-| **Chargeurs (USB)**                         | 2   | 15                   | 30 €               | Chargeurs doubles ou stations |
-| **Tablettes / smartphones durcis**          | 2   | 249,90               | 499,80 €           | Crosscall Core-M5 : [crosscall.com](https://www.crosscall.com/fr/produit/core-m5/) |
-| **Serveur local / mini-PC (type Raspberry)**| 1   | 200                  | 200 €              | Serveur local, stockage sécurisé |
-| **Installation initiale**                   | 1   | 300                  | 300 €              | Pose capteurs, appairage, test |
-| **Maintenance annuelle (estimée)**          | 1   | 200                  | 200 €              | Contrôle, support, remplacement |
+| **Capteurs (T°, H°, présence)**             | 7   | 25                   | 175€              | Estimation basée sur capteurs BLE / RF 433 sur [AliExpress](https://fr.aliexpress.com/item/1005004905171281.html) |
+| **Lecteur RFID / code-barres**              | 1   | 90                   | 90€               | Lecteur fixe ou mobile standard |
+| **Passerelles RF433**                       | 2   | 19                   | 38€               | Sonoff RF Bridge R2 : [Domotique-store.fr](https://www.domotique-store.fr/domotique/types-d-objets/objets-connectes/gateways-passerelles/6598-sonoff-rf-bridge-r2-passerelle-433mhz-wifi.html) |
+| **Batteries rechargeables**                 | 7   | 5                    | 35€               | Batterie Li-ion / CR2032 rechargeables |
+| **Chargeurs (USB)**                         | 2   | 15                   | 30€               | Chargeurs doubles ou stations |
+| **Tablettes / smartphones durcis**          | 2   | 249,90               | 499,80€           | Crosscall Core-M5 : [crosscall.com](https://www.crosscall.com/fr/produit/core-m5/) |
+| **Serveur local / mini-PC (type Raspberry)**| 1   | 200                  | 200€              | Serveur local, stockage sécurisé |
+| **Installation initiale**                   | 1   | 300                  | 300€              | Pose capteurs, appairage, test |
+| **Maintenance annuelle (estimée)**          | 1   | 200                  | 200€              | Contrôle, support, remplacement |
 
-| **TOTAL ESTIMÉ HT**                         |     |                      | **1 567,80 €**     | Sans coûts de développement logiciel |
+| **TOTAL ESTIMÉ HT**                         |     |                      | **1567,80€**     | Sans coûts de développement logiciel |
 
 ---
 
