@@ -6,7 +6,7 @@
 
 - Groupe de TD : 4
 - Date de démarrage : 28 mai 2025 15h
-- Version : 0.4.1
+- Version : 0.4.2
 - Destinataire : EL MAMOUNI Saïd
 
 | Nom               | Prénom  | Mail                                        |
@@ -235,7 +235,28 @@ Ces éléments différenciateurs permettront à notre solution de répondre de m
 
 #### 1\.2.4 Suites prévues
 
-Ce projet étant une première étape (étude et conception fonctionnelle), nous pouvons imaginer des suites ...
+Ce projet doit contenir plusieurs fonctionnalités essentielles telles que: 
+- La collecte de données en temps réel via des capteurs IoT résistants, résiliants, performants et adaptés aux environnements de cuisine collective.
+- Des opérations de maintenance prédictive pour les équipements de notre application, afin d'anticiper les pannes et garantir la continuité du service.
+- La traçabilité des aliments et la gestion de l'hygiène, simplifiée par des étiquettes et des scans.
+- L'analyse des données collectées par l'application, avec des algorithmes d'intelligence artificielle pour prévenir les dérives et anomalies, et apprendre des tendances.
+- L'envoi d'alertes en temps réel, la production de rapports et la fourniture d'un tableau de bord centralisé pour les gestionnaires et les autorités sanitaires.
+- Le suivi des actes de nettoyage et des relevés quotidiens d'informations, pour garantir le respect des normes HACCP.
+- La gestion de l'ouverture d'un produit, enregistrement de la date d'ouverture, de la date de péremption et des conditions de conservation (température, humidité, etc.).
+- Lors de la sortie d'un produit d'une zone avec une certaine température (ex: chambre froide), l'application doit vérifier que la température est conforme aux normes HACCP, et alerter en cas de non-conformité.
+Ainsi que noter le temps de chaque étape de la préparation des aliments, pour garantir le respect des temps de cuisson et de refroidissement.
+Par exemple, ne pas rester + de 2h entre 5 °C et 60 °C / ne pas dépasser 2h entre la sortie du frigo et le passage à + de 60 °C.
+
+
+Il s'agit d'un projet ambitieux, c'est pourquoi il faut le mener en plusieurs phases.
+La premières est celle décrit dans ce cahier des charges, mais certaines autres fonctionnalités pourraient être envisagées dans le futur, comme :
+- Un serveur local dans l'établissement, centralisant les données et permettant un fonctionnement en mode dégradé, sans connexion internet.
+- Une synchronisation des données entre nos serveurs et le serveur local, pour garantir la continuité du service même en cas de coupure réseau, et une synchronisation en cas de problème.
+- Une interface web pour les gestionnaires, permettant une vue d'ensemble des données et des alertes, ainsi que la possibilité de générer des rapports personnalisés.
+- Une fonctionnalité de gestion des allergies et des intolérances alimentaires, permettant de suivre les allergies des utilisateurs et de générer des alertes en cas de risque d'allergie
+(nécessite la gestion des données de santé et donc être certifié HDS).
+- Une fonctionnalité de gestion des stocks, permettant de suivre les produits en stock, les dates de péremption et les quantités disponibles.
+
 
 #### 1\.2.5 Nature des prestations demandées
 
