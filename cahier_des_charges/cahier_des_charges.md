@@ -5,7 +5,7 @@
 ## Entête
 - Groupe de TD : 4
 - Date de démarrage : 28 mai 2025 15h
-- Version : 0.5.2
+- Version : 0.5.3
 - Destinataire : EL MAMOUNI Saïd
 
 
@@ -148,15 +148,16 @@ Sur les 57 500 restaurants collectifs contrôlés, on estime près de 4 600 à 6
 
 ##### Modèle économique
 
-Nous prévoyons de proposer notre solution à la location.
+Nous prévoyons de proposer notre solution à la location. Cela permet de réduire le coût initial pour les établissements, tout en garantissant un revenu récurrent pour notre entreprise.
+Nous nous occupons de la maintenance, de la mise à jour et de l'assistance technique, ce qui est un avantage pour les clients.
 
 On peut différencier les cuisines centrales et les restaurants collectifs, selon leur taille.
 
 \- On peut proposer pour les grandes cuisines centrales (+ de 500 repas/jour) un forfait aux alentours de 500 €/mois. Avec un cout de migration ou installation de 1 200 €   
-\- Pour les cuisines moyennes (entre 100 et 300 repas/jour), l'abonnement pourrait être à 200-300€ / mois. Avec un cout de migration ou installation de 500 €.  
-\- Pour les petites cuisines (50 repas/jour), l'abonnement pourrait être à 50€ / mois. Avec un cout de migration ou installation de 300 €.
+\- Pour les cuisines moyennes (entre 100 et 300 repas/jour), l'abonnement pourrait être à 200-300€ / mois. Avec un cout de départ de 500 €.  
+\- Pour les petites cuisines (50 repas/jour), l'abonnement pourrait être à 50€ / mois. Avec un cout de départ de 300 €.
 
-Nous basons ces calculs sur le cout de nos capteurs (environ 25€ par capteur). Ainsi, l'idée est de fournir selon la taille du restaurant un certain nombre de capteurs. 
+Nous basons ces calculs sur le cout de nos capteurs (environ 25€ par capteur, si on sous traite la fabrication). Ainsi, l'idée est de fournir selon la taille du restaurant un certain nombre de capteurs. 
 
 Pour une petite cuisine, 5 ou 6 capteurs devraient suffir, mais cela peut monter à 10 pour une cuisine moyenne et même 20 pour une grande cuisine centrale. Ainsi, cela fait monter le coût de fabrication d'un pack, qui inclut également plusieurs tablettes (selon la volonté de l'établissement), des répéteurs si certains capteurs sont dans des chambres froides et que les ondes ne passent pas très bien, ainsi qu'un serveur local centralisant toutes les données et enregistrant, notamment en cas de coupure avec internet.
 
@@ -164,7 +165,6 @@ Nous estimons le cout de notre recherche & développement à environ **300 000 �
 
 Pour les cuisines centrales, avec 500€\*12 mois + 1200 €, le chiffre d'affaire serait de 7 200 €.  
 Environ 42 cuisines centrales suffiraient à couvrir le cout R&D.
-
 Pour les cuisines moyennes, le C.A serait de 3 500 €. Avec 86 clients, nous pouvons rembourser la R&D. Il faudrait 334 petites cuisines pour cela.
 
 ##### Croissances des clients
@@ -188,10 +188,6 @@ C'est donc le premier projet, et initiateur de l'entreprise fictive, qui pourrai
 C'est un projet important pour cette entreprise, car il s'agira à la fois d'un essai technique des capacités technologiques de celle-ci, mais aussi d'une vitrine de son savoir faire.
 
 #### 1\.2.2 Études déjà effectuées
-
-<https://chatgpt.com/share/684ad49c-624c-8006-940b-79dd49fffee7>
-
-<https://chatgpt.com/share/684ad4a7-0a18-8006-8992-73ca22fe5063>
 
 Afin d’enrichir la conception de l’application mobile HACCP, une étude comparative de plusieurs solutions existantes sur le marché a été menée. Cette analyse a permis d’identifier les fonctionnalités courantes, les manques fréquents, ainsi que les opportunités d’innovation.
 
@@ -253,17 +249,23 @@ colonnes: fonctionnalités
 
 ---
 
-#### Enseignements pour notre projet
+#### Enseignements pour notre projet (plus value du projet)
 
 L’étude des solutions existantes met en évidence plusieurs opportunités d’amélioration :
 
 - Intégrer une **analyse prédictive** à l’aide d’algorithmes d’IA pour prévenir les non-conformités.
 - Offrir une **interface personnalisable** selon les types d’établissements (EHPAD, cantines scolaires, hôpitaux).
 - Assurer un fonctionnement en **mode hors-ligne** avec synchronisation différée.
+    Pour cela, il faut prévoir un serveur local qui centralise et enregistre les données, avec une synchronisation automatique dès que le réseau est de nouveau disponible.
 - Maintenir une **interface simple et accessible** tout en répondant aux exigences HACCP.
+- Proposer une **solution modulaire** avec des fonctionnalités avancées (analyse, rapports, alertes) en option.
+- Intégrer des **capteurs robustes** adaptés aux environnements de cuisine collective (résistants à l’humidité, aux graisses, etc.).
+- Permettre une **traçabilité complète** des aliments, de leur origine à leur consommation, avec des étiquettes et scans.
+- Intégrer des **fonctionnalités de gestion des allergies** et des intolérances alimentaires, pour suivre les allergies des utilisateurs et générer des alertes en cas de risque d'allergie.
+- Proposer une **gestion des stocks** pour suivre les produits en stock, les dates de péremption et les quantités disponibles.
+
 
 Ces éléments différenciateurs permettront à notre solution de répondre de manière plus ciblée aux besoins spécifiques des cuisines collectives.
-
 
 #### 1.2.3 Études menées sur des sujets voisins
 #### Protection des données (RGPD)
@@ -367,27 +369,29 @@ Ces éléments différenciateurs permettront à notre solution de répondre de m
   https://bluekango.com  
   Tarification personnalisée (intégré à suite QHSE/RSE).
 
-
 #### 1\.2.4 Suites prévues
 
 Ce projet doit contenir plusieurs fonctionnalités essentielles telles que: 
 - La collecte de données en temps réel via des capteurs IoT résistants, résiliants, performants et adaptés aux environnements de cuisine collective.
+
 - Des opérations de maintenance prédictive pour les équipements de notre application, afin d'anticiper les pannes et garantir la continuité du service.
 - La traçabilité des aliments et la gestion de l'hygiène, simplifiée par des étiquettes et des scans.
+
 - L'analyse des données collectées par l'application, avec des algorithmes d'intelligence artificielle pour prévenir les dérives et anomalies, et apprendre des tendances.
 - L'envoi d'alertes en temps réel, la production de rapports et la fourniture d'un tableau de bord centralisé pour les gestionnaires et les autorités sanitaires.
+
 - Le suivi des actes de nettoyage et des relevés quotidiens d'informations, pour garantir le respect des normes HACCP.
 - La gestion de l'ouverture d'un produit, enregistrement de la date d'ouverture, de la date de péremption et des conditions de conservation (température, humidité, etc.).
-- Lors de la sortie d'un produit d'une zone avec une certaine température (ex: chambre froide), l'application doit vérifier que la température est conforme aux normes HACCP, et alerter en cas de non-conformité.
-Ainsi que noter le temps de chaque étape de la préparation des aliments, pour garantir le respect des temps de cuisson et de refroidissement.
-Par exemple, ne pas rester + de 2h entre 5 °C et 60 °C / ne pas dépasser 2h entre la sortie du frigo et le passage à + de 60 °C.
 
+- Lors de la sortie d'un produit d'une zone avec une certaine température (ex: chambre froide), l'application doit vérifier que la température est conforme aux normes HACCP, et alerter en cas de non-conformité.
+    Ainsi que noter le temps de chaque étape de la préparation des aliments, pour garantir le respect des temps de cuisson et de refroidissement.
+    Par exemple, ne pas rester + de 2h entre 5 °C et 60 °C / ne pas dépasser 2h entre la sortie du frigo et le passage à + de 60 °C.
+- Un serveur local dans l'établissement, centralisant les données et permettant un fonctionnement en mode dégradé, sans connexion internet.
 
 Il s'agit d'un projet ambitieux, c'est pourquoi il faut le mener en plusieurs phases.
 La premières est celle décrit dans ce cahier des charges, mais certaines autres fonctionnalités pourraient être envisagées dans le futur, comme :
-- Un serveur local dans l'établissement, centralisant les données et permettant un fonctionnement en mode dégradé, sans connexion internet.
 - Une synchronisation des données entre nos serveurs et le serveur local, pour garantir la continuité du service même en cas de coupure réseau, et une synchronisation en cas de problème.
-- Une interface web pour les gestionnaires, permettant une vue d'ensemble des données et des alertes, ainsi que la possibilité de générer des rapports personnalisés.
+- Une interface web d'administration centralisée, permettant aux gestionnaires de visualiser et gérer les données de l'application depuis un navigateur.
 - Une fonctionnalité de gestion des allergies et des intolérances alimentaires, permettant de suivre les allergies des utilisateurs et de générer des alertes en cas de risque d'allergie
 (nécessite la gestion des données de santé et donc être certifié HDS).
 - Une fonctionnalité de gestion des stocks, permettant de suivre les produits en stock, les dates de péremption et les quantités disponibles.
@@ -399,22 +403,37 @@ Dans le cadre de ce projet, certaines tâches seront confiées à des prestatair
 #### Conception et développement technique
 - Développement de l’application mobile multiplateforme (Android/iOS), incluant :
     - Interfaces utilisateurs (UX/UI) conformes aux maquettes validées
-    - Fonctionnalités principales : collecte de données, alertes, tableau de bord
+    - Fonctionnalités principales : saisie du PMS, collecte de données, alertes, tableau de bord, lecture et création des étiquettes
     - Fonctionnalités complémentaires : historique, mode hors-ligne, personnalisation
 - Intégration d’un système de gestion des utilisateurs et des droits d’accès
 - Implémentation de mécanismes de synchronisation des données (local ↔ cloud)
+- Mise en place d’un serveur local pour la centralisation des données et le fonctionnement en mode dégradé
+- Développement d’algorithmes d’analyse prédictive et de détection des anomalies
+- Ressources nécessaires à une évolution du produit en cas de problème avec le prestataire (documentation technique, code source, etc.)
 
 #### Fabrication, livraison et installation de capteurs IoT
 - Conception et fourniture de capteurs IoT adaptés à l’environnement des cuisines collectives :
     - Capteurs de température, humidité, ouverture de porte ou présence
     - Boîtiers robustes, étanches, résistants aux graisses et aux basses températures
-    - Autonomie minimale de 6 mois, connectivité BLE ou Wi-Fi
+    
+    - Autonomie minimale de 6 mois, connectivité BLE, RF433MhZ, WiFi ou autres protcoles adaptés
+        - Prévoir un remplacement facile des piles ou batteries si nécessaire, avec une seconde batterie pour les capteurs critiques
+            Permettant de ne pas perdre de données durant le remplacement de la pile.
+        - Prévoir un système de notification pour alerter l'utilisateur lorsque la pile est faible.
+        - Prévoir des piles ou batteries également pour les capteurs branchés sur secteur, afin de garantir la continuité de l'historique 
+            en cas de coupure de courant.
+    - Capteurs adaptés aux conditions extrêmes (températures de -40 °C à +100 °C, humidité élevée, atmosphère chargée en graisses)
+    - Il faut trouver et prévoir une solution technique pour les zones blanches (chambres froides, sous-sols, etc.) où la connectivité est limitée.
+        Potentiellement des capteurs avec une connectivité RF433Mhz (onde pouvant traverser plus facilement une couche épaisse) et/ou des répéteurs de signal pour les zones où le signal est faible.
+        À développper en collaboration avec le fournisseur de capteurs.
+
 - Personnalisation du firmware selon nos besoins :
     - Intervalle de mesure ajustable
     - Protocoles de communication compatibles avec l’application
-- Livraison sur site des capteurs
-- Installation physique dans les zones critiques (chambres froides, zones de préparation, etc.)
-- Vérification de la connectivité et des mesures
+- Livraison sur site des capteurs:
+    - Préparation des capteurs (configuration, tests de connectivité)
+    - Installation physique dans les zones critiques (chambres froides, zones de préparation, etc.)
+    - Vérification de la connectivité et des mesures
 
 #### Qualité, tests et validation
 - Réalisation de tests unitaires et fonctionnels sur les modules applicatifs
