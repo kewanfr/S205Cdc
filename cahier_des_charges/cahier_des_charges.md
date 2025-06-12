@@ -64,6 +64,8 @@ RGPD: consentement libre et éclaire des utilisateurs
 dire toutes les donnés qu'on utilise, lesquelles et pourquoi
 permettre la suppresion, l'accès, la modification des données à chaque user
 
+fonctions: lecture de données, affichage de données, alerte
+
 ## 1. Présentation générale du problème
 ### 1.1 Projet
 
@@ -209,6 +211,7 @@ Ces éléments différenciateurs permettront à notre solution de répondre de m
 #### 1.2.4 Suites prévues
 Ce projet étant une première étape (étude et conception fonctionnelle), nous pouvons imaginer des suites ...
 #### 1.2.5 Nature des prestations demandées
+prestataires/sous traitants ne peuvent exiger la propriété intellecture // partenaires
 dans le cadre de cette phase de cadrage du projet, la principale prestation attendue est **l’étude approfondie des applications existantes dédiées à la gestion HACCP**. Cette étude vise à analyser les solutions actuellement disponibles sur le marché afin d’identifier les meilleures pratiques, les fonctionnalités clés, les manques à combler, et les opportunités d’innovation pour le futur développement de l’application.
 
 Cette prestation comprend les actions suivantes :
@@ -244,12 +247,17 @@ Pour chaque application étudiée (ex. : Traqfood, Eezytrace, HACCP Facile) :
 Cette prestation analytique constitue une base stratégique pour le futur développement logiciel. Elle permettra à l’équipe de développement SAE5/SAE6 d’éviter les erreurs de conception courantes et de se positionner dès le départ avec une solution pertinente, innovante et adaptée au terrain.
 
 #### 1.2.6 Parties concernées par le déroulement du projet et ses résultats (demandeurs, utilisateurs)
+présents sur la matrice raci
 #### 1.2.7 Caractère confidentiel s'il y a lieu
+rgpd
+depot de brevet, NDA, 
 ### 1.3 Énoncé du besoin 
 *(finalités du produit pour le futur utilisateur tel que prévu par le demandeur)*
 ### 1.4 Environnement du produit recherché
 #### 1.4.1 Listes exhaustives des éléments *(personnes, équipements, matières…)* et contraintes *(e.g. environnement)*
 ##### Capteurs connectés (IoT)
+
+maintenance prédictive 
 
 L’application repose sur un réseau de capteurs connectés (IoT) permettant la collecte automatisée des données critiques en lien avec les exigences HACCP. Ces capteurs doivent être sélectionnés en fonction des contraintes spécifiques des cuisines collectives, à savoir : humidité, température extrême, graisses, nettoyages fréquents, connexions instables.
 
@@ -413,7 +421,7 @@ L’application collecte automatiquement les températures, l’humidité et la 
 - **Génération des rapports :** L’application génère automatiquement des rapports périodiques (hebdomadaires, mensuels) à partir des données collectées. Les rapports peuvent également être générés manuellement pour des périodes spécifiques ou des événements particuliers. Les rapports sont générés dans des formats standardisés (PDF, CSV) conformes aux exigences des autorités sanitaires.
 - **Transmission sécurisée :** Les rapports sont chiffrés avant transmission pour garantir la confidentialité des données. Utilisation de protocoles sécurisés (HTTPS, SFTP) pour la transmission des rapports. Les autorités sanitaires sont authentifiées avant de pouvoir accéder aux rapports.
 - **Traçabilité et audit :** Toutes les transmissions de rapports sont journalisées pour assurer la traçabilité. L’application envoie un accusé de réception une fois le rapport transmis avec succès. Les utilisateurs peuvent consulter l’historique des transmissions pour vérifier que les rapports ont bien été envoyés et reçus.
-- **Conformité réglementaire :** La transmission des données est conforme à la RGPD. Les rapports générés respectent les normes HACCP et les exigences des autorités sanitaires.
+- **Conformité réglementaire :** Les rapports générés respectent les normes HACCP et les exigences des autorités sanitaires.
 
 **Méthodes de collecte :**
 - Automatisée pour les capteurs environnementaux et certains capteurs opérationnels.
@@ -480,6 +488,7 @@ Outre les fonctions principales indispensables au respect des règles HACCP, l�
 
 1. Tutoriels et rappels intégrés : Accompagner utilisateurs (prise en main, bonnes pratiques). Contenu interactif/textuel, rappels sur normes HACCP, consultation libre ou notifications contextuelles. Bénéfice : Réduction erreurs humaines, auto-formation
 2. Historique des alertes et actions correctives : Traçabilité complète des anomalies et mesures correctives. Journal détaillé/horodaté, archivage actions (responsable, type, délai), exportation (PDF, Excel) possible pour audits. Bénéfice : Amélioration transparence et conformité
+Selon le PMS, l'IA donne les actions correctives
 3. Mode hors-ligne avec synchronisation différée : Garantie fonctionnement continu sans connexion. Enregistrement local des données, synchronisation automatique dès connexion, notifications échec/conflit. Bénéfice : Fiabilité accrue en environnements à faible connectivité
 4. Personnalisation des indicateurs et de l’interface : Adapter l'application au contexte métier spécifique (école, EHPAD, hôpital). Choix des seuils critiques, personnalisation catégories (zones, aliments, nettoyage), affichage sur-mesure tableau de bord. Bénéfice : Pertinence accrue, meilleure appropriation
 5. Documentation contextuelle : Accès immédiat aux informations réglementaires/techniques (CE 852/2004, guides HACCP). Bouton d'aide/info-bulle, liens vers réglementation, mises à jour en ligne possibles. Bénéfice : Autonomie renforcée, cohérence réglementaire facilitée
