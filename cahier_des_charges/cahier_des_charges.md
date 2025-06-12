@@ -644,80 +644,110 @@ Sur le plan de la protection des données, l’application devra être conforme 
 
 *Synthèse des jalons : __tables synthétiques des jalons__ du projet.*
 ### 3.1 *Pour chaque fonction : fonction 1*
-#### 3.1.1 Solution proposée
-##### Collecte des données et capteurs IoT
-La collecte des données critiques liées à la sécurité alimentaire repose sur un système hybride combinant capteurs connectés (IoT), modules de traçabilité, et interfaces utilisateurs. Cette solution garantit une surveillance continue, une traçabilité fiable et une remontée d’information conforme aux exigences HACCP.
+#### 3.1.1 Fonction : Collecte automatique de données environnementales
+
+##### Objectif
+
+Assurer la **collecte automatisée, sécurisée et traçable** des données environnementales, opérationnelles et comportementales liées à la conformité HACCP. Cette collecte doit rester fonctionnelle même en conditions extrêmes (chaleur, froid, humidité) ou sans réseau, et déclencher des alertes en cas de non-conformité.
 
 ---
 
-**1. Collecte des données environnementales :**
-- Déploiement de capteurs IoT connectés (BLE ou WiFi) dans les enceintes froides et zones de stockage.
-- Paramètres mesurés : **température**, **humidité**, parfois **vibrations** (ex. panne de machine).
-- Lecture automatisée toutes les 10 à 15 minutes.
-- Données stockées localement en cas de coupure réseau, puis synchronisées avec le serveur.
+##### Architecture fonctionnelle de la collecte
 
-> *Exemple :* Un capteur BLE placé dans une chambre froide envoie une température de 7,2°C. L'application la reçoit, compare au seuil critique (4°C), et déclenche une alerte immédiate.
+1. **Capteurs → Application mobile**  
+   - Capteurs connectés via BLE ou RF 433 MHz (selon zones).  
+   - Données stockées localement sur l’application (cryptées).  
+   - Synchronisation différée automatique vers le serveur HACCP.
 
----
+2. **Systèmes de traçabilité**  
+   - Lecture RFID ou codes-barres.  
+   - Enregistrement des mouvements produits/lots.  
+   - Journalisation des opérations.
 
-**2. Collecte des données opérationnelles :**
-- **Traçabilité alimentaire** assurée par lecture de codes-barres ou étiquettes RFID (lot, origine, DLC).
-- **Détection des procédures de nettoyage** via capteurs de présence ou validation manuelle sur l’application.
-- Enregistrement automatique ou semi-automatique des événements critiques (nettoyage, réception marchandise).
-
----
-
-**3. Collecte des données comportementales :**
-- Intégration de **questionnaires numériques** dans l’application.
-- Suivi des **pratiques du personnel** : respect des protocoles, formations suivies.
-- Saisie manuelle, avec enregistrement horodaté, signature numérique et anonymisation RGPD si nécessaire.
+3. **Interface utilisateur**  
+   - Questionnaires hygiène / formation / validation manuelle.  
+   - Données saisies → stockage local → analyse → transmission serveur.
 
 ---
 
-**Architecture fonctionnelle de la collecte :**
+##### Sécurité & confidentialité
 
-1. **Capteurs → application mobile** :
-   - Lecture via BLE/WiFi → stockage local → synchronisation serveur.
-2. **Systèmes de traçabilité** :
-   - Scan RFID ou code-barres → enregistrement événement produit.
-3. **Interface utilisateur** :
-   - Questionnaire ou validation manuelle → stockage → analyse locale → envoi serveur.
+- **Chiffrement AES-256** des données transmises et stockées localement.
+- **Appairage sécurisé** des capteurs par QR code ou ID unique.
+- **Consentement utilisateur** requis à l’activation.
+- **Traçabilité complète** : tous les accès et modifications sont loggés (journalisation activée).
 
 ---
 
-**Sécurité & confidentialité :**
-- Chiffrement AES-256 des données transmises et stockées.
-- Appairage sécurisé des capteurs.
-- Consentement utilisateur requis pour toute donnée personnelle.
-- Journalisation et logs d’accès activés.
+##### Points forts de la solution proposée
+
+- Collecte **multi-source** : capteurs environnementaux, saisie manuelle, RFID.
+- Fonctionnement **hors-ligne garanti**, avec **synchronisation automatique**.
+- Système **modulaire**, compatible multi-sites (scolaire, hospitalier, EHPAD).
+- Déclenchement **immédiat d’alertes** en cas de non-conformité.
 
 ---
 
-**Points forts de la solution proposée :**
-- Collecte multi-source : environnementale, opérationnelle, comportementale.
-- Fonctionnement **hors-ligne assuré** avec reprise automatique.
-- Intégration **modulaire**, adaptable à différents établissements (EHPAD, scolaire, hospitalier).
-- Système d’alertes immédiates en cas de non-conformité détectée.
+##### Scénarios d’usage
 
-**Scénarios d’usage**
+**Scénario 1 – Alerte de dépassement de température (capteur IoT)**  
+- 6h30 : le capteur BLE de la chambre froide enregistre 6,8 °C.  
+- Le seuil critique étant 4 °C, l’application déclenche une **alerte immédiate**.  
+- Le chef cuisine est notifié, accède à l’historique, confirme une action corrective.
 
-**Scénario 1 – Alerte de dépassement de température (capteur IoT)**
-- Le capteur BLE de la chambre froide relève une température de 6,8°C à 6h30.
-- L’application détecte que le seuil critique de 4 °C est dépassé.
-- Une **alerte immédiate** est affichée sur l’écran du responsable cuisine.
-- L’utilisateur accède à l’historique, déclenche une vérification et enregistre une action corrective dans l’application.
+**Scénario 2 – Validation automatique du nettoyage**  
+- Un capteur de présence est fixé dans la zone de plonge.  
+- À 15h30, un nettoyage est prévu. À 15h45, aucune détection.  
+- L’application **détecte une tâche non effectuée** → alerte.  
+- Si une présence est détectée ensuite (15h30–16h), la tâche est **validée automatiquement**.
 
-**Scénario 2 – Validation automatique du nettoyage**
-- Un capteur de présence est installé dans la zone plonge.
-- Le planning prévoit un nettoyage à 15h30.
-- À 15h45, aucune détection n’a eu lieu : l’application déclenche une **alerte de tâche non effectuée**.
-- Si présence détectée entre 15h30 et 16h, la tâche est automatiquement validée dans le tableau de bord.
+**Scénario 3 – Questionnaire d’hygiène saisi par un agent**  
+- L’agent ouvre l’application sur tablette durcie.  
+- Il complète un **formulaire de 5 questions** (hygiène poste froid).  
+- Les réponses sont stockées localement puis transmises.  
+- Un **score est généré** et accessible au responsable HACCP.
 
-**Scénario 3 – Saisie d’un questionnaire personnel**
-- Un employé ouvre l’application sur tablette.
-- Il complète un **questionnaire de 5 questions** sur les règles d’hygiène en poste froid.
-- Les réponses sont enregistrées localement puis transmises au serveur.
-- Un score est généré, consultable par le responsable HACCP.
+---
+
+##### WBS associé à la collecte HACCP
+
+La collecte automatique s’appuie sur les 7 sous-fonctions suivantes :
+
+1. **Intégration des capteurs IoT**  
+   - Sélection (température, humidité, présence)  
+   - Compatibilité radio (BLE / RF433)  
+   - Appairage sécurisé  
+   - Test IP65/IP68, autonomie, précision
+
+2. **Lecture automatisée des données**  
+   - Configuration des intervalles (ex : toutes les 10 min)  
+   - Stockage local chiffré  
+   - Déclenchement d’alertes
+
+3. **Synchronisation des données**  
+   - Mécanisme de synchro différée  
+   - Transmission HTTPS/MQTT  
+   - File d’attente et gestion des conflits
+
+4. **Traçabilité alimentaire**  
+   - Scan RFID / codes-barres  
+   - Association lots-produits  
+   - Journalisation des stocks
+
+5. **Données comportementales**  
+   - Questionnaires hygiène / formation  
+   - Stockage et scoring automatisé  
+   - Suivi nominatif ou anonyme
+
+6. **Système d’alertes et journalisation**  
+   - Relevés capteurs  
+   - Historique actions correctives  
+   - Suivi des validations manuelles
+
+7. **Sécurité et conformité RGPD**  
+   - Chiffrement AES-256  
+   - Gestion des droits (profils utilisateurs)  
+   - Consentement utilisateur
 
 ---
 
