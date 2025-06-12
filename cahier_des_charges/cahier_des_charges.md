@@ -273,12 +273,12 @@ Ces éléments différenciateurs permettront à notre solution de répondre de m
 
 - **Data Legal Drive** – Plateforme SaaS française (EQS Group) de gouvernance RGPD. Elle offre diagnostic de conformité, registres de traitement collaboratifs, gestion automatisée des demandes de droits, gestion des incidents (failles), veille juridique, et rapports centralisés  
   https://appvizer.fr  
-  Plus de 20 000 utilisateurs (DPO de grandes entreprises) l’utilisent  
+  Plus de 20000 utilisateurs (DPO de grandes entreprises) l’utilisent  
   https://ccistore.fr  
   Tarifs :
-    - TPE (≤250 personnes) : 195 €/mois
-    - PME (≤1000) : 375 €/mois
-    - ETI (≤2500) : 775 €/mois (grandes entreprises sur devis)
+    - TPE (≤250 personnes) : 195€/mois
+    - PME (≤1000) : 375€/mois
+    - ETI (≤2500) : 775€/mois (grandes entreprises sur devis)
 
 - **Dastra** – Plateforme RGPD made in France, didactique et modulable  
   https://appvizer.fr  
@@ -294,16 +294,16 @@ Ces éléments différenciateurs permettront à notre solution de répondre de m
   https://mission-rgpd.com  
   Plus de 1000 structures en Europe.  
   Tarifs PME (jusqu’à 50 salariés) :
-    - Solo : 139 €HT/mois
-    - Coach : 239 €HT/mois
-    - Academy : 199 €HT/mois
-    - DPO Externe : 439 €HT/mois  
+    - Solo : 139€HT/mois
+    - Coach : 239€HT/mois
+    - Academy : 199€HT/mois
+    - DPO Externe : 439€HT/mois  
       https://donnees.net
 
 - **Witik** – Plateforme RGPD collaborative française (leur RGPD + module IA Act, Sapin II, etc.)  
   https://witik.io  
   Plan Starter (gratuit) : jusqu’à 30 traitements créés, 2 PIA, 2 audits, 10 demandes de droits/an, 10 incidents/an  
-  Plan Premium (engagement 36 mois) à partir de 240 €HT/mois : fonctionnalités illimitées (registres, PIA, audits, droits, incidents, etc.)  
+  Plan Premium (engagement 36 mois) à partir de 240€HT/mois : fonctionnalités illimitées (registres, PIA, audits, droits, incidents, etc.)  
   Version d’essai 14 jours disponible.
 
 - **OneTrust** – Solution internationale de Privacy Management (RGPD, LGPD, CCPA, ePrivacy…) très utilisée.  
@@ -337,13 +337,13 @@ Ces éléments différenciateurs permettront à notre solution de répondre de m
   Fonctionnalités : incidents, audits, CAPA, documents, tableaux de bord, etc.  
   Intégration SharePoint possible  
   https://qualishare.fr  
-  Tarifs : à partir de 99 €HT/mois (≤10 utilisateurs, 3 Go)  
+  Tarifs : à partir de 99€HT/mois (≤10 utilisateurs, 3Go)  
   Essai gratuit disponible.
 
 - **SafetyCulture (iAuditor)** – Application mobile d’inspection et d’audit de sécurité.  
   Création de checklists personnalisées, contrôle qualité, prise de photos/vidéos d’incidents, actions correctives, analyses.  
   https://safetyculture.com  
-  Version gratuite (≤10 utilisateurs), Premium ~24 $US/mois/siège.  
+  Version gratuite (≤10 utilisateurs), Premium ~24$US/mois/siège.  
   Essai gratuit 30 jours.
 
 #### Environnement (ISO 14001, gestion des déchets)
@@ -351,7 +351,7 @@ Ces éléments différenciateurs permettront à notre solution de répondre de m
 - **Nimonik** – Plateforme EHS/Q internationale.  
   Gère les obligations légales et les normes ISO (14001, 45001), audits, veille réglementaire.  
   https://nimonik.com  
-  Tarifs : licence de base ~$2000/an, audits internes ~500 $
+  Tarifs : licence de base ~$2000/an, audits internes ~500$
 
 - **Quentic** – Plateforme allemande EHSQ/ESG.  
   Module ISO 14001 complet : documentation, indicateurs, audits, amélioration continue.  
@@ -520,7 +520,7 @@ L’application repose sur un réseau de capteurs connectés (IoT) pour la colle
 
 ##### Conditions physiques d’utilisation
 
-- **Températures extrêmes** : de –40 °C (chambre froide) à **+100 °C** (zone cuisson, plonge).
+- **Températures extrêmes** : de –40°C (chambre froide) à **+100°C** (zone cuisson, plonge).
 - **Humidité élevée, vapeur, graisses** : zones lavables, atmosphère chargée.
 - **Surfaces glissantes / manipulabilité réduite** : nécessite interface robuste.
 - **Utilisation avec gants / mains mouillées** : ergonomie renforcée.
@@ -564,9 +564,9 @@ Les capteurs IoT, terminaux et modules doivent répondre à un ensemble de spéc
 
 | Critère                     | Exigence minimale attendue                                 |
 |-----------------------------|-------------------------------------------------------------|
-| Température supportée       | De –40 °C à **+100 °C** selon zone                         |
+| Température supportée       | De –40°C à **+100°C** selon zone                         |
 | Étanchéité                  | **IP65 minimum**, IP68 recommandé                          |
-| Précision capteurs          | ±0,5 °C (température), ±5 % HR (humidité)                 |
+| Précision capteurs          | ±0,5°C (température), ±5 % HR (humidité)                 |
 | Autonomie                   | ≥ 6 mois (objectif 2 à 5 ans sur pile) avec batterie de rechange et câble                 |
 | Stockage local              | ≥ 7 jours en cas de perte de liaison (jusqu’à 125 jours)  |
 | Connectivité radio          | BLE / RF 433 MHz selon cas                 |
@@ -579,8 +579,8 @@ Les capteurs IoT, terminaux et modules doivent répondre à un ensemble de spéc
 
 | Technologie | Usage recommandé | Portée / Fiabilité | Autonomie | Débit |
 |-------------|------------------|---------------------|----------|--------|
-| BLE         | Zones proches, compatibilité mobile | 10–50 m (obstacles sensibles) | Très bonne | Moyenne |
-| RF 433 MHz  | Chambres froides / métalliques | 50–100 m (très bonne traversée) | Bonne | Faible |
+| BLE         | Zones proches, compatibilité mobile | 10–50m (obstacles sensibles) | Très bonne | Moyenne |
+| RF 433 MHz  | Chambres froides / métalliques | 50–100m (très bonne traversée) | Bonne | Faible |
 
 ##### Sécurité, conformité et intégration
 
@@ -877,7 +877,7 @@ Assurer la **collecte automatisée, sécurisée et traçable** des données envi
 
 **Scénario 1 – Alerte de dépassement de température (capteur IoT)**  
 - 6h30 : le capteur BLE de la chambre froide enregistre 6,8 °C.  
-- Le seuil critique étant 4 °C, l’application déclenche une **alerte immédiate**.  
+- Le seuil critique étant 4°C, l’application déclenche une **alerte immédiate**.  
 - Le chef cuisine est notifié, accède à l’historique, confirme une action corrective.
 
 **Scénario 2 – Validation automatique du nettoyage**  
@@ -899,40 +899,40 @@ Assurer la **collecte automatisée, sécurisée et traçable** des données envi
 La collecte automatique s’appuie sur les 7 sous-fonctions suivantes :
 
 1. **Intégration des capteurs IoT**  
-   - Sélection (température, humidité, présence)  
-   - Compatibilité radio (BLE / RF433)  
-   - Appairage sécurisé  
-   - Test IP65/IP68, autonomie, précision
+   - 1.1 Sélection (température, humidité, présence)  
+   - 1.2 Compatibilité radio (BLE / RF433)  
+   - 1.3 Appairage sécurisé  
+   - 1.4 Test IP65/IP68, autonomie, précision
 
 2. **Lecture automatisée des données**  
-   - Configuration des intervalles (ex : toutes les 10 min)  
-   - Stockage local chiffré  
-   - Déclenchement d’alertes
+   - 2.1 Configuration des intervalles (ex : toutes les 10 min)  
+   - 2.2 Stockage local chiffré  
+   - 2.3 Déclenchement d’alertes
 
 3. **Synchronisation des données**  
-   - Mécanisme de synchro différée  
-   - Transmission HTTPS/MQTT  
-   - File d’attente et gestion des conflits
+   - 3.1 Mécanisme de synchro différée  
+   - 3.2 Transmission HTTPS/MQTT  
+   - 3.3 File d’attente et gestion des conflits
 
 4. **Traçabilité alimentaire**  
-   - Scan RFID / codes-barres  
-   - Association lots-produits  
-   - Journalisation des stocks
+   - 4.1 Scan RFID / codes-barres  
+   - 4.2 Association lots-produits  
+   - 4.3 Journalisation des stocks
 
 5. **Données comportementales**  
-   - Questionnaires hygiène / formation  
-   - Stockage et scoring automatisé  
-   - Suivi nominatif ou anonyme
+   - 5.1 Questionnaires hygiène / formation  
+   - 5.2 Stockage et scoring automatisé  
+   - 5.3 Suivi nominatif ou anonyme
 
 6. **Système d’alertes et journalisation**  
-   - Relevés capteurs  
-   - Historique actions correctives  
-   - Suivi des validations manuelles
+   - 6.1 Relevés capteurs  
+   - 6.2 Historique actions correctives  
+   - 6.3 Suivi des validations manuelles
 
 7. **Sécurité et conformité RGPD**  
-   - Chiffrement AES-256  
-   - Gestion des droits (profils utilisateurs)  
-   - Consentement utilisateur
+   - 7.1 Chiffrement AES-256  
+   - 7.2 Gestion des droits (profils utilisateurs)  
+   - 7.3 Consentement utilisateur
 
 ---
 
@@ -1038,26 +1038,40 @@ Le tableau de bord représente la **porte d’entrée principale** vers la donn�
 ### 3.3 Pour l’ensemble du produit
 #### 3.3.1 Prix de la réalisation de la version de base
 ##### Capteurs connectés (IoT)
-Le coût lié aux capteurs IoT représente une part significative du budget initial de l’application. Ce budget couvre l’acquisition de capteurs de température, d’humidité et de présence, nécessaires à la surveillance automatisée des paramètres HACCP en cuisine collective.
+a version de base de l’application HACCP repose sur un déploiement fonctionnel dans une cuisine collective de taille moyenne (type EHPAD, lycée, cuisine centrale). Elle inclut les capteurs environnementaux, les équipements mobiles, la connectivité, ainsi que l’infrastructure serveur et la maintenance initiale.
 
-**Estimation des coûts (à l’unité) :**
+---
 
-| Type de capteur                   | Prix unitaire estimé | Quantité prévue | Sous-total |
-|----------------------------------|----------------------|------------------|------------|
-| Capteur de température BLE (IP65) | ~25 €                | 5                | 125 €      |
-| Capteur d’humidité / présence     | ~30 €                | 3                | 90 €       |
-| Lecteur RFID mobile (optionnel)   | ~40 €                | 1                | 40 €       |
-| **Total capteurs IoT**           |                      |                  | **255 €**  |
+#####  Estimation des coûts – Matériel et services (HT)
 
-**Références tarifaires** :
-- Capteurs consultés sur les catalogues fournisseurs (ex. : Distrelec, Seeed Studio, Yoctopuce).
-- Prix basés sur des modèles avec connectivité BLE, étanchéité IP65 minimum et compatibilité mobile.
+| Équipement / service                         | Qté | Prix unitaire (€ HT) | Coût total (€ HT) | Références / Remarques |
+|---------------------------------------------|-----|----------------------|--------------------|-------------------------|
+| **Capteurs (T°, H°, présence)**             | 7   | 25                   | 175€              | Estimation basée sur capteurs BLE / RF 433 sur [AliExpress](https://fr.aliexpress.com/item/1005004905171281.html) |
+| **Lecteur RFID / code-barres**              | 1   | 90                   | 90€               | Lecteur fixe ou mobile standard |
+| **Passerelles RF433**                       | 2   | 19                   | 38€               | Sonoff RF Bridge R2 : [Domotique-store.fr](https://www.domotique-store.fr/domotique/types-d-objets/objets-connectes/gateways-passerelles/6598-sonoff-rf-bridge-r2-passerelle-433mhz-wifi.html) |
+| **Batteries rechargeables**                 | 7   | 5                    | 35€               | Batterie Li-ion / CR2032 rechargeables |
+| **Chargeurs (USB)**                         | 2   | 15                   | 30€               | Chargeurs doubles ou stations |
+| **Tablettes / smartphones durcis**          | 2   | 249,90               | 499,80€           | Crosscall Core-M5 : [crosscall.com](https://www.crosscall.com/fr/produit/core-m5/) |
+| **Serveur local / mini-PC (type Raspberry)**| 1   | 200                  | 200€              | Serveur local, stockage sécurisé |
+| **Installation initiale**                   | 1   | 300                  | 300€              | Pose capteurs, appairage, test |
+| **Maintenance annuelle (estimée)**          | 1   | 200                  | 200€              | Contrôle, support, remplacement |
+
+| **TOTAL ESTIMÉ HT**                         |     |                      | **1567,80€**     | Sans coûts de développement logiciel |
+
+---
+
+##### Hypothèses
+
+- Capteurs BLE ou RF433 avec stockage local + synchronisation.
+- 2 tablettes durcies pour alternance ou multi-utilisateurs.
+- Passerelles RF433 pour zones métalliques.
+- Le serveur local assure la synchronisation des données chiffrées.
 
 **Part du budget global estimé :** environ **30 % du coût total** de la solution de base (application + capteurs + hébergement serveur).
 
 Cette estimation pourra évoluer selon les sites pilotes (surface, nombre de chambres froides, besoins en redondance) et les choix de fournisseurs lors du prototypage.
-*Ici, il faut imaginer en faisant une petite étude de marchée (cf des sites marchands spécialisés)*
-<<<<<<< HEAD
+
+
 #### 3.3.2 Options et variantes proposées non retenues au cahier des charges
 ### Solutions envisagées mais non retenues
 
@@ -1259,14 +1273,14 @@ Le module "tableau de bord" est au cœur de la **stratégie UX de l’applicatio
 *Table de défaillance pour chaque fonction de service avec un paragraphe commentant chaque défaillance et/ou chaque cause/effet/détection d’importance notable*
 | Fonction du produit              | Mode de défaillance                   | Effet de la défaillance                              | Causes possibles de la défaillance                   | Détection | Occurrence | Gravité | Criticité (D×O×G) |
 |----------------------------------|---------------------------------------|------------------------------------------------------|------------------------------------------------------|------------|-------------|----------|--------------------|
-| Capteur IoT       | Capteur inactif                       | Non-détection d’un dépassement de seuil critique     | Batterie vide, signal coupé, défaut matériel         | 6          | 5           | 9        | 270                |
-| Capteur de présence nettoyage    | Pas de détection durant le créneau    | Tâche non réalisée mais non signalée                 | Mauvais positionnement, zone non couverte            | 1          | 3           | 8        | 24                |
-| Synchronisation mobile-serveur   | Données non transmises ou corrompues  | Perte de traçabilité, non-conformité réglementaire   | Perte de réseau, plantage de l’app mobile            | 8          | 4           | 10        | 320                |
-| Stockage local des données       | Saturation mémoire, perte hors ligne  | Données perdues avant synchronisation                | Manque de contrôle espace, bug système               | 8          | 3           | 10       | 240                 |
-| Application mobile               | Crash ou freeze                       | Blocage temporaire de la collecte                    | Erreur de code, surcharge mémoire, conflits système  | 3          | 3           | 8        | 72                 |
-| Saisie questionnaire personnel   | Réponses incomplètes ou erronées      | Mauvais suivi comportemental                         | Oubli, inattention, interface mal conçue             | 3          | 7           | 4        | 84                |
-| Scan RFID / QR code              | Produit non reconnu ou mal scanné     | Rupture de la traçabilité d’un lot alimentaire       | Étiquette abîmée, éclairage insuffisant              | 3          | 6           | 7        | 126                |
-| Capteur IoT               | Données incohérentes                  | Sous-estimation du risque microbien                  | Capteur mal calibré, condensation                    | 6          | 6           | 9        | 324                 |
+| 1-Capteur IoT       | Capteur inactif                       | Non-détection d’un dépassement de seuil critique     | Batterie vide, signal coupé, défaut matériel         | 6          | 5           | 9        | 270                |
+| 1-Capteur de présence nettoyage    | Pas de détection durant le créneau    | Tâche non réalisée mais non signalée                 | Mauvais positionnement, zone non couverte            | 1          | 3           | 8        | 24                |
+| 3-Synchronisation mobile-serveur   | Données non transmises ou corrompues  | Perte de traçabilité, non-conformité réglementaire   | Perte de réseau, plantage de l’app mobile            | 8          | 4           | 10        | 320                |
+| 2-Stockage local des données       | Saturation mémoire, perte hors ligne  | Données perdues avant synchronisation                | Manque de contrôle espace, bug système               | 8          | 3           | 10       | 240                 |
+| 6-Application mobile               | Crash ou freeze                       | Blocage temporaire de la collecte                    | Erreur de code, surcharge mémoire, conflits système  | 3          | 3           | 8        | 72                 |
+| 5-Saisie questionnaire personnel   | Réponses incomplètes ou erronées      | Mauvais suivi comportemental                         | Oubli, inattention, interface mal conçue             | 3          | 7           | 4        | 84                |
+| 4-Scan RFID / QR code              | Produit non reconnu ou mal scanné     | Rupture de la traçabilité d’un lot alimentaire       | Étiquette abîmée, éclairage insuffisant              | 3          | 6           | 7        | 126                |
+| 1-Capteur IoT               | Données incohérentes                  | Sous-estimation du risque microbien                  | Capteur mal calibré, condensation                    | 6          | 6           | 9        | 324                 |
 
 
 ### 4.3 Gestion des défaillances
@@ -1274,7 +1288,7 @@ Le module "tableau de bord" est au cœur de la **stratégie UX de l’applicatio
 *La __Matrice de criticité__*
 <img src=img/matrice_de_criticité.png>
 
-### Capteur inactif (Gravité : Catastrophique, Probabilité : rare)
+### 1-Capteur inactif (Gravité : Catastrophique, Probabilité : rare)
 
 **Empêcher :**  
 Déployer des capteurs redondants dans les zones critiques (ex. : chambres froides), avec un plan de vérification hebdomadaire (test de signal, batterie). Installer des capteurs validés IP65 avec autonomie longue durée et indicateur d'état.
@@ -1287,7 +1301,7 @@ Envoyer immédiatement une notification au responsable HACCP. Activer un mode ma
 
 ---
 
-### Capteur de présence non déclenché (Gravité : Critique, Probabilité : Rare)
+### 1-Capteur de présence non déclenché (Gravité : Critique, Probabilité : Rare)
 
 **Empêcher :**  
 Optimiser l’emplacement des capteurs avec un guide d’installation (zone de détection, hauteur, orientation). Prévoir une validation manuelle complémentaire à chaque tâche planifiée (ex. : bouton “nettoyage effectué”).
@@ -1300,7 +1314,7 @@ Envoyer une notification au responsable avec la possibilité de valider manuelle
 
 ---
 
-### Données non transmises ou corrompues (Gravité : Catastrophique, Probabilité : Rare)
+### 3-Données non transmises ou corrompues (Gravité : Catastrophique, Probabilité : Rare)
 
 **Empêcher :**  
 Prévoir une architecture de stockage local robuste avec buffer sécurisé et file d’attente résiliente. Tester les scénarios de déconnexion pour valider la reprise.
@@ -1313,7 +1327,7 @@ En cas de perte réseau, activer un mode hors-ligne prolongé. Lors du retour de
 
 ---
 
-### Saturation mémoire, perte hors ligne  (Gravité : Catastrophique, Probabilité : Rare)
+### 2-Saturation mémoire, perte hors ligne  (Gravité : Catastrophique, Probabilité : Rare)
 
 **Empêcher :**  
 Mettre en place une vérification régulière de l’espace disponible sur l’appareil (monitoring de capacité mémoire). Définir une politique de nettoyage automatique des anciennes données ou des logs non critiques. Compresser les données localement pour limiter l’occupation.
@@ -1380,36 +1394,16 @@ Ce diagramme constitue un outil essentiel pour le **pilotage du projet**, en ass
 | Proposition de l'UX du tableau de bord  | 3.2 / 3.3.5         | 1h            |            
 | Diagramme de Gantt                      | 5 Annexe            | 1h30          |
 
-<<<<<<< HEAD
-### Pacôme
-| Tâche                                   | Section             | Durée estimée |
-|-----------------------------------------|---------------------|---------------|
-| Etude des capteurs possibles            | 1.4 / 3.1.1 / 3.3.1 (LLM) | 1h30         |
-| Rédaction collecte des données environnementales       | 2.1.1.1 / 3.1.1 (LLM) | 1h50            |
-| Rédaction scénarios de fonctionnement(WBS) | 3.1.1  | 1h            |
-| Analyse des risques techniques     | 4.1 / 4.2             | 1h          |
-| Table de défaillance (technique)          | 4.2                 | 1h            |
-| Matrice de criticité (technique)  | 4.3         | 50min            |            
-| Solutions techniques (maintenance,modules)                      | 3.3.4 / 3.3.5            | 1h          |
 
-=======
-**\### Pacôme**
->>>>>>> refs/remotes/origin/main
+
+### Pacôme
 
 | Tâche | Section | Durée estimée |
-
 |-----------------------------------------|---------------------|---------------|
-
 | Etude des capteurs possibles | 1.4 / 3.1.1 / 3.3.1 (LLM) | 1h30 |
-
 | Rédaction collecte des données environnementales | 2.1.1.1 / 3.1.1 (LLM) | 1h50 |
-
 | Rédaction scénarios de fonctionnement(WBS) | 3.1.1 | 1h |
-
 | Analyse des risques techniques | 4.1 / 4.2 | 1h |
-
 | Table de défaillance (technique) | 4.2 | 1h |
-
 | Matrice de criticité (technique) | 4.3 | 50min |
-
-| Solutions techniques (maintenance,modules) | 3.3.4 / 3.3.5 | 1h |
+| Solutions techniques (maintenance,modules) (LLM)| 3.3.4 / 3.3.5 | 1h |
