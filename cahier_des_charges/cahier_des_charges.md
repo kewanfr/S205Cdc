@@ -5,7 +5,7 @@
 ## Entête
 - Groupe de TD : 4
 - Date de démarrage : 28 mai 2025 15h
-- Version : 0.8.0
+- Version : 0.8.2
 - Destinataire : EL MAMOUNI Saïd
 
 
@@ -17,53 +17,6 @@
 | RAYNARD           | Livio   | livio.raynard@etu.univ-nantes.fr            |
 | GALLY             | Chianti | chianti.gally@etu.univ-nantes.fr            |
 
-
-# brouillon
-
-ROI: Combien de cuisines collectives
-combien controlées voire fermés,
-Envisager le modèle économique, combien on peut vendre/louer, etc..
-couts de fonctionnement
-Haccp: anticipation de problèmes, PMS sur l'appli (problèmes qu'on peut rencontrer, solutions qu'on apporte, et les mesures de prévention)
-relevés de température (entre - 40 et 0 : bloque développement, 0 et 5, 5 et +60: développement des organismes, +60: moins de bacteries, + 100: mortes)
-froid positif et froid negatifs
-capteurs doivent résister aux temperatures et humidité
-envisager des zones blanches pour certains capteurs.
-permettre de vérifier les capteurs: responsabilité en cas de problème
-venir faire des vérifications régulièrement
-ping les capteurs pour vérifier qu'ils sont toujours actifs, les changer sinon
-imprimante ettiqueteuse
-prévenir d'une coupure de courant, générer un rapport
-en cas de faux positif ou faux negatif: perdre un utilisateur
-tracer les allergenes, les dates de péremption, les numéros de lot, les fournisseurs
-
-purée: commande patates beures
-dans camion frigo pour beure: verifier temp, si pas conforme ça repart
-valider commande sinon
-dans frigo: tracabilité (fournisseur, produit, date arrive, date peremption, temp frigo)
-verification etat patate (num lot, fournisseur)
-faire cuire
-sortir beurre: ettiquetage (date ouverture, temps consommation, quelle temperature)
-mixer à + de 60°C avant et après
-Max 2h pour passer à 5°C
-
-dans frigo: fait tel jour, telle heure, consommer avant, fait par
-
-tracer température sortie frigo et
-
-lors du controle: montrer courbe de temperatures horodatée pour chaque nourriture
-verifier qu'il n'y a pas de produits non ouverts plus valables ou ouverts et pus valables
-plans de nettoyage des locaux,
-noter et déclarer les accidents: ex: coupé, blessure -> tout doit être jeté
-
-si données nominatives: RGPD
-données de sante (ex: handicap, sante ou autre): HDS
-
-RGPD: consentement libre et éclaire des utilisateurs
-dire toutes les donnés qu'on utilise, lesquelles et pourquoi
-permettre la suppresion, l'accès, la modification des données à chaque user
-
-fonctions: lecture de données, affichage de données, alerte
 
 ## 1. Présentation générale du problème
 ### 1.1 Projet
