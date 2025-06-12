@@ -711,40 +711,40 @@ Assurer la **collecte automatisée, sécurisée et traçable** des données envi
 La collecte automatique s’appuie sur les 7 sous-fonctions suivantes :
 
 1. **Intégration des capteurs IoT**  
-   - Sélection (température, humidité, présence)  
-   - Compatibilité radio (BLE / RF433)  
-   - Appairage sécurisé  
-   - Test IP65/IP68, autonomie, précision
+   - 1.1 Sélection (température, humidité, présence)  
+   - 1.2 Compatibilité radio (BLE / RF433)  
+   - 1.3 Appairage sécurisé  
+   - 1.4 Test IP65/IP68, autonomie, précision
 
 2. **Lecture automatisée des données**  
-   - Configuration des intervalles (ex : toutes les 10 min)  
-   - Stockage local chiffré  
-   - Déclenchement d’alertes
+   - 2.1 Configuration des intervalles (ex : toutes les 10 min)  
+   - 2.2 Stockage local chiffré  
+   - 2.3 Déclenchement d’alertes
 
 3. **Synchronisation des données**  
-   - Mécanisme de synchro différée  
-   - Transmission HTTPS/MQTT  
-   - File d’attente et gestion des conflits
+   - 3.1 Mécanisme de synchro différée  
+   - 3.2 Transmission HTTPS/MQTT  
+   - 3.3 File d’attente et gestion des conflits
 
 4. **Traçabilité alimentaire**  
-   - Scan RFID / codes-barres  
-   - Association lots-produits  
-   - Journalisation des stocks
+   - 4.1 Scan RFID / codes-barres  
+   - 4.2 Association lots-produits  
+   - 4.3 Journalisation des stocks
 
 5. **Données comportementales**  
-   - Questionnaires hygiène / formation  
-   - Stockage et scoring automatisé  
-   - Suivi nominatif ou anonyme
+   - 5.1 Questionnaires hygiène / formation  
+   - 5.2 Stockage et scoring automatisé  
+   - 5.3 Suivi nominatif ou anonyme
 
 6. **Système d’alertes et journalisation**  
-   - Relevés capteurs  
-   - Historique actions correctives  
-   - Suivi des validations manuelles
+   - 6.1 Relevés capteurs  
+   - 6.2 Historique actions correctives  
+   - 6.3 Suivi des validations manuelles
 
 7. **Sécurité et conformité RGPD**  
-   - Chiffrement AES-256  
-   - Gestion des droits (profils utilisateurs)  
-   - Consentement utilisateur
+   - 7.1 Chiffrement AES-256  
+   - 7.2 Gestion des droits (profils utilisateurs)  
+   - 7.3 Consentement utilisateur
 
 
 **WBS – Collecte des données HACCP**
@@ -882,67 +882,6 @@ a version de base de l’application HACCP repose sur un déploiement fonctionne
 
 Cette estimation pourra évoluer selon les sites pilotes (surface, nombre de chambres froides, besoins en redondance) et les choix de fournisseurs lors du prototypage.
 *Ici, il faut imaginer en faisant une petite étude de marchée (cf des sites marchands spécialisés)*
-<<<<<<< HEAD
-#### 3.x.2 Options et variantes proposées non retenues au cahier des charges
-#### 3.x.3 Mesures prises pour respecter les contraintes et leurs conséquences économiques
-#### 3.x.4 Outils d’installation, de maintenance … à prévoir
-
-**1. Maintenance logicielle**
-
-- **Mises à jour de l’application mobile** :
-  - Fréquence : mensuelle (corrections de bugs, améliorations UX, sécurité).
-  - Canal : via les stores (Google Play, App Store) ou MDM interne pour appareils pro.
-  - Rétrocompatibilité assurée avec les capteurs existants et données stockées.
-
-- **Suivi de la synchronisation et des performances** :
-  - Journalisation des erreurs (logs techniques).
-  - Système d’alerte automatique en cas d’échec ou lenteur de synchronisation.
-  - Correctifs déployés en mise à jour prioritaire en cas de dysfonctionnement critique.
-
-- **Maintenance des modules IA (si activés ultérieurement)** :
-  - Recalibrage ou entraînement périodique des modèles.
-  - Vérification des seuils d’alerte (non-conformité prédite, profil de risque évolutif).
-
----
-
-**2. Maintenance matérielle – Capteurs IoT**
-
-- **Vérification périodique du bon fonctionnement** :
-  - Contrôle hebdomadaire automatisé des transmissions (signal, batterie, valeurs).
-  - Détection des capteurs inactifs (inactivité > 30 min) → alerte au gestionnaire.
-
-- **Remplacement des capteurs** :
-  - Capteurs à batterie longue durée (≥ 6 mois).
-  - Remplaçables sans reconfiguration (ID unique, auto-reconnaissance via l’application).
-  - Procédure standardisée d’installation disponible dans l’app (guide ou tutoriel).
-
-- **Calibration** :
-  - Température / humidité recalibrées tous les 6 à 12 mois selon environnement.
-  - Enregistrement des interventions de maintenance dans le journal système.
-
----
-
-**3. Maintenance des données**
-
-- **Archivage automatique** :
-  - Les données HACCP (relevés, alertes, questionnaires) sont archivées localement puis exportées vers le serveur sécurisé (fréquence configurable, ex. 7 jours).
-  - Conformité RGPD assurée : durée de conservation limitée, droit à l’effacement, anonymisation possible.
-
-- **Sauvegarde** :
-  - Backup automatique des bases locales (app mobile) en cas de plantage ou désinstallation.
-  - Export manuel possible sur demande (clé USB, PDF, fichier chiffré).
-
----
-
-**4. Support technique**
-
-- Interface dédiée pour les administrateurs (facultative) permettant :
-  - Suivi en temps réel de l’état des capteurs
-  - Consultation de l’historique des erreurs et interventions
-  - Déclenchement manuel d’une synchronisation ou d’une vérification système
-
-#### 3.x.5 Décomposition en modules, sous-ensembles
-=======
 #### 3.3.2 Options et variantes proposées non retenues au cahier des charges
 ### Solutions envisagées mais non retenues
 
@@ -1023,7 +962,6 @@ En résumé, pour garantir la conformité RGPD, la sécurité et la robustesse i
 
 #### 3.3.4 Outils d’installation, de maintenance … à prévoir
 #### 3.3.5 Décomposition en modules, sous-ensembles
->>>>>>> refs/remotes/origin/main
 
 L’application sera composée de plusieurs modules fonctionnels, organisés de manière modulaire afin de faciliter le développement, l’entretien et l’évolution de la solution. Parmi eux, le **module tableau de bord** est un point central de l’expérience utilisateur.
 
@@ -1090,14 +1028,14 @@ Le module "tableau de bord" est au cœur de la **stratégie UX de l’applicatio
 *Table de défaillance pour chaque fonction de service avec un paragraphe commentant chaque défaillance et/ou chaque cause/effet/détection d’importance notable*
 | Fonction du produit              | Mode de défaillance                   | Effet de la défaillance                              | Causes possibles de la défaillance                   | Détection | Occurrence | Gravité | Criticité (D×O×G) |
 |----------------------------------|---------------------------------------|------------------------------------------------------|------------------------------------------------------|------------|-------------|----------|--------------------|
-| Capteur IoT       | Capteur inactif                       | Non-détection d’un dépassement de seuil critique     | Batterie vide, signal coupé, défaut matériel         | 6          | 5           | 9        | 270                |
-| Capteur de présence nettoyage    | Pas de détection durant le créneau    | Tâche non réalisée mais non signalée                 | Mauvais positionnement, zone non couverte            | 1          | 3           | 8        | 24                |
-| Synchronisation mobile-serveur   | Données non transmises ou corrompues  | Perte de traçabilité, non-conformité réglementaire   | Perte de réseau, plantage de l’app mobile            | 8          | 4           | 10        | 320                |
-| Stockage local des données       | Saturation mémoire, perte hors ligne  | Données perdues avant synchronisation                | Manque de contrôle espace, bug système               | 8          | 3           | 10       | 240                 |
-| Application mobile               | Crash ou freeze                       | Blocage temporaire de la collecte                    | Erreur de code, surcharge mémoire, conflits système  | 3          | 3           | 8        | 72                 |
-| Saisie questionnaire personnel   | Réponses incomplètes ou erronées      | Mauvais suivi comportemental                         | Oubli, inattention, interface mal conçue             | 3          | 7           | 4        | 84                |
-| Scan RFID / QR code              | Produit non reconnu ou mal scanné     | Rupture de la traçabilité d’un lot alimentaire       | Étiquette abîmée, éclairage insuffisant              | 3          | 6           | 7        | 126                |
-| Capteur IoT               | Données incohérentes                  | Sous-estimation du risque microbien                  | Capteur mal calibré, condensation                    | 6          | 6           | 9        | 324                 |
+| 1-Capteur IoT       | Capteur inactif                       | Non-détection d’un dépassement de seuil critique     | Batterie vide, signal coupé, défaut matériel         | 6          | 5           | 9        | 270                |
+| 1-Capteur de présence nettoyage    | Pas de détection durant le créneau    | Tâche non réalisée mais non signalée                 | Mauvais positionnement, zone non couverte            | 1          | 3           | 8        | 24                |
+| 3-Synchronisation mobile-serveur   | Données non transmises ou corrompues  | Perte de traçabilité, non-conformité réglementaire   | Perte de réseau, plantage de l’app mobile            | 8          | 4           | 10        | 320                |
+| 2-Stockage local des données       | Saturation mémoire, perte hors ligne  | Données perdues avant synchronisation                | Manque de contrôle espace, bug système               | 8          | 3           | 10       | 240                 |
+| 6-Application mobile               | Crash ou freeze                       | Blocage temporaire de la collecte                    | Erreur de code, surcharge mémoire, conflits système  | 3          | 3           | 8        | 72                 |
+| 5-Saisie questionnaire personnel   | Réponses incomplètes ou erronées      | Mauvais suivi comportemental                         | Oubli, inattention, interface mal conçue             | 3          | 7           | 4        | 84                |
+| 4-Scan RFID / QR code              | Produit non reconnu ou mal scanné     | Rupture de la traçabilité d’un lot alimentaire       | Étiquette abîmée, éclairage insuffisant              | 3          | 6           | 7        | 126                |
+| 1-Capteur IoT               | Données incohérentes                  | Sous-estimation du risque microbien                  | Capteur mal calibré, condensation                    | 6          | 6           | 9        | 324                 |
 
 
 ### 4.3 Gestion des défaillances
@@ -1105,7 +1043,7 @@ Le module "tableau de bord" est au cœur de la **stratégie UX de l’applicatio
 *La __Matrice de criticité__*
 <img src=img/matrice_de_criticité.png>
 
-### Capteur inactif (Gravité : Catastrophique, Probabilité : rare)
+### 1-Capteur inactif (Gravité : Catastrophique, Probabilité : rare)
 
 **Empêcher :**  
 Déployer des capteurs redondants dans les zones critiques (ex. : chambres froides), avec un plan de vérification hebdomadaire (test de signal, batterie). Installer des capteurs validés IP65 avec autonomie longue durée et indicateur d'état.
@@ -1118,7 +1056,7 @@ Envoyer immédiatement une notification au responsable HACCP. Activer un mode ma
 
 ---
 
-### Capteur de présence non déclenché (Gravité : Critique, Probabilité : Rare)
+### 1-Capteur de présence non déclenché (Gravité : Critique, Probabilité : Rare)
 
 **Empêcher :**  
 Optimiser l’emplacement des capteurs avec un guide d’installation (zone de détection, hauteur, orientation). Prévoir une validation manuelle complémentaire à chaque tâche planifiée (ex. : bouton “nettoyage effectué”).
@@ -1131,7 +1069,7 @@ Envoyer une notification au responsable avec la possibilité de valider manuelle
 
 ---
 
-### Données non transmises ou corrompues (Gravité : Catastrophique, Probabilité : Rare)
+### 3-Données non transmises ou corrompues (Gravité : Catastrophique, Probabilité : Rare)
 
 **Empêcher :**  
 Prévoir une architecture de stockage local robuste avec buffer sécurisé et file d’attente résiliente. Tester les scénarios de déconnexion pour valider la reprise.
@@ -1144,7 +1082,7 @@ En cas de perte réseau, activer un mode hors-ligne prolongé. Lors du retour de
 
 ---
 
-### Saturation mémoire, perte hors ligne  (Gravité : Catastrophique, Probabilité : Rare)
+### 2-Saturation mémoire, perte hors ligne  (Gravité : Catastrophique, Probabilité : Rare)
 
 **Empêcher :**  
 Mettre en place une vérification régulière de l’espace disponible sur l’appareil (monitoring de capacité mémoire). Définir une politique de nettoyage automatique des anciennes données ou des logs non critiques. Compresser les données localement pour limiter l’occupation.
