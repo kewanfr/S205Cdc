@@ -137,8 +137,8 @@ C'est un projet important pour cette entreprise, car il s'agira à la fois d'un 
 
 
 Afin d’enrichir la conception de l’application mobile HACCP, une étude comparative de plusieurs solutions existantes sur le marché a été menée. Cette analyse a permis d’identifier les fonctionnalités courantes, les manques fréquents, ainsi que les opportunités d’innovation.
+
 #### Applications étudiées
----
 
 **Traqfood**
 - **Description** : Solution HACCP utilisée dans les cuisines professionnelles.
@@ -207,44 +207,160 @@ Ces éléments différenciateurs permettront à notre solution de répondre de m
 #### 1.2.3 Études menées sur des sujets voisins
 
 
+#### Protection des données (RGPD)
+(Règlement Général sur la Protection des Données)
+
+- **Data Legal Drive** – Plateforme SaaS française (EQS Group) de gouvernance RGPD. Elle offre diagnostic de conformité, registres de traitement collaboratifs, gestion automatisée des demandes de droits, gestion des incidents (failles), veille juridique, et rapports centralisés  
+  https://appvizer.fr  
+  Plus de 20 000 utilisateurs (DPO de grandes entreprises) l’utilisent  
+  https://ccistore.fr  
+  Tarifs :
+    - TPE (≤250 personnes) : 195 €/mois
+    - PME (≤1000) : 375 €/mois
+    - ETI (≤2500) : 775 €/mois (grandes entreprises sur devis)
+
+- **Dastra** – Plateforme RGPD made in France, didactique et modulable  
+  https://appvizer.fr  
+  Fonctions : registre des traitements, gestion des droits (accès, rectification…), PIA, déclaration d’incidents, audits internes, plan d’action, veille RGPD.  
+  Versions :
+    - Starter (gratuite) : registre, planification, cartographie des données, veille, gestion documentaire
+    - Pro : + AIPD, gestion des droits, incidents, audits
+    - Entreprise : + gestion des risques, portail privacy, reporting personnalisés, SSO, etc.  
+      https://dastra.eu  
+      Tarifs : sur devis.
+
+- **Mission RGPD** – Plateforme tout-en-un et DPO externalisé. Elle combine logiciel RGPD (audits, registres, plan d’actions, documents réglementaires) et sensibilisation (e-learning RGPD)  
+  https://mission-rgpd.com  
+  Plus de 1000 structures en Europe.  
+  Tarifs PME (jusqu’à 50 salariés) :
+    - Solo : 139 €HT/mois
+    - Coach : 239 €HT/mois
+    - Academy : 199 €HT/mois
+    - DPO Externe : 439 €HT/mois  
+      https://donnees.net
+
+- **Witik** – Plateforme RGPD collaborative française (leur RGPD + module IA Act, Sapin II, etc.)  
+  https://witik.io  
+  Plan Starter (gratuit) : jusqu’à 30 traitements créés, 2 PIA, 2 audits, 10 demandes de droits/an, 10 incidents/an  
+  Plan Premium (engagement 36 mois) à partir de 240 €HT/mois : fonctionnalités illimitées (registres, PIA, audits, droits, incidents, etc.)  
+  Version d’essai 14 jours disponible.
+
+- **OneTrust** – Solution internationale de Privacy Management (RGPD, LGPD, CCPA, ePrivacy…) très utilisée.  
+  Modules : registres, consentements, cartographie des données, audits, reporting.  
+  Plusieurs éditions disponibles (gestion programme de confidentialité, privacy marketing, etc.)  
+  https://appvizer.fr  
+  Version de démonstration gratuite 14 jours.  
+  Tarifs : sur devis.
+
+#### Sécurité au travail
+
+- **TEEXMA for EHS (Bassetti Group)** – Suite QHSE modulable. Modules :
+    - Évaluation des risques chimiques (référentiel substances, FDS, calcul INRS CLP)
+    - Document unique (DUERP, RPS)
+    - Accidents du travail (déclarations AT/MP)
+    - Suivi des habilitations, formations, vérifications périodiques (VPR), indicateurs QHSE  
+      https://bassetti-group.com  
+      Tarifs : sur devis (licences modulaires)
+
+- **SIGMA-RH (suite SST)** – Logiciel HSE modulaire. Modules :
+    - Accidents du travail / maladies professionnelles
+    - DUERP et prévention
+    - Cotisations AT/MP
+    - Visites médicales, rappels de vaccination  
+      https://sigma-rh.com  
+      Automatise les déclarations réglementaires (accidents, DUERP, PAPRIPACT).  
+      Tarifs : sur devis
+
+- **Qualishare QHSE** – Plateforme française intégrée « tout-en-un » (Qualité, Sécurité, Environnement, RSE, RH).  
+  Paramétrable, compatible ISO 9001, 14001, 45001.  
+  Fonctionnalités : incidents, audits, CAPA, documents, tableaux de bord, etc.  
+  Intégration SharePoint possible  
+  https://qualishare.fr  
+  Tarifs : à partir de 99 €HT/mois (≤10 utilisateurs, 3 Go)  
+  Essai gratuit disponible.
+
+- **SafetyCulture (iAuditor)** – Application mobile d’inspection et d’audit de sécurité.  
+  Création de checklists personnalisées, contrôle qualité, prise de photos/vidéos d’incidents, actions correctives, analyses.  
+  https://safetyculture.com  
+  Version gratuite (≤10 utilisateurs), Premium ~24 $US/mois/siège.  
+  Essai gratuit 30 jours.
+
+#### Environnement (ISO 14001, gestion des déchets)
+(Organisation internationale de normalisation)
+- **Nimonik** – Plateforme EHS/Q internationale.  
+  Gère les obligations légales et les normes ISO (14001, 45001), audits, veille réglementaire.  
+  https://nimonik.com  
+  Tarifs : licence de base ~$2000/an, audits internes ~500 $
+
+- **Quentic** – Plateforme allemande EHSQ/ESG.  
+  Module ISO 14001 complet : documentation, indicateurs, audits, amélioration continue.  
+  https://quentic.com  
+  Tarifs : sur demande.
+
+- **Symalean – Dyo Environnement** – Plateforme française ISO 14001/50001.  
+  Gère impacts environnementaux, risques, produits chimiques, déchets, incidents.  
+  https://symalean.com  
+  Tarifs : sur devis.
+
+- **BlueKanGo (module déchets)** – Module HSE de gestion des déchets.  
+  Traçabilité complète (bordereaux, registre, poids, transport, prestataires, traitement).  
+  Intégration nomenclature INERIS + reporting.  
+  https://bluekango.com  
+  Tarification personnalisée (intégré à suite QHSE/RSE).
 
 #### 1.2.4 Suites prévues
 Ce projet étant une première étape (étude et conception fonctionnelle), nous pouvons imaginer des suites ...
 #### 1.2.5 Nature des prestations demandées
-prestataires/sous traitants ne peuvent exiger la propriété intellecture // partenaires
-dans le cadre de cette phase de cadrage du projet, la principale prestation attendue est **l’étude approfondie des applications existantes dédiées à la gestion HACCP**. Cette étude vise à analyser les solutions actuellement disponibles sur le marché afin d’identifier les meilleures pratiques, les fonctionnalités clés, les manques à combler, et les opportunités d’innovation pour le futur développement de l’application.
 
-Cette prestation comprend les actions suivantes :
+Dans le cadre de ce projet, certaines tâches seront confiées à des prestataires externes spécialisés ou à des partenaires techniques. Les prestations attendues sont les suivantes :
 
-####  Recensement et sélection d’applications pertinentes
+#### Conception et développement technique
+- Développement de l’application mobile multiplateforme (Android/iOS), incluant :
+    - Interfaces utilisateurs (UX/UI) conformes aux maquettes validées
+    - Fonctionnalités principales : collecte de données, alertes, tableau de bord
+    - Fonctionnalités complémentaires : historique, mode hors-ligne, personnalisation
+- Intégration d’un système de gestion des utilisateurs et des droits d’accès
+- Implémentation de mécanismes de synchronisation des données (local ↔ cloud)
 
-- Identifier les principales solutions logicielles utilisées dans la restauration collective ou commerciale pour le suivi HACCP.
-- Sélectionner des applications représentatives selon différents critères : niveau d’automatisation, secteur cible, accessibilité, modèle économique.
+#### Fabrication, livraison et installation de capteurs IoT
+- Conception et fourniture de capteurs IoT adaptés à l’environnement des cuisines collectives :
+    - Capteurs de température, humidité, ouverture de porte ou présence
+    - Boîtiers robustes, étanches, résistants aux graisses et aux basses températures
+    - Autonomie minimale de 6 mois, connectivité BLE ou Wi-Fi
+- Personnalisation du firmware selon nos besoins :
+    - Intervalle de mesure ajustable
+    - Protocoles de communication compatibles avec l’application
+- Livraison sur site des capteurs
+- Installation physique dans les zones critiques (chambres froides, zones de préparation, etc.)
+- Vérification de la connectivité et des mesures
 
-#### Analyse fonctionnelle des applications
+#### Qualité, tests et validation
+- Réalisation de tests unitaires et fonctionnels sur les modules applicatifs
+- Tests de réception des capteurs installés
+- Correction des anomalies détectées lors de la phase de recette
+- Fourniture d’un protocole de tests et d’un rapport de validation
 
-Pour chaque application étudiée (ex. : Traqfood, Eezytrace, HACCP Facile) :
-- Décrire les fonctionnalités disponibles : relevés automatiques, traçabilité, alertes, rapports, tutoriels, etc.
-- Évaluer l’ergonomie et la simplicité d’utilisation.
-- Repérer les éléments techniques (présence de capteurs, fonctionnement hors-ligne, interfaces, export de données).
-- Apprécier le respect des normes (HACCP, RGPD).
+#### Conformité réglementaire et sécurité
+- Mise en œuvre de mesures de sécurité conformes au RGPD :
+    - Authentification sécurisée
+    - Gestion des accès utilisateurs
+    - Chiffrement des données sensibles
+- Fourniture d’une documentation technique de conformité RGPD
 
-####  Comparaison des forces et faiblesses
+#### Livraison et documentation
+- Livraison d’un prototype fonctionnel de l’application mobile
+- Livraison des capteurs installés et fonctionnels
+- Documentation technique complète (utilisation, maintenance, RGPD)
+- Accompagnement à l’installation de l’application sur terminaux mobiles
 
-- Dresser un tableau comparatif des solutions analysées.
-- Identifier les avantages compétitifs de chaque application.
-- Mettre en lumière les limites récurrentes : absence d’IA, manque de personnalisation, complexité d’usage, non prise en charge du mode hors-ligne, etc.
+#### Options (selon budget)
+- Développement d’une interface web d’administration centralisée
+- Maintenance corrective sur 3 mois après livraison
+- Ajout de capteurs supplémentaires ou évolutions logicielles futures
 
-#### Recommandations pour le futur prototype
+---
 
-- Dégager des axes d’amélioration ou d’innovation à partir de l’étude de l’existant.
-- Proposer des fonctionnalités différenciantes pour la future application, notamment :
-    - Intégration d’une **analyse prédictive basée sur l’IA**.
-    - Personnalisation selon le type d’établissement (école, EHPAD, hôpital).
-    - **Robustesse en environnement contraint** (mode hors-ligne, interface simplifiée).
-    - Conformité stricte aux **exigences HACCP et RGPD**.
-
-Cette prestation analytique constitue une base stratégique pour le futur développement logiciel. Elle permettra à l’équipe de développement SAE5/SAE6 d’éviter les erreurs de conception courantes et de se positionner dès le départ avec une solution pertinente, innovante et adaptée au terrain.
+Toutes les prestations doivent respecter les exigences fonctionnelles définies dans le présent cahier des charges, ainsi que les contraintes techniques, environnementales et réglementaires mentionnées dans les sections précédentes.
 
 #### 1.2.6 Parties concernées par le déroulement du projet et ses résultats (demandeurs, utilisateurs)
 présents sur la matrice raci
@@ -480,7 +596,6 @@ Aucune des applications étudiées ne propose **l’ensemble de ces fonctions co
 - Garantissant un **mode hors-ligne fiable**, indispensable en environnement à connectivité limitée.
 - Centralisant une **documentation contextuelle** directement accessible dans l’application.
 
-Ces fonctions complémentaires ne sont pas acc*(qui améliorent, facilitent ou complètent le service rendu)*essoires : elles participent à la **pérennité**, la **conformité** et la **bonne adoption** de la solution sur le terrain.
 
 ##### 2.1.2.1 Description et détail
 
@@ -738,8 +853,8 @@ L’UX/UI proposée s’appuie sur les principes de **clarté, synthèse, hiéra
 ---
 
 Le tableau de bord représente la **porte d’entrée principale** vers la donnée critique. Il doit être **lisible, modulaire et réactif**, conçu pour des utilisateurs en environnement contraint, avec une **expérience fluide**, même sous stress ou contrainte de temps.
-### 3.x Pour l’ensemble du produit
-#### 3.x.1 Prix de la réalisation de la version de base
+### 3.3 Pour l’ensemble du produit
+#### 3.3.1 Prix de la réalisation de la version de base
 ##### Capteurs connectés (IoT)
 Le coût lié aux capteurs IoT représente une part significative du budget initial de l’application. Ce budget couvre l’acquisition de capteurs de température, d’humidité et de présence, nécessaires à la surveillance automatisée des paramètres HACCP en cuisine collective.
 
@@ -760,7 +875,7 @@ Le coût lié aux capteurs IoT représente une part significative du budget init
 
 Cette estimation pourra évoluer selon les sites pilotes (surface, nombre de chambres froides, besoins en redondance) et les choix de fournisseurs lors du prototypage.
 *Ici, il faut imaginer en faisant une petite étude de marchée (cf des sites marchands spécialisés)*
-#### 3.x.2 Options et variantes proposées non retenues au cahier des charges
+#### 3.3.2 Options et variantes proposées non retenues au cahier des charges
 ### Solutions envisagées mais non retenues
 
 Dans le cadre de l’étude de faisabilité, plusieurs options technologiques et fonctionnelles ont été envisagées mais finalement écartées pour la version initiale du projet. Voici les principales solutions non retenues et les raisons de leur exclusion :
@@ -799,7 +914,7 @@ Dans le cadre de l’étude de faisabilité, plusieurs options technologiques et
 
 **Conclusion** :  
 Ces solutions pourront être réévaluées lors de futures évolutions du projet, en fonction des retours utilisateurs, de l’évolution des besoins ou de l’extension à de nouveaux marchés. Pour la version initiale, le choix s’est porté sur des technologies éprouvées, simples à déployer et à maintenir, tout en garantissant la sécurité et la conformité réglementaire.
-#### 3.x.3 Mesures prises pour respecter les contraintes et leurs conséquences économiques
+#### 3.3.3 Mesures prises pour respecter les contraintes et leurs conséquences économiques
 ### Mesures prises pour respecter les contraintes et leurs conséquences économiques
 
 #### Conformité RGPD
@@ -838,8 +953,8 @@ Ces solutions pourront être réévaluées lors de futures évolutions du projet
 
 En résumé, pour garantir la conformité RGPD, la sécurité et la robustesse impliquent un investissement initial et une complexité technique accrus, mais c’est indispensable pour la viabilité, la confiance des utilisateurs et la conformité réglementaire du produit.
 
-#### 3.x.4 Outils d’installation, de maintenance … à prévoir
-#### 3.x.5 Décomposition en modules, sous-ensembles
+#### 3.3.4 Outils d’installation, de maintenance … à prévoir
+#### 3.3.5 Décomposition en modules, sous-ensembles
 
 L’application sera composée de plusieurs modules fonctionnels, organisés de manière modulaire afin de faciliter le développement, l’entretien et l’évolution de la solution. Parmi eux, le **module tableau de bord** est un point central de l’expérience utilisateur.
 
@@ -897,7 +1012,7 @@ Ce module est conçu comme le **centre de contrôle visuel** de l'application. I
 ---
 
 Le module "tableau de bord" est au cœur de la **stratégie UX de l’application**. Il doit garantir à l’utilisateur une **expérience fluide, rassurante et efficace**, même en situation de stress ou de surcharge opérationnelle.
-#### 3.x.7 Perspectives d’évolution technologique
+#### 3.3.7 Perspectives d’évolution technologique
 ## 4 Prévisions de fiabilité – Gestions des risques
 ### 4.1 Risques à la réalisation
 *__Profils de risques__ pour chaque fonction de service*
@@ -1007,9 +1122,8 @@ Ce diagramme constitue un outil essentiel pour le **pilotage du projet**, en ass
 ### Alex
 | Tâche                                   | Section             | Durée estimée |
 |-----------------------------------------|---------------------|---------------|
-| Etude des applications existantes       | 1.2.3 / 1.2.5 (LLM) | 30min         |
+| Etude des applications existantes       | 1.2.3 / 1.2.5 (LLM) | 2h            |
 | Synthèse comparative outils HACCP       | 1.2.3 / 2.1.2 (LLM) | 1h            |
-| Rédaction de l'environnement du produit | 1.4.1 / 1.4.2 (LLM) | 1h            |
 | Rédaction fonctions complémentaires     | 2.1.2.1             | 1h30          |
 | Diagramme de cas d'utilisation          | 2.1                 | 2h            |
 | Proposition de l'UX du tableau de bord  | 3.2 / 3.3.5         | 1h            |            
