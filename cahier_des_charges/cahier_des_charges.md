@@ -1038,11 +1038,8 @@ a version de base de l’application HACCP repose sur un déploiement fonctionne
 **Part du budget global estimé :** environ **30 % du coût total** de la solution de base (application + capteurs + hébergement serveur).
 
 Cette estimation pourra évoluer selon les sites pilotes (surface, nombre de chambres froides, besoins en redondance) et les choix de fournisseurs lors du prototypage.
-*Ici, il faut imaginer en faisant une petite étude de marchée (cf des sites marchands spécialisés)*
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> e3330257652b561d3504c0cbb88a852774688118
+
+
 #### 3.3.2 Options et variantes proposées non retenues au cahier des charges
 ### Solutions envisagées mais non retenues
 
@@ -1365,36 +1362,16 @@ Ce diagramme constitue un outil essentiel pour le **pilotage du projet**, en ass
 | Proposition de l'UX du tableau de bord  | 3.2 / 3.3.5         | 1h            |            
 | Diagramme de Gantt                      | 5 Annexe            | 1h30          |
 
-<<<<<<< HEAD
-### Pacôme
-| Tâche                                   | Section             | Durée estimée |
-|-----------------------------------------|---------------------|---------------|
-| Etude des capteurs possibles            | 1.4 / 3.1.1 / 3.3.1 (LLM) | 1h30         |
-| Rédaction collecte des données environnementales       | 2.1.1.1 / 3.1.1 (LLM) | 1h50            |
-| Rédaction scénarios de fonctionnement(WBS) | 3.1.1  | 1h            |
-| Analyse des risques techniques     | 4.1 / 4.2             | 1h          |
-| Table de défaillance (technique)          | 4.2                 | 1h            |
-| Matrice de criticité (technique)  | 4.3         | 50min            |            
-| Solutions techniques (maintenance,modules)                      | 3.3.4 / 3.3.5            | 1h          |
 
-=======
-**\### Pacôme**
->>>>>>> refs/remotes/origin/main
+
+### Pacôme
 
 | Tâche | Section | Durée estimée |
-
 |-----------------------------------------|---------------------|---------------|
-
 | Etude des capteurs possibles | 1.4 / 3.1.1 / 3.3.1 (LLM) | 1h30 |
-
 | Rédaction collecte des données environnementales | 2.1.1.1 / 3.1.1 (LLM) | 1h50 |
-
 | Rédaction scénarios de fonctionnement(WBS) | 3.1.1 | 1h |
-
 | Analyse des risques techniques | 4.1 / 4.2 | 1h |
-
 | Table de défaillance (technique) | 4.2 | 1h |
-
 | Matrice de criticité (technique) | 4.3 | 50min |
-
-| Solutions techniques (maintenance,modules) | 3.3.4 / 3.3.5 | 1h |
+| Solutions techniques (maintenance,modules) (LLM)| 3.3.4 / 3.3.5 | 1h |
