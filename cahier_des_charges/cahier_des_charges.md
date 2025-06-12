@@ -5,7 +5,7 @@
 ## Entête
 - Groupe de TD : 4
 - Date de démarrage : 28 mai 2025 15h
-- Version : 0.9.0
+- Version : 0.9.1
 - Destinataire : EL MAMOUNI Saïd
 
 
@@ -44,7 +44,7 @@ Ses objectifs sont:
     - Zone de cuisson : au-dessus de 60 °C (cuisson, maintien au chaud, etc.)
 
     Cela permet de superviser le fonctionnement constant des infrastructures, sans nécessiter la présence d'un humain.
-    Si des données venaient à changer de manière brutale, ou anormale, ou ne pas être conformes aux normes exigées par le HACCP, alors une alerte en temps réel est envoyée aux gestionnaires, avec des actions à effectuer.
+    Tout écart brusque ou dépassement de seuil du HACCP déclenche aussitôt une alerte en temps réel, envoyée aux gestionnaires, avec des actions à effectuer.
 
 - La Traçabilité des produits et la gestion de l'hygiène 
   - Chaque aliment devra être tracé, de son origine à sa consommation. À chaque changement de condition, seront notés: 
@@ -84,14 +84,14 @@ Ses objectifs sont:
   - Il faut faire très attention aux faux positifs et faux négatifs, car ils peuvent entrainer des pertes de confiance dans l'application.
     On pourrait ajouter par exemple: un niveau de confiance à chaque alerte, donné par l'IA. On les analyserait ensuite et ferait apprendre à l'IA.
 
-Pour résumer, l'application fournit un pilotage, un contrôle et une analyse intelligente, automatisée au maximum et pratique pour les utilisateurs.
+En résumé, l’application assure un pilotage intelligent, un contrôle et une analyse intelligente, automatisée et pratique pour les utilisateurs.
 Elle vise à garantir l'application des principes de la réglementation HACCP, pour alléger la charge de travail du personnel et renforcer la conformité sanitaire.
 
 #### 1\.1.2 Espérance de retour sur investissement
 
-Notre application a un fort potentiel de retour sur investissement, de par sa nécessité dans de nombreux établissements en France.
+L’application présente un solide potentiel de ROI, car elle répond à un besoin largement répandu en France.
 
-Il y a en effet en France environ *800 cuisines centrales*, c'est-à-dire des établissements qui produisent des plats en grande quantité qui sont ensuite livrés sur plusieurs sites
+On compte environ 800 cuisines centrales en France : des établissements qui produisent des plats en grande quantité, livrés sur plusieurs sites
 
 Mais on dénombre au total près de 90 000 restaurants collectifs (écoles, hôpitaux, EHPAD, entreprises, etc.). Ce sont toutes des cuisines collectives. C'est un terme générique désignant toute structure proposant des repas  "hors du foyer" pour une collectivité.
 
@@ -122,7 +122,7 @@ Pour les cuisines moyennes, le **CA serait de 3 500 €**. Avec 86 clients, nous
 
 ##### Croissance des clients
 
-La première année consisterait en une bêta avec 10 cuisines centrales, 20 moyennes et 50 petites. Ce qui constituerait un **CA de 187 000 €**.
+La première année servirait de bêta : 10 grandes, 20 moyennes et 50 petites cuisines pilotes Ce qui constituerait un **CA de 187 000 €**.
 
 La deuxième année on espère passer à 30 centrales, 200 moyennes et 100 petites. Ainsi notre CA serait de 840 k€/an. 
 
