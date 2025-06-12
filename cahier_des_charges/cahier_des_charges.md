@@ -5,7 +5,7 @@
 ## Entête
 - Groupe de TD : 4
 - Date de démarrage : 28 mai 2025 15h
-- Version : 0.2.5
+- Version : 0.3.0
 *Il s'agit d'un numéro de version logique en visant d'arriver à la version 1.0 le jour du rendu (git gère une autre numérotation pour le versionnage*) 
 - Destinataire : EL MAMOUNI Saïd
 
@@ -77,7 +77,7 @@ Les gains attendus sont:
 En conclusion,
 Le retour sur investissement de ce projet est principalement une amélioration de la productivité du personnel, un renforcement du climat de confiance et une diminution des coûts liés aux risques sanitaires.
 
-Sources: [traqfood](https://www.traqfood.com/fr/blog-methode-haccp/normes-haccp/article/les-avantages-des-solutions-digitales-haccp-en-restauration/), (formation-haccp)[https://formation-haccp.info/reglementation-hygiene-alimentaire/], (traqfood)[https://www.traqfood.com/fr/blog-methode-haccp/actualites-hygiene-alimentaire/article/ia-et-securite-alimentaire-comment-l-ia-transforme-la-gestion-haccp-en/]
+Sources: [traqfood](https://www.traqfood.com/fr/blog-methode-haccp/normes-haccp/article/les-avantages-des-solutions-digitales-haccp-en-restauration/), [formation-haccp](https://formation-haccp.info/reglementation-hygiene-alimentaire/), [traqfood](https://www.traqfood.com/fr/blog-methode-haccp/actualites-hygiene-alimentaire/article/ia-et-securite-alimentaire-comment-l-ia-transforme-la-gestion-haccp-en/)
 L'IA générative à été utilisée à des fins de résumés des sources et de reformulations.
 ### 1.2 Contexte
 #### 1.2.1 Situation du projet par rapport aux autres projets de l’entreprise
