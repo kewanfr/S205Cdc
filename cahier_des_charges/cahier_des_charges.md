@@ -613,6 +613,16 @@ Cette architecture permet un contrôle rigoureux, automatisé et intelligent du 
 - **Conformité RGPD** : 10% du budget (anonymisation, gestion des droits, logs).
 - **Documentation et tutoriels** : 5% du budget (contenus, intégration).
 - **Maintenance/évolutivité** : 10% du budget (support, mises à jour).
+
+#### 3.1.4 Jalons associés
+| Fonction                | Jalon (date/étape)           | Modalité de contrôle           |
+|-------------------------|------------------------------|-------------------------------|
+| Collecte des données    | Prototype capteurs (Semaine 3) | Test de collecte automatisée   |
+| Tableau de bord         | Maquette validée (Semaine 5)   | Test utilisateur               |
+| Alertes                 | Système opérationnel (Semaine 6) | Simulation d’anomalie         |
+| Synchronisation         | Démo hors-ligne (Semaine 7)     | Test de coupure réseau         |
+| RGPD                    | Audit conformité (Semaine 8)    | Vérification documentation     |
+
 ### 3.2 *Pour chaque fonction : fonction 2*
 
 #### 3.2.1 Solution proposée
