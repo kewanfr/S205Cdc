@@ -5,7 +5,7 @@
 ## Entête
 - Groupe de TD : 4
 - Date de démarrage : 28 mai 2025 15h
-- Version : 0.5.0
+- Version : 0.5.1
 - Destinataire : EL MAMOUNI Saïd
 
 
@@ -949,8 +949,8 @@ L’UX/UI proposée s’appuie sur les principes de **clarté, synthèse, hiéra
 ---
 
 Le tableau de bord représente la **porte d’entrée principale** vers la donnée critique. Il doit être **lisible, modulaire et réactif**, conçu pour des utilisateurs en environnement contraint, avec une **expérience fluide**, même sous stress ou contrainte de temps.
-### 3.x Pour l’ensemble du produit
-#### 3.x.1 Prix de la réalisation de la version de base
+### 3.3 Pour l’ensemble du produit
+#### 3.3.1 Prix de la réalisation de la version de base
 ##### Capteurs connectés (IoT)
 Le coût lié aux capteurs IoT représente une part significative du budget initial de l’application. Ce budget couvre l’acquisition de capteurs de température, d’humidité et de présence, nécessaires à la surveillance automatisée des paramètres HACCP en cuisine collective.
 
@@ -972,66 +972,6 @@ Le coût lié aux capteurs IoT représente une part significative du budget init
 Cette estimation pourra évoluer selon les sites pilotes (surface, nombre de chambres froides, besoins en redondance) et les choix de fournisseurs lors du prototypage.
 *Ici, il faut imaginer en faisant une petite étude de marchée (cf des sites marchands spécialisés)*
 <<<<<<< HEAD
-#### 3.x.2 Options et variantes proposées non retenues au cahier des charges
-#### 3.x.3 Mesures prises pour respecter les contraintes et leurs conséquences économiques
-#### 3.x.4 Outils d’installation, de maintenance … à prévoir
-
-**1. Maintenance logicielle**
-
-- **Mises à jour de l’application mobile** :
-  - Fréquence : mensuelle (corrections de bugs, améliorations UX, sécurité).
-  - Canal : via les stores (Google Play, App Store) ou MDM interne pour appareils pro.
-  - Rétrocompatibilité assurée avec les capteurs existants et données stockées.
-
-- **Suivi de la synchronisation et des performances** :
-  - Journalisation des erreurs (logs techniques).
-  - Système d’alerte automatique en cas d’échec ou lenteur de synchronisation.
-  - Correctifs déployés en mise à jour prioritaire en cas de dysfonctionnement critique.
-
-- **Maintenance des modules IA (si activés ultérieurement)** :
-  - Recalibrage ou entraînement périodique des modèles.
-  - Vérification des seuils d’alerte (non-conformité prédite, profil de risque évolutif).
-
----
-
-**2. Maintenance matérielle – Capteurs IoT**
-
-- **Vérification périodique du bon fonctionnement** :
-  - Contrôle hebdomadaire automatisé des transmissions (signal, batterie, valeurs).
-  - Détection des capteurs inactifs (inactivité > 30 min) → alerte au gestionnaire.
-
-- **Remplacement des capteurs** :
-  - Capteurs à batterie longue durée (≥ 6 mois).
-  - Remplaçables sans reconfiguration (ID unique, auto-reconnaissance via l’application).
-  - Procédure standardisée d’installation disponible dans l’app (guide ou tutoriel).
-
-- **Calibration** :
-  - Température / humidité recalibrées tous les 6 à 12 mois selon environnement.
-  - Enregistrement des interventions de maintenance dans le journal système.
-
----
-
-**3. Maintenance des données**
-
-- **Archivage automatique** :
-  - Les données HACCP (relevés, alertes, questionnaires) sont archivées localement puis exportées vers le serveur sécurisé (fréquence configurable, ex. 7 jours).
-  - Conformité RGPD assurée : durée de conservation limitée, droit à l’effacement, anonymisation possible.
-
-- **Sauvegarde** :
-  - Backup automatique des bases locales (app mobile) en cas de plantage ou désinstallation.
-  - Export manuel possible sur demande (clé USB, PDF, fichier chiffré).
-
----
-
-**4. Support technique**
-
-- Interface dédiée pour les administrateurs (facultative) permettant :
-  - Suivi en temps réel de l’état des capteurs
-  - Consultation de l’historique des erreurs et interventions
-  - Déclenchement manuel d’une synchronisation ou d’une vérification système
-
-#### 3.x.5 Décomposition en modules, sous-ensembles
-=======
 #### 3.3.2 Options et variantes proposées non retenues au cahier des charges
 ### Solutions envisagées mais non retenues
 
@@ -1111,8 +1051,62 @@ Ces solutions pourront être réévaluées lors de futures évolutions du projet
 En résumé, pour garantir la conformité RGPD, la sécurité et la robustesse impliquent un investissement initial et une complexité technique accrus, mais c’est indispensable pour la viabilité, la confiance des utilisateurs et la conformité réglementaire du produit.
 
 #### 3.3.4 Outils d’installation, de maintenance … à prévoir
+
+**1. Maintenance logicielle**
+
+- **Mises à jour de l’application mobile** :
+  - Fréquence : mensuelle (corrections de bugs, améliorations UX, sécurité).
+  - Canal : via les stores (Google Play, App Store) ou MDM interne pour appareils pro.
+  - Rétrocompatibilité assurée avec les capteurs existants et données stockées.
+
+- **Suivi de la synchronisation et des performances** :
+  - Journalisation des erreurs (logs techniques).
+  - Système d’alerte automatique en cas d’échec ou lenteur de synchronisation.
+  - Correctifs déployés en mise à jour prioritaire en cas de dysfonctionnement critique.
+
+- **Maintenance des modules IA (si activés ultérieurement)** :
+  - Recalibrage ou entraînement périodique des modèles.
+  - Vérification des seuils d’alerte (non-conformité prédite, profil de risque évolutif).
+
+---
+
+**2. Maintenance matérielle – Capteurs IoT**
+
+- **Vérification périodique du bon fonctionnement** :
+  - Contrôle hebdomadaire automatisé des transmissions (signal, batterie, valeurs).
+  - Détection des capteurs inactifs (inactivité > 30 min) → alerte au gestionnaire.
+
+- **Remplacement des capteurs** :
+  - Capteurs à batterie longue durée (≥ 6 mois).
+  - Remplaçables sans reconfiguration (ID unique, auto-reconnaissance via l’application).
+  - Procédure standardisée d’installation disponible dans l’app (guide ou tutoriel).
+
+- **Calibration** :
+  - Température / humidité recalibrées tous les 6 à 12 mois selon environnement.
+  - Enregistrement des interventions de maintenance dans le journal système.
+
+---
+
+**3. Maintenance des données**
+
+- **Archivage automatique** :
+  - Les données HACCP (relevés, alertes, questionnaires) sont archivées localement puis exportées vers le serveur sécurisé (fréquence configurable, ex. 7 jours).
+  - Conformité RGPD assurée : durée de conservation limitée, droit à l’effacement, anonymisation possible.
+
+- **Sauvegarde** :
+  - Backup automatique des bases locales (app mobile) en cas de plantage ou désinstallation.
+  - Export manuel possible sur demande (clé USB, PDF, fichier chiffré).
+
+---
+
+**4. Support technique**
+
+- Interface dédiée pour les administrateurs (facultative) permettant :
+  - Suivi en temps réel de l’état des capteurs
+  - Consultation de l’historique des erreurs et interventions
+  - Déclenchement manuel d’une synchronisation ou d’une vérification système
+
 #### 3.3.5 Décomposition en modules, sous-ensembles
->>>>>>> refs/remotes/origin/main
 
 L’application sera composée de plusieurs modules fonctionnels, organisés de manière modulaire afin de faciliter le développement, l’entretien et l’évolution de la solution. Parmi eux, le **module tableau de bord** est un point central de l’expérience utilisateur.
 
