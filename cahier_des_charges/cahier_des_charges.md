@@ -763,10 +763,59 @@ Le module "tableau de bord" est au cœur de la **stratégie UX de l’applicatio
 ### 4.3 Gestion des défaillances
 
 *La __Matrice de criticité__*
-*Pour chaque défaillance critique (en zone noire ou proche), un paragraphe expliquant comment
-- L’empêcher
-- Alerter que elle est en voie de se produire
-- Réagir quand elle s’est produite*
+<img src=img/matrice_de_criticité.png>
+
+### Capteur inactif (Gravité : Catastrophique, Probabilité : rare)
+
+**Empêcher :**  
+Déployer des capteurs redondants dans les zones critiques (ex. : chambres froides), avec un plan de vérification hebdomadaire (test de signal, batterie). Installer des capteurs validés IP65 avec autonomie longue durée et indicateur d'état.
+
+**Alerter :**  
+Configurer une alerte automatique dès qu’un capteur n’émet plus de données pendant une durée donnée (ex. 30 minutes). Surveiller les écarts de transmission via un watchdog intégré à l’application.
+
+**Réagir :**  
+Envoyer immédiatement une notification au responsable HACCP. Activer un mode manuel de saisie temporaire. Remplacer le capteur dès que possible et historiser l’incident dans le tableau de bord.
+
+---
+
+### Capteur de présence non déclenché (Gravité : Critique, Probabilité : Rare)
+
+**Empêcher :**  
+Optimiser l’emplacement des capteurs avec un guide d’installation (zone de détection, hauteur, orientation). Prévoir une validation manuelle complémentaire à chaque tâche planifiée (ex. : bouton “nettoyage effectué”).
+
+**Alerter :**  
+Générer une alerte si aucune activité n’est détectée pendant une plage horaire où une action est prévue (nettoyage, désinfection). Journaliser l’absence de détection.
+
+**Réagir :**  
+Envoyer une notification au responsable avec la possibilité de valider manuellement l’action. Documenter l'écart de conformité. Planifier une intervention de vérification capteur si récurrence.
+
+---
+
+### Données non transmises ou corrompues (Gravité : Catastrophique, Probabilité : Rare)
+
+**Empêcher :**  
+Prévoir une architecture de stockage local robuste avec buffer sécurisé et file d’attente résiliente. Tester les scénarios de déconnexion pour valider la reprise.
+
+**Alerter :**  
+Afficher un indicateur d’état de synchronisation dans l’application. Déclencher une alerte si une donnée n’a pas été synchronisée après un délai maximum (ex. 2h).
+
+**Réagir :**  
+En cas de perte réseau, activer un mode hors-ligne prolongé. Lors du retour de connexion, déclencher la synchronisation automatique. En cas d’échec persistant, activer un export manuel local chiffré.
+
+---
+
+### Saturation mémoire, perte hors ligne  (Gravité : Catastrophique, Probabilité : Rare)
+
+**Empêcher :**  
+Mettre en place une vérification régulière de l’espace disponible sur l’appareil (monitoring de capacité mémoire). Définir une politique de nettoyage automatique des anciennes données ou des logs non critiques. Compresser les données localement pour limiter l’occupation.
+
+**Alerter :**  
+Générer une alerte dès que le seuil d’alerte de capacité (ex. 80 %) est atteint. Afficher une notification dans l’interface de l’application signalant le risque de saturation imminente.
+
+**Réagir :**  
+Passer temporairement en mode dégradé en bloquant les nouvelles saisies non urgentes. Autoriser un export manuel des données sur support externe (clé USB, WiFi local). Une fois l’espace libéré ou la synchronisation rétablie, restaurer les fonctions bloquées et historiser l’incident.
+
+
 
 
 ## 5 Annexe
