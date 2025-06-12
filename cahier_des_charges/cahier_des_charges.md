@@ -5,7 +5,7 @@
 ## Entête
 - Groupe de TD : 4
 - Date de démarrage : 28 mai 2025 15h
-- Version : 0.5.3
+- Version : 0.6.0
 - Destinataire : EL MAMOUNI Saïd
 
 
@@ -415,7 +415,7 @@ Dans le cadre de ce projet, certaines tâches seront confiées à des prestatair
 - Conception et fourniture de capteurs IoT adaptés à l’environnement des cuisines collectives :
     - Capteurs de température, humidité, ouverture de porte ou présence
     - Boîtiers robustes, étanches, résistants aux graisses et aux basses températures
-    
+
     - Autonomie minimale de 6 mois, connectivité BLE, RF433MhZ, WiFi ou autres protcoles adaptés
         - Prévoir un remplacement facile des piles ou batteries si nécessaire, avec une seconde batterie pour les capteurs critiques
             Permettant de ne pas perdre de données durant le remplacement de la pile.
@@ -464,7 +464,39 @@ Dans le cadre de ce projet, certaines tâches seront confiées à des prestatair
 Toutes les prestations doivent respecter les exigences fonctionnelles définies dans le présent cahier des charges, ainsi que les contraintes techniques, environnementales et réglementaires mentionnées dans les sections précédentes.
 
 #### 1.2.6 Parties concernées par le déroulement du projet et ses résultats (demandeurs, utilisateurs)
-présents sur la matrice raci
+
+Diagramme RACI des parties du projet et des étapes
+
+R: Responsible = Celui qui Réalise la tache
+A: Accountable = Décisionnaire, approuve le résultat
+C: Consulted = Consulté, doit donner son avis (expert)
+I: Informed = Tenu au courant de toutes les avancées
+
+| Tâche                                              | Administration et direction | Equipe de développement | Sous traitant: capteurs, matériel et installation | Gestionnaire de cuisine | Cuisiniers |
+| -------------------------------------------------- | --------------------------- | ----------------------- | ------------------------------------------------- | ----------------------- | ---------- |
+| I - Conception du projet                           |                             |                         |                                                   |                         |            |
+| Cahier des charges                                 | A                           | R                       |                                                   | A                       | C          |
+| Besoins des utilisateurs                           | A                           | R                       |                                                   | C                       | C          |
+| Conception de l'application                        | A                           | R                       |                                                   |                         |            |
+| Technique et spécification des capteurs            | A                           | C                       | R                                                 | C                       |            |
+| II - Développement                                 |                             |                         |                                                   |                         |            |
+| Capteurs IoT et matériels                          | A                           | C                       | R                                                 | I                       | I          |
+| Application mobile                                 | A                           | R                       |                                                   | I                       | I          |
+| Serveurs et sauvegarde                             | A                           | R                       |                                                   |                         |            |
+| III - Déploiement                                  |                             |                         |                                                   |                         |            |
+| Préparation des capteurs et analyse sur le terrain | A                           | I                       | R                                                 | C                       | C          |
+| Installation de l'application                      | A                           | R                       |                                                   | I                       | I          |
+| Installation des capteurs                          | A                           | C                       | R                                                 | I                       | I          |
+| Tests d'utilisations                               | I                           | I                       | A                                                 | C                       | R          |
+| IV - Maintenance / Retour                          |                             |                         |                                                   |                         |            |
+| Remplacement préventif ou curatif des capteurs     | I                           | C                       | R                                                 | A                       | I          |
+| Suivi des données                                  | A                           | R                       |                                                   |                         |            |
+| Mises à jours et corrections                       | A                           | R                       |                                                   | C                       | I          |
+|                                                    |                             |                         |                                                   |                         |            |
+|                                                    |                             |                         |                                                   |                         |            |
+|                                                    |                             |                         |                                                   |                         |            |
+
+
 #### 1.2.7 Caractère confidentiel s'il y a lieu
 rgpd
 depot de brevet, NDA, 
