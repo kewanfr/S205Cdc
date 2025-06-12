@@ -602,7 +602,17 @@ La collecte des données critiques liées à la sécurité alimentaire repose su
 Cette architecture permet un contrôle rigoureux, automatisé et intelligent du respect des normes HACCP, tout en restant simple à déployer et à maintenir.
 *__Jalon__ : date à laquelle la fonction doit être livrée.*
 #### 3.1.2 Niveau atteint pour chaque critère d’appréciation de cette fonction et modalités de contrôle
+- **Temps de réponse** : < 3 secondes pour l’affichage d’une alerte (testé sur 10 scénarios).
+- **Fiabilité** : Précision des capteurs ±0,5°C, taux de transmission >98% (tests de validation sur 1 semaine).
+- **Accessibilité** : Interface utilisable avec gants, multilingue (tests utilisateurs en conditions réelles).
 #### 3.1.3 Part du prix attribué à chaque fonction
+- **Collecte des données** : 30% du budget (capteurs, intégration IoT, stockage sécurisé).
+- **Tableau de bord** : 20% du budget (UX/UI, développement front-end, personnalisation).
+- **Alertes et notifications** : 10% du budget (système d’alerte, notifications mobiles/SMS).
+- **Synchronisation/hors-ligne** : 15% du budget (gestion des données locales, synchronisation serveur).
+- **Conformité RGPD** : 10% du budget (anonymisation, gestion des droits, logs).
+- **Documentation et tutoriels** : 5% du budget (contenus, intégration).
+- **Maintenance/évolutivité** : 10% du budget (support, mises à jour).
 ### 3.2 *Pour chaque fonction : fonction 2*
 
 #### 3.2.1 Solution proposée
