@@ -5,7 +5,7 @@
 ## Entête
 - Groupe de TD : 4
 - Date de démarrage : 28 mai 2025 15h
-- Version : 0.8.3
+- Version : 0.8.4
 - Destinataire : EL MAMOUNI Saïd
 
 
@@ -1363,21 +1363,21 @@ Ce diagramme constitue un outil essentiel pour le **pilotage du projet**, en ass
 | "espérance de retour sur investissement" (ROI) et modèle économique                         | 1.1.2          | 1h            |     |
 | Situation du projet par rapport aux autres projets de l’entreprise                          | 1.2.1          | 15min         |     |
 | Suites prévues                                                                              | 1.2.4          | 2h            |     |
-| Caractère confidentiel s'il y a lieu                                                        | 1.2.7          | 30min         |     |
-| Énoncé du besoin                                                                            | 1.3            | 30min         |     |
 | Analyse des autres applications (même sujet et sujets voisins) avec LLMs                    | 1.2.2 et 1.2.3 | 30min         |     |
 | Parties concernées par le déroulement du projet et ses résultats (demandeurs, utilisateurs) | 1.2.6          | 1h            |     |
+| Caractère confidentiel s'il y a lieu                                                        | 1.2.7          | 30min         |     |
+| Énoncé du besoin                                                                            | 1.3            | 30min         |     |
 
 
 
 ### Pacôme
 
-| Tâche | Section | Durée estimée |
-|-----------------------------------------|---------------------|---------------|
-| Etude des capteurs possibles | 1.4 / 3.1.1 / 3.3.1 (LLM) | 1h30 |
-| Rédaction collecte des données environnementales | 2.1.1.1 / 3.1.1 (LLM) | 1h50 |
-| Rédaction scénarios de fonctionnement(WBS) | 3.1.1 | 1h |
-| Analyse des risques techniques | 4.1 / 4.2 | 1h |
-| Table de défaillance (technique) | 4.2 | 1h |
-| Matrice de criticité (technique) | 4.3 | 50min |
-| Solutions techniques (maintenance,modules) (LLM)| 3.3.4 / 3.3.5 | 1h |
+| Tâche                                            | Section                   | Durée estimée |
+| ------------------------------------------------ | ------------------------- | ------------- |
+| Etude des capteurs possibles                     | 1.4 / 3.1.1 / 3.3.1 (LLM) | 1h30          |
+| Rédaction collecte des données environnementales | 2.1.1.1 / 3.1.1 (LLM)     | 1h50          |
+| Rédaction scénarios de fonctionnement(WBS)       | 3.1.1                     | 1h            |
+| Analyse des risques techniques                   | 4.1 / 4.2                 | 1h            |
+| Table de défaillance (technique)                 | 4.2                       | 1h            |
+| Matrice de criticité (technique)                 | 4.3                       | 50min         |
+| Solutions techniques (maintenance,modules) (LLM) | 3.3.4 / 3.3.5             | 1h            |
