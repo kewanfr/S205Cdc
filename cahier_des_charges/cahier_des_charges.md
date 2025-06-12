@@ -255,9 +255,6 @@ La premières est celle décrit dans ce cahier des charges, mais certaines autre
 (nécessite la gestion des données de santé et donc être certifié HDS).
 - Une fonctionnalité de gestion des stocks, permettant de suivre les produits en stock, les dates de péremption et les quantités disponibles.
 
-
-#### 1.2.4 Suites prévues
-Ce projet étant une première étape (étude et conception fonctionnelle), nous pouvons imaginer des suites ...
 #### 1.2.5 Nature des prestations demandées
 
 Dans le cadre de ce projet, certaines tâches seront confiées à des prestataires externes spécialisés ou à des partenaires techniques. Les prestations attendues sont les suivantes :
