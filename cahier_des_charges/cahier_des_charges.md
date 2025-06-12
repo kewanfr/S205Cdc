@@ -209,72 +209,88 @@ Cette prestation analytique constitue une base stratégique pour le futur dével
 ### 1.3 Énoncé du besoin 
 *(finalités du produit pour le futur utilisateur tel que prévu par le demandeur)*
 ### 1.4 Environnement du produit recherché
-#### 1.4.1 Listes exhaustives des éléments *(personnes, équipements, matières…)* et contraintes *(e.g. environnement)*
-##### Capteurs connectés (IoT)
 
-L’application repose sur un réseau de capteurs connectés (IoT) permettant la collecte automatisée des données critiques en lien avec les exigences HACCP. Ces capteurs doivent être sélectionnés en fonction des contraintes spécifiques des cuisines collectives, à savoir : humidité, température extrême, graisses, nettoyages fréquents, connexions instables.
+#### 1.4.1 Liste exhaustive des éléments *(personnes, équipements, matières…)* et contraintes *(environnement, matériel, usage)*
 
-**Types de capteurs envisagés** :
+L’application repose sur un réseau de capteurs connectés (IoT) pour la collecte automatisée des données critiques HACCP. Elle devra fonctionner dans un environnement professionnel contraignant, avec des utilisateurs variés et une infrastructure réseau parfois instable.
 
-- **Capteurs de température** : placés dans les réfrigérateurs, congélateurs ou chambres froides pour vérifier le respect de la chaîne du froid.
-- **Capteurs d’humidité** : mesurent l’hygrométrie ambiante pour éviter les zones favorables au développement microbien.
-- **Capteurs de présence / mouvement** : détectent les interventions de nettoyage ou les ouvertures de portes.
-- **Lecteurs RFID / codes-barres** : assurent la traçabilité des denrées alimentaires.
+##### Types de capteurs envisagés
 
-L’environnement dans lequel sera utilisée l’application mobile impose un ensemble de contraintes spécifiques, liées aux conditions physiques, au contexte professionnel, et à l’usage sur le terrain. Le produit devra être conçu pour être **robuste, accessible et fiable** dans un cadre de travail contraint, typique des cuisines collectives.
+- **Capteurs de température** : réfrigérateurs, congélateurs, fours, chambres froides.
+- **Capteurs d’humidité** : contrôle de l’hygrométrie ambiante.
+- **Capteurs de présence / ouverture** : détection de nettoyage, cycles HACCP.
+- **Lecteurs RFID / codes-barres** : traçabilité des denrées alimentaires.
 
-####  Conditions physiques d’utilisation
+##### Conditions physiques d’utilisation
 
-- **Milieu humide et chaud/froid** : l’application sera utilisée dans des environnements comportant de la vapeur, de l’humidité, voire du froid extrême (chambres froides).
-- **Surfaces glissantes ou grasses** : manipulations parfois difficiles, nécessité d’une interface résistante aux fausses manipulations.
-- **Utilisation avec des gants ou des mains mouillées** : exige une interface à boutons larges et des zones de clic étendues.
+- **Températures extrêmes** : de –40 °C (chambre froide) à **+100 °C** (zone cuisson, plonge).
+- **Humidité élevée, vapeur, graisses** : zones lavables, atmosphère chargée.
+- **Surfaces glissantes / manipulabilité réduite** : nécessite interface robuste.
+- **Utilisation avec gants / mains mouillées** : ergonomie renforcée.
 
-####  Appareils utilisés
+##### Appareils utilisés
 
-- **Smartphones et tablettes professionnels** : matériel Android ou iOS, souvent en coque durcie.
-- Résolution d’écran variable, parfois réduite : l’interface doit être **responsive** et adaptée à différents formats.
-- Risque de chute ou d’usage intensif : application conçue pour un usage rapide, avec **accès direct aux fonctions critiques**.
+- **Smartphones / tablettes durcies** Android/iOS, souvent en usage intensif.
+- Écrans de taille variable : besoin d’interface **responsive** et minimaliste.
+- Application utilisée dans un environnement **bruyant et sous pression**.
 
-####  Contexte de connectivité
+##### Contraintes réseau et connectivité
 
-- **Réseau instable ou absent** dans certaines zones (cuisines en sous-sol, murs épais, zones rurales).
-- L’application devra être utilisable **en mode hors-ligne**, avec une **synchronisation automatique des données** dès retour de la connexion.
+- **Zones blanches fréquentes** (chambres froides, sous-sols).
+- Besoin impératif d’un **mode hors-ligne stable**, avec **synchronisation automatique** dès retour réseau.
+- Choix de capteurs adaptés selon la zone :
+  - BLE (zones ouvertes, courte portée),
+  - RF433 (zones isolées ou métalliques).
 
-####  Sécurité des données
+##### Contraintes d’usage et utilisateurs
 
-- Présence de **données sensibles** (identité de l’utilisateur, données de formation, informations sanitaires).
-- Application soumise au **RGPD**, avec :
-    - chiffrement local des données (ex : AES-256),
-    - anonymisation partielle des profils,
-    - consentement utilisateur obligatoire à la première utilisation.
+- Profils variés : agents de cuisine, responsables HACCP, inspecteurs.
+- **Compétences numériques hétérogènes** : interface simple et guidée.
+- Application utilisée dans un **cadre normé** (audits, contrôles).
+- Multilingue, avec **contraste fort et pictogrammes clairs**.
 
-####  Contexte d’usage
+##### Sécurité des données – cadre réglementaire
 
-- Utilisateurs à profils variés : agents de cuisine, gestionnaires, inspecteurs – tous avec des niveaux de compétence numérique hétérogènes.
-- Application utilisée dans un cadre **professionnel normé** (HACCP), parfois sous contrôle d’audits ou d’autorités sanitaires.
-- Nécessité d’une **prise en main rapide**, avec interface simplifiée, **multilingue** et **accessibilité renforcée**.
+- Données sensibles : identifiants personnels, historique d’interventions.
+- Conformité **RGPD** :
+  - consentement utilisateur obligatoire,
+  - anonymisation partielle,
+  - chiffrement local.
 
 ---
 
-**Conclusion** :  
-Le produit devra être adapté à un **environnement opérationnel contraint**, tant sur le plan physique que numérique. L’interface et l’architecture logicielle devront être pensées pour garantir **fiabilité, simplicité et sécurité** dans ces conditions spécifiques.
+#### 1.4.2 Caractéristiques techniques attendues des éléments matériels
 
+Les capteurs IoT, terminaux et modules doivent répondre à un ensemble de spécifications techniques garantissant leur bon fonctionnement dans les environnements visés.
 
-#### 1.4.2 Caractéristiques pour chaque élément de l’environnement
-##### Capteurs connectés (IoT)
-**Contraintes fonctionnelles et techniques** :
+##### Spécifications minimales pour les capteurs IoT
 
-- **Connectivité** : Bluetooth Low Energy (BLE) pour compatibilité mobile, WiFi si disponible ; possibilité d’extension à LoRa dans des environnements plus vastes.
-- **Autonomie** : minimum 6 mois avec batterie intégrée, fréquence d’envoi ajustable selon le niveau de criticité des données.
-- **Robustesse** : matériel certifié IP65 ou plus (résistance à l’eau, à la vapeur, aux projections de graisse).
-- **Fiabilité** : précision attendue de ±0,5 °C pour les capteurs de température, fiabilité de transmission supérieure à 98 %.
-- **Sécurité** : chiffrement des données (AES-256), appairage sécurisé, identification unique des capteurs.
+| Critère                     | Exigence minimale attendue                                 |
+|-----------------------------|-------------------------------------------------------------|
+| Température supportée       | De –40 °C à **+100 °C** selon zone                         |
+| Étanchéité                  | **IP65 minimum**, IP68 recommandé                          |
+| Précision capteurs          | ±0,5 °C (température), ±5 % HR (humidité)                 |
+| Autonomie                   | ≥ 6 mois (objectif 2 à 5 ans sur pile) avec batterie de rechange et câble                 |
+| Stockage local              | ≥ 7 jours en cas de perte de liaison (jusqu’à 125 jours)  |
+| Connectivité radio          | BLE / RF 433 MHz selon cas                 |
+| Fixation                    | Aimant, collier ou support sans perçage                   |
+| Matériaux                   | Inertes, étanches, certifiés usage alimentaire             |
+| Compatibilité mobile        | Android 9+ / iOS 13+ / BLE 4.2+                            |
+| Appairage / installation    | QR code, ID unique, reconnexion automatique               |
 
-**Fonctionnement hors-ligne** : les capteurs doivent pouvoir continuer à stocker ou transmettre leurs données à l’application même en cas de perte de réseau, avec synchronisation dès rétablissement de la connexion.
+##### Technologies de transmission recommandées
 
-Ces capteurs forment la base technique de la surveillance HACCP automatisée. Leur sélection devra répondre aux exigences de fiabilité, d’autonomie et de sécurité tout en respectant les contraintes d’environnement des cuisines collectives.
+| Technologie | Usage recommandé | Portée / Fiabilité | Autonomie | Débit |
+|-------------|------------------|---------------------|----------|--------|
+| BLE         | Zones proches, compatibilité mobile | 10–50 m (obstacles sensibles) | Très bonne | Moyenne |
+| RF 433 MHz  | Chambres froides / métalliques | 50–100 m (très bonne traversée) | Bonne | Faible |
 
-L’application mobile HACCP sera utilisée dans des environnements professionnels exigeants tels que les cuisines collectives. Les caractéristiques des éléments constitutifs de la solution doivent permettre un usage **fluide, sécurisé et fiable**, malgré les contraintes physiques, techniques et humaines du terrain.
+##### Sécurité, conformité et intégration
+
+- Chiffrement des données : **AES-128 / AES-256** selon modules.
+- Journalisation horodatée obligatoire pour audit HACCP.
+- API REST ou MQTT pour intégration avec serveurs cloud / locaux.
+- Conformité aux directives CE 852/2004, CE 178/2002, RGPD.
 
 ####  Interfaces utilisateurs
 
@@ -290,7 +306,7 @@ Les interfaces devront être pensées pour une **utilisation rapide et intuitive
 
 L’application devra fonctionner dans des contextes **avec ou sans connexion Internet stable**. L’architecture doit donc permettre un **mode dégradé temporaire** sans perte de données.
 
-- **Stockage local sécurisé** : les données doivent être enregistrées temporairement en local en cas de déconnexion, avec chiffrement (ex : AES-256).
+- **Stockage local sécurisé** : les données doivent être enregistrées temporairement en local avec un serveur ne exterieur en cas de déconnexion, avec chiffrement (ex : AES-256).
 - **Synchronisation différée** : automatique dès détection d’une connexion, avec gestion des conflits si plusieurs utilisateurs modifient les données.
 - **Modularité** : architecture capable de désactiver certaines fonctionnalités non critiques si l’environnement réseau ou matériel l’exige.
 
@@ -303,8 +319,8 @@ L’application devra fonctionner dans des contextes **avec ou sans connexion In
 ####  Profil utilisateur hétérogène
 
 L’application sera utilisée par :
-- Des **agents de cuisine**, avec peu de temps disponible et parfois peu formés au numérique.
-- Des **gestionnaires HACCP**, plus à l’aise avec les outils, mais exigeant des données synthétiques claires.
+- Des **agents de cuisine**/ **chef de cuisine**, avec peu de temps disponible et parfois peu formés au numérique.
+- Des **responsable HACCP**, plus à l’aise avec les outils, mais exigeant des données synthétiques claires.
 - Éventuellement des **inspecteurs ou autorités sanitaires**, avec besoin d’accès ponctuel, sécurisé et en lecture seule.
 
 La conception devra donc proposer :
@@ -312,10 +328,6 @@ La conception devra donc proposer :
 - Une **interface épurée**, focalisée sur les actions prioritaires selon le profil connecté.
 
 ---
-
-**Conclusion** :  
-Les caractéristiques logicielles et ergonomiques de l’application doivent tenir compte de la réalité du terrain : contraintes physiques, instabilité réseau, hétérogénéité des utilisateurs. La robustesse de l’expérience utilisateur est un enjeu central de la réussite du projet.
-
 
 ## 2. Expression fonctionnelle du besoin
 
@@ -695,6 +707,61 @@ Cette estimation pourra évoluer selon les sites pilotes (surface, nombre de cha
 #### 3.x.2 Options et variantes proposées non retenues au cahier des charges
 #### 3.x.3 Mesures prises pour respecter les contraintes et leurs conséquences économiques
 #### 3.x.4 Outils d’installation, de maintenance … à prévoir
+
+**1. Maintenance logicielle**
+
+- **Mises à jour de l’application mobile** :
+  - Fréquence : mensuelle (corrections de bugs, améliorations UX, sécurité).
+  - Canal : via les stores (Google Play, App Store) ou MDM interne pour appareils pro.
+  - Rétrocompatibilité assurée avec les capteurs existants et données stockées.
+
+- **Suivi de la synchronisation et des performances** :
+  - Journalisation des erreurs (logs techniques).
+  - Système d’alerte automatique en cas d’échec ou lenteur de synchronisation.
+  - Correctifs déployés en mise à jour prioritaire en cas de dysfonctionnement critique.
+
+- **Maintenance des modules IA (si activés ultérieurement)** :
+  - Recalibrage ou entraînement périodique des modèles.
+  - Vérification des seuils d’alerte (non-conformité prédite, profil de risque évolutif).
+
+---
+
+**2. Maintenance matérielle – Capteurs IoT**
+
+- **Vérification périodique du bon fonctionnement** :
+  - Contrôle hebdomadaire automatisé des transmissions (signal, batterie, valeurs).
+  - Détection des capteurs inactifs (inactivité > 30 min) → alerte au gestionnaire.
+
+- **Remplacement des capteurs** :
+  - Capteurs à batterie longue durée (≥ 6 mois).
+  - Remplaçables sans reconfiguration (ID unique, auto-reconnaissance via l’application).
+  - Procédure standardisée d’installation disponible dans l’app (guide ou tutoriel).
+
+- **Calibration** :
+  - Température / humidité recalibrées tous les 6 à 12 mois selon environnement.
+  - Enregistrement des interventions de maintenance dans le journal système.
+
+---
+
+**3. Maintenance des données**
+
+- **Archivage automatique** :
+  - Les données HACCP (relevés, alertes, questionnaires) sont archivées localement puis exportées vers le serveur sécurisé (fréquence configurable, ex. 7 jours).
+  - Conformité RGPD assurée : durée de conservation limitée, droit à l’effacement, anonymisation possible.
+
+- **Sauvegarde** :
+  - Backup automatique des bases locales (app mobile) en cas de plantage ou désinstallation.
+  - Export manuel possible sur demande (clé USB, PDF, fichier chiffré).
+
+---
+
+**4. Support technique**
+
+- Interface dédiée pour les administrateurs (facultative) permettant :
+  - Suivi en temps réel de l’état des capteurs
+  - Consultation de l’historique des erreurs et interventions
+  - Déclenchement manuel d’une synchronisation ou d’une vérification système
+
 #### 3.x.5 Décomposition en modules, sous-ensembles
 
 L’application sera composée de plusieurs modules fonctionnels, organisés de manière modulaire afin de faciliter le développement, l’entretien et l’évolution de la solution. Parmi eux, le **module tableau de bord** est un point central de l’expérience utilisateur.
@@ -870,5 +937,16 @@ Ce diagramme constitue un outil essentiel pour le **pilotage du projet**, en ass
 | Diagramme de cas d'utilisation          | 2.1                 | 2h            |
 | Proposition de l'UX du tableau de bord  | 3.2 / 3.3.5         | 1h            |            
 | Diagramme de Gantt                      | 5 Annexe            | 1h30          |
+
+### Pacôme
+| Tâche                                   | Section             | Durée estimée |
+|-----------------------------------------|---------------------|---------------|
+| Etude des capteurs possibles            | 1.4 / 3.1.1 / 3.3.1 (LLM) | 1h30         |
+| Rédaction collecte des données environnementales       | 2.1.1.1 / 3.1.1 (LLM) | 1h50            |
+| Rédaction scénarios de fonctionnement(WBS) | 3.1.1  | 1h            |
+| Analyse des risques techniques     | 4.1 / 4.2             | 1h          |
+| Table de défaillance (technique)          | 4.2                 | 1h            |
+| Matrice de criticité (technique)  | 4.3         | 50min            |            
+| Solutions techniques (maintenance,modules)                      | 3.3.4 / 3.3.5            | 1h          |
 
 
