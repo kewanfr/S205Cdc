@@ -713,7 +713,83 @@ Le coût lié aux capteurs IoT représente une part significative du budget init
 Cette estimation pourra évoluer selon les sites pilotes (surface, nombre de chambres froides, besoins en redondance) et les choix de fournisseurs lors du prototypage.
 *Ici, il faut imaginer en faisant une petite étude de marchée (cf des sites marchands spécialisés)*
 #### 3.x.2 Options et variantes proposées non retenues au cahier des charges
+### Solutions envisagées mais non retenues
+
+Dans le cadre de l’étude de faisabilité, plusieurs options technologiques et fonctionnelles ont été envisagées mais finalement écartées pour la version initiale du projet. Voici les principales solutions non retenues et les raisons de leur exclusion :
+
+#### 1. Capteurs longue portée LoRaWAN
+
+- **Description** : Utilisation de capteurs IoT communiquant via le protocole LoRaWAN pour couvrir de très grandes surfaces ou des sites multi-bâtiments.
+- **Raison du rejet** : Coût d’infrastructure élevé (passerelles LoRa, abonnements réseau), complexité de déploiement et de maintenance, surdimensionné pour la majorité des cuisines collectives ciblées. BLE/WiFi jugés suffisants pour la portée requise.
+
+#### 2. Stockage cloud externe (type AWS, Azure)
+
+- **Description** : Hébergement des données critiques sur des plateformes cloud publiques.
+- **Raison du rejet** : Risques accrus en matière de confidentialité et de conformité RGPD, coûts récurrents d’abonnement, dépendance à la connectivité Internet. Préférence pour un stockage local sécurisé avec synchronisation sur serveur interne ou hébergement souverain.
+
+#### 3. Interface web complète (application desktop)
+
+- **Description** : Développement d’une interface web accessible depuis un navigateur pour la gestion et la consultation des données.
+- **Raison du rejet** : Complexité de développement supplémentaire, risques de divergence UX/UI avec la version mobile, nécessité de sécuriser l’accès distant. L’application mobile couvre déjà les besoins principaux sur le terrain.
+
+#### 4. Reconnaissance vocale pour la saisie des données
+
+- **Description** : Intégration d’un module de saisie vocale pour faciliter l’enregistrement des tâches ou des alertes.
+- **Raison du rejet** : Fiabilité insuffisante en environnement bruyant (cuisine), complexité technique, coût de développement et d’intégration élevé pour un gain limité.
+
+#### 5. Intégration de la blockchain pour la traçabilité
+
+- **Description** : Utilisation d’une blockchain privée pour garantir l’immutabilité des historiques de traçabilité.
+- **Raison du rejet** : Surcoût important, complexité technique, absence de besoin réglementaire à ce stade, et impact limité sur la valeur ajoutée pour les utilisateurs finaux.
+
+#### 6. Application multiplateforme (Windows, Linux, Mac)
+
+- **Description** : Développement d’une version desktop native pour tous les systèmes d’exploitation.
+- **Raison du rejet** : Ressources de développement non justifiées par rapport à la cible principale (utilisation mobile/tablette en cuisine), coûts de maintenance accrus.
+
+---
+
+**Conclusion** :  
+Ces solutions pourront être réévaluées lors de futures évolutions du projet, en fonction des retours utilisateurs, de l’évolution des besoins ou de l’extension à de nouveaux marchés. Pour la version initiale, le choix s’est porté sur des technologies éprouvées, simples à déployer et à maintenir, tout en garantissant la sécurité et la conformité réglementaire.
 #### 3.x.3 Mesures prises pour respecter les contraintes et leurs conséquences économiques
+### Mesures prises pour respecter les contraintes et leurs conséquences économiques
+
+#### Conformité RGPD
+
+- **Consentement explicite** : Mise en place d’un écran d’information et de consentement à la première utilisation, gestion des droits d’accès, possibilité de retrait du consentement.
+- **Minimisation des données** : Collecte uniquement des données strictement nécessaires au suivi HACCP.
+- **Droits utilisateurs** : Fonctionnalités pour accéder, rectifier, supprimer ou exporter ses données personnelles.
+- **Registre des traitements** : Documentation interne des traitements, finalités, catégories de données et mesures de sécurité.
+- **Pseudonymisation/anonymisation** : Export des données pour audits sans informations identifiantes.
+
+*Conséquence :* Développement de modules spécifiques, temps de conception juridique, coût de validation légale, maintenance accrue pour suivre l’évolution de la réglementation.
+
+#### Sécurité
+
+- **Chiffrement** : Données stockées localement et transmises via des protocoles sécurisés (AES-256, TLS 1.2+).
+- **Authentification forte** : Gestion des accès par profils, mots de passe robustes, éventuellement double authentification.
+- **Journalisation** : Traçabilité des accès et modifications, logs consultables en cas d’incident.
+- **Mises à jour de sécurité** : Politique de patching régulier de l’application et des serveurs.
+
+*Conséquence :* Surcoût lié à l’intégration de bibliothèques de sécurité, tests de pénétration, audits réguliers, gestion des incidents.
+
+#### Robustesse
+
+- **Redondance des capteurs** : Installation de capteurs critiques en double dans les zones sensibles.
+- **Stockage local résilient** : Buffer sécurisé pour fonctionnement hors-ligne, synchronisation automatique dès retour réseau.
+- **Gestion des erreurs** : Notifications en cas de panne, modes dégradés pour garantir la continuité de service.
+- **Tests intensifs** : Scénarios de coupure réseau, saturation mémoire, crash applicatif.
+
+*Conséquence :* Investissement matériel plus élevé (capteurs redondants), développement de mécanismes de reprise, coût de tests et validation.
+
+#### Impact économique et complexité
+
+- **Coût initial augmenté** : Développement de fonctionnalités avancées, achat de matériel sécurisé, validation RGPD.
+- **Maintenance renforcée** : Suivi des évolutions réglementaires, mises à jour de sécurité, support utilisateur.
+- **Complexité technique** : Architecture logicielle modulaire, gestion des synchronisations, gestion fine des droits et des logs.
+
+En résumé, pour garantir la conformité RGPD, la sécurité et la robustesse impliquent un investissement initial et une complexité technique accrus, mais c’est indispensable pour la viabilité, la confiance des utilisateurs et la conformité réglementaire du produit.
+
 #### 3.x.4 Outils d’installation, de maintenance … à prévoir
 #### 3.x.5 Décomposition en modules, sous-ensembles
 
