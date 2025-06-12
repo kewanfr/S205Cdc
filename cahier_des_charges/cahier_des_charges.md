@@ -749,7 +749,6 @@ La collecte automatique s’appuie sur les 7 sous-fonctions suivantes :
    - Gestion des droits (profils utilisateurs)  
    - Consentement utilisateur
 
----
 
 **WBS – Collecte des données HACCP**
 <img src=img/export.png>
@@ -853,20 +852,34 @@ Le tableau de bord représente la **porte d’entrée principale** vers la donn�
 ### 3.x Pour l’ensemble du produit
 #### 3.x.1 Prix de la réalisation de la version de base
 ##### Capteurs connectés (IoT)
-Le coût lié aux capteurs IoT représente une part significative du budget initial de l’application. Ce budget couvre l’acquisition de capteurs de température, d’humidité et de présence, nécessaires à la surveillance automatisée des paramètres HACCP en cuisine collective.
+a version de base de l’application HACCP repose sur un déploiement fonctionnel dans une cuisine collective de taille moyenne (type EHPAD, lycée, cuisine centrale). Elle inclut les capteurs environnementaux, les équipements mobiles, la connectivité, ainsi que l’infrastructure serveur et la maintenance initiale.
 
-**Estimation des coûts (à l’unité) :**
+---
 
-| Type de capteur                   | Prix unitaire estimé | Quantité prévue | Sous-total |
-|----------------------------------|----------------------|------------------|------------|
-| Capteur de température BLE (IP65) | ~25 €                | 5                | 125 €      |
-| Capteur d’humidité / présence     | ~30 €                | 3                | 90 €       |
-| Lecteur RFID mobile (optionnel)   | ~40 €                | 1                | 40 €       |
-| **Total capteurs IoT**           |                      |                  | **255 €**  |
+#####  Estimation des coûts – Matériel et services (HT)
 
-**Références tarifaires** :
-- Capteurs consultés sur les catalogues fournisseurs (ex. : Distrelec, Seeed Studio, Yoctopuce).
-- Prix basés sur des modèles avec connectivité BLE, étanchéité IP65 minimum et compatibilité mobile.
+| Équipement / service                         | Qté | Prix unitaire (€ HT) | Coût total (€ HT) | Références / Remarques |
+|---------------------------------------------|-----|----------------------|--------------------|-------------------------|
+| **Capteurs (T°, H°, présence)**             | 7   | 25                   | 175 €              | Estimation basée sur capteurs BLE / RF 433 sur [AliExpress](https://fr.aliexpress.com/item/1005004905171281.html) |
+| **Lecteur RFID / code-barres**              | 1   | 90                   | 90 €               | Lecteur fixe ou mobile standard |
+| **Passerelles RF433**                       | 2   | 19                   | 38 €               | Sonoff RF Bridge R2 : [Domotique-store.fr](https://www.domotique-store.fr/domotique/types-d-objets/objets-connectes/gateways-passerelles/6598-sonoff-rf-bridge-r2-passerelle-433mhz-wifi.html) |
+| **Batteries rechargeables**                 | 7   | 5                    | 35 €               | Batterie Li-ion / CR2032 rechargeables |
+| **Chargeurs (USB)**                         | 2   | 15                   | 30 €               | Chargeurs doubles ou stations |
+| **Tablettes / smartphones durcis**          | 2   | 249,90               | 499,80 €           | Crosscall Core-M5 : [crosscall.com](https://www.crosscall.com/fr/produit/core-m5/) |
+| **Serveur local / mini-PC (type Raspberry)**| 1   | 200                  | 200 €              | Serveur local, stockage sécurisé |
+| **Installation initiale**                   | 1   | 300                  | 300 €              | Pose capteurs, appairage, test |
+| **Maintenance annuelle (estimée)**          | 1   | 200                  | 200 €              | Contrôle, support, remplacement |
+
+| **TOTAL ESTIMÉ HT**                         |     |                      | **1 567,80 €**     | Sans coûts de développement logiciel |
+
+---
+
+##### Hypothèses
+
+- Capteurs BLE ou RF433 avec stockage local + synchronisation.
+- 2 tablettes durcies pour alternance ou multi-utilisateurs.
+- Passerelles RF433 pour zones métalliques.
+- Le serveur local assure la synchronisation des données chiffrées.
 
 **Part du budget global estimé :** environ **30 % du coût total** de la solution de base (application + capteurs + hébergement serveur).
 
