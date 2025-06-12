@@ -383,30 +383,13 @@ L’application collecte automatiquement les températures, l’humidité et la 
 
 L’ensemble de ces données est centralisé, analysé en temps réel ou différé, et utilisé pour générer des alertes, des indicateurs de conformité, et des rapports exportables pour les autorités sanitaires.
 
-▪
-2.1.1.1 Description et détail
-•
-Collecte des données : Fonction centrale garantissant le respect HACCP via surveillance continue et automatisée
-. Trois catégories de données sont collectées via capteurs IoT et interfaces numériques
-.
-◦
-Données environnementales : Température (enceintes froides), humidité ambiante, conditions de ventilation (extension possible). Recueillies automatiquement via capteurs BLE/WiFi
-.
-◦
-Données opérationnelles : Traçabilité aliments (codes-barres, RFID), détection protocoles nettoyage (capteurs présence/mouvement ou validation manuelle), informations points critiques (CCP)
-.
-◦
-Données comportementales : Réponses questionnaires intégrés (procédures, formation), auto-évaluations, suivi sensibilisation hygiène
-.
-•
-Méthodes de collecte : Automatisée (capteurs), Semi-automatique/manuelle (application). Fonctionnement possible hors-ligne avec journalisation locale, puis synchronisation
-.
-•
-L'ensemble des données est centralisé, analysé (temps réel/différé), utilisé pour générer alertes, indicateurs conformité, rapports exportables
-.
-•
-(La solution détaillée pour la collecte est également décrite en 3.1.1
-).
+Trois catégories de données sont collectées via capteurs IoT et interfaces numériques
+
+- Données environnementales : Température (enceintes froides), humidité ambiante, conditions de ventilation (extension possible). Recueillies automatiquement via capteurs BLE/WiFi
+- Données opérationnelles : Traçabilité aliments (codes-barres, RFID), détection protocoles nettoyage (capteurs présence/mouvement ou validation manuelle), informations points critiques (CCP)
+- Données comportementales : Réponses questionnaires intégrés (procédures, formation), auto-évaluations, suivi sensibilisation hygiène
+- Méthodes de collecte : Automatisée (capteurs), Semi-automatique/manuelle (application). Fonctionnement possible hors-ligne avec journalisation locale, puis synchronisation
+- L'ensemble des données est centralisé, analysé (temps réel/différé), utilisé pour générer alertes, indicateurs conformité, rapports exportables
 
 ##### 2.1.1.2 Critères d’appréciation et les niveaux qui les caractérisent 
 *(Niveaux dont l’obtention est imposée)*
