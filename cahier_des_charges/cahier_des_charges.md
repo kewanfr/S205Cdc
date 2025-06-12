@@ -319,13 +319,12 @@ depot de brevet, NDA,
 *(finalités du produit pour le futur utilisateur tel que prévu par le demandeur)*
 ### 1.4 Environnement du produit recherché
 
-<<<<<<< HEAD
 #### 1.4.1 Liste exhaustive des éléments *(personnes, équipements, matières…)* et contraintes *(environnement, matériel, usage)*
 =======
 maintenance prédictive 
 
 L’application repose sur un réseau de capteurs connectés (IoT) permettant la collecte automatisée des données critiques en lien avec les exigences HACCP. Ces capteurs doivent être sélectionnés en fonction des contraintes spécifiques des cuisines collectives, à savoir : humidité, température extrême, graisses, nettoyages fréquents, connexions instables.
->>>>>>> refs/remotes/origin/main
+
 
 L’application repose sur un réseau de capteurs connectés (IoT) pour la collecte automatisée des données critiques HACCP. Elle devra fonctionner dans un environnement professionnel contraignant, avec des utilisateurs variés et une infrastructure réseau parfois instable.
 
