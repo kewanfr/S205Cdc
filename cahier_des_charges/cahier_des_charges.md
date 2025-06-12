@@ -5,7 +5,7 @@
 ## Entête
 - Groupe de TD : 4
 - Date de démarrage : 28 mai 2025 15h
-- Version : 0.3.0
+- Version : 0.3.1
 *Il s'agit d'un numéro de version logique en visant d'arriver à la version 1.0 le jour du rendu (git gère une autre numérotation pour le versionnage*) 
 - Destinataire : EL MAMOUNI Saïd
 
@@ -19,6 +19,50 @@
 | GALLY             | Chianti | chianti.gally@etu.univ-nantes.fr            |
 
 
+# brouillon
+
+ROI: Combien de cuisines collectives
+combien controlées voire fermés,
+Envisager le modèle économique, combien on peut vendre/louer, etc..
+couts de fonctionnement
+Haccp: anticipation de problèmes, PMS sur l'appli (problèmes qu'on peut rencontrer, solutions qu'on apporte, et les mesures de prévention)
+relevés de température (entre - 40 et 0 : bloque développement, 0 et 5, 5 et +60: développement des organismes, +60: moins de bacteries, + 100: mortes)
+froid positif et froid negatifs
+capteurs doivent résister aux temperatures et humidité
+envisager des zones blanches pour certains capteurs.
+permettre de vérifier les capteurs: responsabilité en cas de problème
+venir faire des vérifications régulièrement
+ping les capteurs pour vérifier qu'ils sont toujours actifs, les changer sinon
+imprimante ettiqueteuse
+prévenir d'une coupure de courant, générer un rapport
+en cas de faux positif ou faux negatif: perdre un utilisateur
+tracer les allergenes, les dates de péremption, les numéros de lot, les fournisseurs
+
+purée: commande patates beures
+dans camion frigo pour beure: verifier temp, si pas conforme ça repart
+valider commande sinon
+dans frigo: tracabilité (fournisseur, produit, date arrive, date peremption, temp frigo)
+verification etat patate (num lot, fournisseur)
+faire cuire
+sortir beurre: ettiquetage (date ouverture, temps consommation, quelle temperature)
+mixer à + de 60°C avant et après
+Max 2h pour passer à 5°C
+
+dans frigo: fait tel jour, telle heure, consommer avant, fait par
+
+tracer température sortie frigo et 
+
+lors du controle: montrer courbe de temperatures horodatée pour chaque nourriture
+verifier qu'il n'y a pas de produits non ouverts plus valables ou ouverts et pus valables
+plans de nettoyage des locaux, 
+noter et déclarer les accidents: ex: coupé, blessure -> tout doit être jeté
+
+si données nominatives: RGPD
+données de sante (ex: handicap, sante ou autre): HDS
+
+RGPD: consentement libre et éclaire des utilisateurs
+dire toutes les donnés qu'on utilise, lesquelles et pourquoi
+permettre la suppresion, l'accès, la modification des données à chaque user
 
 ## 1. Présentation générale du problème
 ### 1.1 Projet
@@ -89,22 +133,9 @@ C'est donc le premier projet, et initiateur de l'entreprise fictive, qui pourrai
 C'est un projet important pour cette entreprise, car il s'agira à la fois d'un essai technique des capacités technologiques de celle-ci, mais aussi d'une vitrine de son savoir faire.
 #### 1.2.2 Études déjà effectuées
 
-Pour la rédaction de ce cahier des charges, nous avons mené plusieurs étudies préliminaires, pour s'assurer de la pertinence et la viabilité de cette application.
-Différentes analyses des textes de loi ont été effectués, en partie à l'aide de LLMs.
-Une analyse détaillée de la règlementation en vigueur à propos des règlements européens (CE) n°178/2002 et n°852/2004 a été effectuée pour en extraire les exigences utiles et nécessaires à notre application.
 
-Le règlement 178/2002, appelé plus communément *Food Law* permet de poser des principes généraux des lois sur l'alimentation. Il impose notamment la traçabilité des aliments tout au long de la chaîne. Ensuite, le règlement 852/2004 est relatif à l'hygiène des denrées alimenataires. Il rend obligatoire la mise en places de procédures basées sur le HACCP dans tous les établissements de restauration européens. Ces textes imposent notamment de surveiller tous les points critiques et de tenir des fichiers et rapports contenant tout l'historique des données et des actions effectuées.
-Nous avons identifié les différents obligations pouvant être intégrées à notre produit: contrôle des températures et autre données, plan de nettoyage avec contrôle des actions, formationn 
-
-Nous avons également consultés et analyses les règles en cuisine collectives (GBPH), qui ont notamment été présentés dans le "Paquet Hygiène", règlementation européenne de Janvier 2006.
-
-
-Nous avons effectués des recherches préliminaires pour identifier les différentes exigences HACCP dans les règlements CE 178/2002 et CE 852/2004, ainsi que les pratiques courantes dans la restauration collective.
-#### 1.2.3 Études menées sur des sujets voisins
 Afin d’enrichir la conception de l’application mobile HACCP, une étude comparative de plusieurs solutions existantes sur le marché a été menée. Cette analyse a permis d’identifier les fonctionnalités courantes, les manques fréquents, ainsi que les opportunités d’innovation.
-
 #### Applications étudiées
-
 ---
 
 **Traqfood**
@@ -140,6 +171,9 @@ Afin d’enrichir la conception de l’application mobile HACCP, une étude comp
 - **Limites** : Pas de capteurs, peu de fonctions avancées.
 - **Source** : [https://www.haccp-facile.com](https://www.haccp-facile.com)
 
+lignes: toutes les applications
+colonnes: fonctionnalités
+
 ---
 
 #### Tableau comparatif
@@ -168,7 +202,12 @@ L’étude des solutions existantes met en évidence plusieurs opportunités d�
 
 Ces éléments différenciateurs permettront à notre solution de répondre de manière plus ciblée aux besoins spécifiques des cuisines collectives.
 
+#### 1.2.3 Études menées sur des sujets voisins
+
+
+
 #### 1.2.4 Suites prévues
+Ce projet étant une première étape (étude et conception fonctionnelle), nous pouvons imaginer des suites ...
 #### 1.2.5 Nature des prestations demandées
 dans le cadre de cette phase de cadrage du projet, la principale prestation attendue est **l’étude approfondie des applications existantes dédiées à la gestion HACCP**. Cette étude vise à analyser les solutions actuellement disponibles sur le marché afin d’identifier les meilleures pratiques, les fonctionnalités clés, les manques à combler, et les opportunités d’innovation pour le futur développement de l’application.
 
@@ -810,3 +849,14 @@ Ce diagramme constitue un outil essentiel pour le **pilotage du projet**, en ass
 | Diagramme de Gantt                      | 5 Annexe            | 1h30          |
 
 
+### Kéwan
+
+| Tâche                                   | Section             | Durée estimée |
+|-----------------------------------------|---------------------|---------------|
+| Etude des applications existantes       | 1.2.3 / 1.2.5 (LLM) | 30min         |
+| Synthèse comparative outils HACCP       | 1.2.3 / 2.1.2 (LLM) | 1h            |
+| Rédaction de l'environnement du produit | 1.4.1 / 1.4.2 (LLM) | 1h            |
+| Rédaction fonctions complémentaires     | 2.1.2.1             | 1h30          |
+| Diagramme de cas d'utilisation          | 2.1                 | 2h            |
+| Proposition de l'UX du tableau de bord  | 3.2 / 3.3.5         | 1h            |            
+| Diagramme de Gantt                      | 5 Annexe            | 1h30          |
