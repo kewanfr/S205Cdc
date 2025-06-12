@@ -5,7 +5,7 @@
 ## Entête
 - Groupe de TD : 4
 - Date de démarrage : 28 mai 2025 15h
-- Version : 0.8.2
+- Version : 0.8.3
 - Destinataire : EL MAMOUNI Saïd
 
 
@@ -1345,27 +1345,28 @@ Ce diagramme constitue un outil essentiel pour le **pilotage du projet**, en ass
 #### Répartition du travail
 
 ### Alex
-| Tâche                                   | Section             | Durée estimée |
-|-----------------------------------------|---------------------|---------------|
-| Etude des applications existantes       | 1.2.3 / 1.2.5 (LLM) | 2h            |
-| Synthèse comparative outils HACCP       | 1.2.3 / 2.1.2 (LLM) | 1h            |
-| Rédaction fonctions complémentaires     | 2.1.2.1             | 1h30          |
-| Diagramme de cas d'utilisation          | 2.1                 | 2h            |
-| Proposition de l'UX du tableau de bord  | 3.2 / 3.3.5         | 1h            |            
-| Diagramme de Gantt                      | 5 Annexe            | 1h30          |
+| Tâche                                  | Section             | Durée estimée |     |
+| -------------------------------------- | ------------------- | ------------- | --- |
+| Etude des applications existantes      | 1.2.3 / 1.2.5 (LLM) | 2h            |     |
+| Synthèse comparative outils HACCP      | 1.2.3 / 2.1.2 (LLM) | 1h            |     |
+| Rédaction fonctions complémentaires    | 2.1.2.1             | 1h30          |     |
+| Diagramme de cas d'utilisation         | 2.1                 | 2h            |     |
+| Proposition de l'UX du tableau de bord | 3.2 / 3.3.5         | 1h            |     |
+| Diagramme de Gantt                     | 5 Annexe            | 1h30          |     |
 
 
 ### Kéwan
 
-| Tâche                                   | Section             | Durée estimée |
-|-----------------------------------------|---------------------|---------------|
-| Etude des applications existantes       | 1.2.3 / 1.2.5 (LLM) | 30min         |
-| Synthèse comparative outils HACCP       | 1.2.3 / 2.1.2 (LLM) | 1h            |
-| Rédaction de l'environnement du produit | 1.4.1 / 1.4.2 (LLM) | 1h            |
-| Rédaction fonctions complémentaires     | 2.1.2.1             | 1h30          |
-| Diagramme de cas d'utilisation          | 2.1                 | 2h            |
-| Proposition de l'UX du tableau de bord  | 3.2 / 3.3.5         | 1h            |            
-| Diagramme de Gantt                      | 5 Annexe            | 1h30          |
+| Tâche                                                                                       | Section        | Durée estimée |     |
+| ------------------------------------------------------------------------------------------- | -------------- | ------------- | --- |
+| Rédaction des finalités                                                                     | 1.1.1          | 1h            |     |
+| "espérance de retour sur investissement" (ROI) et modèle économique                         | 1.1.2          | 1h            |     |
+| Situation du projet par rapport aux autres projets de l’entreprise                          | 1.2.1          | 15min         |     |
+| Suites prévues                                                                              | 1.2.4          | 2h            |     |
+| Caractère confidentiel s'il y a lieu                                                        | 1.2.7          | 30min         |     |
+| Énoncé du besoin                                                                            | 1.3            | 30min         |     |
+| Analyse des autres applications (même sujet et sujets voisins) avec LLMs                    | 1.2.2 et 1.2.3 | 30min         |     |
+| Parties concernées par le déroulement du projet et ses résultats (demandeurs, utilisateurs) | 1.2.6          | 1h            |     |
 
 
 
