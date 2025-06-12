@@ -5,7 +5,7 @@
 ## Entête
 - Groupe de TD : 4
 - Date de démarrage : 28 mai 2025 15h
-- Version : 0.8.4
+- Version : 0.8.5
 - Destinataire : EL MAMOUNI Saïd
 
 
@@ -57,9 +57,9 @@ Ses objectifs sont:
   - Cela se fera par étiquettes sur les produits (QR Codes, etiquettes RFID, codes barre) et scans via l'appareil de l'utilisateur.
     Il faut pour cela prévoir un/des appareils capables de lire ces étiquettes, et des étiquetteuses.
 
-  - L'application permet de respecter les bonnes pratiques d'hygiène: enregistrement et suvi des tâches de nettoyage ou relevé quotidiens d'informations.
+  - L'application permet de respecter les bonnes pratiques d'hygiène: enregistrement et suivi des tâches de nettoyage ou relevé quotidiens d'informations.
 
-  - Ces données seront toutes enregistrés avec un historique et centralisés sur l'application.
+  - Ces données seront toutes enregistrées avec un historique et centralisés sur l'application.
 
 
 - Nous devons implémenter une IA et des algorithmes
@@ -93,7 +93,7 @@ Notre application a un fort potentiel de retour sur investissement, de part sa n
 
 Il y a en effet en France environ *800 cuisines centrales*, c'est à dire des établissements qui produisent des plants en grande quantité qui sont ensuite livrés sur plusieurs sites
 
-Mais on dénombre au total près de 90 000 restaurants collectifs (écoles, hopitaux, EPHAD, entreprises, etc...). Ce sont toutes des cuisines collectives. C'est un terme générique désignant toute structure proposant des repas  "hors du foyer" pour une collectivité.
+Mais on dénombre au total près de 90 000 restaurants collectifs (écoles, hôpitaux, EPHAD, entreprises, etc...). Ce sont toutes des cuisines collectives. C'est un terme générique désignant toute structure proposant des repas  "hors du foyer" pour une collectivité.
 
 En France, près de *90 000 inspections sanitaires* sont effectuées chaque année dans les établissements alimentaires (pas uniquement des restaurants collectifs).
 
@@ -106,29 +106,29 @@ Nous nous occupons de la maintenance, de la mise à jour et de l'assistance tech
 
 On peut différencier les cuisines centrales et les restaurants collectifs, selon leur taille.
 
-\- On peut proposer pour les grandes cuisines centrales (+ de 500 repas/jour) un forfait aux alentours de 500 €/mois. Avec un cout de migration ou installation de 1 200 €   
-\- Pour les cuisines moyennes (entre 100 et 300 repas/jour), l'abonnement pourrait être à 200-300€ / mois. Avec un cout de départ de 500 €.  
-\- Pour les petites cuisines (50 repas/jour), l'abonnement pourrait être à 50€ / mois. Avec un cout de départ de 300 €.
+\- On peut proposer pour les grandes cuisines centrales (+ de 500 repas/jour) un forfait aux alentours de 500 €/mois. Avec un coût de migration ou installation de 1 200 €   
+\- Pour les cuisines moyennes (entre 100 et 300 repas/jour), l'abonnement pourrait être à 200-300€ / mois. Avec un coût de départ de 500 €.  
+\- Pour les petites cuisines (50 repas/jour), l'abonnement pourrait être à 50€ / mois. Avec un coût de départ de 300 €.
 
-Nous basons ces calculs sur le cout de nos capteurs (environ 25€ par capteur, si on sous traite la fabrication). Ainsi, l'idée est de fournir selon la taille du restaurant un certain nombre de capteurs. 
+Nous basons ces calculs sur le coût de nos capteurs (environ 25€ par capteur, si on sous traite la fabrication). Ainsi, l'idée est de fournir selon la taille du restaurant un certain nombre de capteurs. 
 
 Pour une petite cuisine, 5 ou 6 capteurs devraient suffir, mais cela peut monter à 10 pour une cuisine moyenne et même 20 pour une grande cuisine centrale. Ainsi, cela fait monter le coût de fabrication d'un pack, qui inclut également plusieurs tablettes (selon la volonté de l'établissement), des répéteurs si certains capteurs sont dans des chambres froides et que les ondes ne passent pas très bien, ainsi qu'un serveur local centralisant toutes les données et enregistrant, notamment en cas de coupure avec internet.
 
-Nous estimons le cout de notre recherche & développement à environ **300 000 €** **sur 6 mois**  pour 4 développeurs (cout employeur de 75 000 €/an) et 1 chef de projet expérimenté + consultant métier/expert HACCP.
+Nous estimons le coût de notre recherche & développement à environ **300 000 €** **sur 6 mois**  pour 4 développeurs (coût employeur de 75 000 €/an) et 1 chef de projet expérimenté + consultant métier/expert HACCP.
 
-Pour les cuisines centrales, avec 500€\*12 mois + 1200 €, le chiffre d'affaire serait de 7 200 €.  
-Environ 42 cuisines centrales suffiraient à couvrir le cout R&D.
-Pour les cuisines moyennes, le C.A serait de 3 500 €. Avec 86 clients, nous pouvons rembourser la R&D. Il faudrait 334 petites cuisines pour cela.
+Pour les cuisines centrales, avec 500€\*12 mois + 1200 €, le **chiffre d'affaire serait de 7 200 €**.  
+Environ 42 cuisines centrales suffiraient à couvrir le coût R&D.
+Pour les cuisines moyennes, le **CA serait de 3 500 €**. Avec 86 clients, nous pouvons amortir la R&D. Il faudrait 334 petites cuisines pour cela.
 
 ##### Croissances des clients
 
-La première année consisterait en une béta avec 10 cuisines centrales, 20 moyennes et 50 petites. Ce qui constituerait un C.A de 187 000 €.
+La première année consisterait en une béta avec 10 cuisines centrales, 20 moyennes et 50 petites. Ce qui constituerait un **CA de 187 000 €**.
 
-La deuxième année on espère passer à 30 centrales, 200 moyennes et 100 petites. Ainsi notre C.A serait de 840 k€/an. 
+La deuxième année on espère passer à 30 centrales, 200 moyennes et 100 petites. Ainsi notre CA serait de 840 k€/an. 
 
-Si l'on inclut le coût des capteurs et matériels. Les couts pour une petite cuisine sont de 525 € de mise en place + 96 €/an. Nous serions donc en négatif sur les petites cuisines la premièe année. Pour une moyenne, le cout de première année serait 875€ de cout fixe + 96€/mois ) = +2 029€
+Si l'on inclut le coût des capteurs et matériels. Les coûts pour une petite cuisine sont de 525 € de mise en place + 96 €/an. Nous serions donc en négatif sur les petites cuisines la première année. Pour une moyenne, le coût de première année serait 875€ de coût fixe + 96€/mois ) = +2 029€
 
-Le résultat la première année serait de 79 070 €, puis de 522 320 € la deuxième année. Il faudrait environ 1 an et demi pour rembourser le cout R&D.
+Le résultat la première année serait de 79 070 €, puis de 522 320 € la deuxième année. Il faudrait environ 1 an et demi pour rembourser le coût R&D.
 
 ### 1\.2 Contexte
 
