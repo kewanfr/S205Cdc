@@ -5,7 +5,7 @@
 ## Entête
 - Groupe de TD : 4
 - Date de démarrage : 28 mai 2025 15h
-- Version : 0.7.0
+- Version : 0.7.1
 - Destinataire : EL MAMOUNI Saïd
 
 
@@ -507,6 +507,16 @@ Permettre l'accès, la modification et la suppression des données de chacun. Et
 
 ### 1.3 Énoncé du besoin 
 *(finalités du produit pour le futur utilisateur tel que prévu par le demandeur)*
+
+Dans les cuisines collectives, la réglementation HACCP impose des normes strictes pour garantir la sécurité alimentaire.
+Le respect de ces normes est essentiel pour prévenir les risques sanitaires, il doit être systématique et rigoureux. 
+Cependant, la mise en œuvre de ces normes est souvent complexe et chronophage pour le personnel.
+
+En réponse à cela, nous proposons ce produit innovant, une application mobile dédiée à la gestion des règles HACCP dans les cuisines collectives. Accompagné d'une solution matérielle de capteurs IoT, d'écrans/tablettes et d'un serveur local, notre solution vise à simplifier et automatiser le suivi des normes HACCP.
+Les capteurs IoT collecteront en temps réel les données critiques (température, humidité, etc.) et les transmettront au serveur.
+Les applications permettront d'enregistrer les procédures effectuées, de suivre les tâches de nettoyage, de gérer la traçabilité des denrées alimentaires et d'analyser les données collectées.
+
+
 ### 1.4 Environnement du produit recherché
 
 #### 1.4.1 Liste exhaustive des éléments *(personnes, équipements, matières…)* et contraintes *(environnement, matériel, usage)*
