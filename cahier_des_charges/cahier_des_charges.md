@@ -5,7 +5,7 @@
 ## Entête
 - Groupe de TD : 4
 - Date de démarrage : 28 mai 2025 15h
-- Version : 0.10.0
+- Version : 0.10.1
 - Destinataire : EL MAMOUNI Saïd
 
 
@@ -31,13 +31,13 @@ Elle fournira également aux autorités sanitaires des indications pour un meill
 
 Le projet est de concevoir une application, permettant d'assurer un suivi intelligent et en temps réel des protocoles HACCP (Hazard Analysis Critical Control Point) dans les cuisines collectives.
 
-Ses objectifs sont:
+Ses objectifs sont :
 
 - La surveillance automatisée des paramètres critiques de sûreté alimentaire. 
   - Nous utiliserons pour cela un réseau de capteurs et des données renseignées par les utilisateurs. 
-    Nous installerons dans les cuisines (frigos, chambres froides, congélateurs, etc.) des capteurs de température et d'humidité, ainsi que d'autres capteurs selon les besoins (par exemple: taux de CO2, taux de particules dans l'air).
+    Nous installerons dans les cuisines (frigos, chambres froides, congélateurs, etc.) des capteurs de température et d'humidité, ainsi que d'autres capteurs selon les besoins (par exemple : taux de CO2, taux de particules dans l'air).
     Ces capteurs permettront de mesurer en continu les conditions de stockage des aliments et de garantir le respect de la chaîne du froid.
-    Doivent être respectées ces 4 zones de température:
+    Doivent être respectées ces 4 zones de température :
     - Froid négatif : de -40 °C à 0 °C (chambres froides, congélateurs)
     - Froid positif : de 0 °C à 5 °C (chambres froides positives, frigos)
     - Zone de danger : de 5 °C à 60 °C (zone de préparation, cuisson, etc.)
@@ -47,17 +47,17 @@ Ses objectifs sont:
     Tout écart brusque ou dépassement de seuil du HACCP déclenche aussitôt une alerte en temps réel, envoyée aux gestionnaires, avec des actions à effectuer.
 
 - La Traçabilité des produits et la gestion de l'hygiène 
-  - Chaque aliment devra être tracé, de son origine à sa consommation. À chaque changement de condition, seront notés: 
+  - Chaque aliment devra être tracé, de son origine à sa consommation. À chaque changement de condition, seront notés : 
     - la date d'ouverture du produit,
     - la date de fabrication
     - la date de péremption,
-    - la température à ce moment là
+    - la température à ce moment-là
     - ou d'autres informations (numéro de lot, fournisseur, etc.).
 
   - Cela se fera par étiquettes sur les produits (QR Codes, étiquettes RFID, codes-barres) et scans via l'appareil de l'utilisateur.
     Il faut pour cela prévoir un/des appareils capables de lire ces étiquettes, et des étiqueteuses.
 
-  - L'application permet de respecter les bonnes pratiques d'hygiène: enregistrement et suivi des tâches de nettoyage ou relevés quotidiens d'informations.
+  - L'application permet de respecter les bonnes pratiques d'hygiène : enregistrement et suivi des tâches de nettoyage ou relevés quotidiens d'informations.
 
   - Ces données seront toutes enregistrées avec un historique et centralisées sur l'application.
 
@@ -77,12 +77,12 @@ Ses objectifs sont:
 
 - Alerter en temps réel, produire des rapports et fournir un tableau de bord 
   - Dès qu'un élément semble non conforme (problème de température ou humidité, nettoyage non conforme ou autre manquement), l'application envoie des alertes immédiatement.
-  - Ces alertes peuvent prendre plusieurs formes: notifications mobiles, par SMS ou par e-mail.
+  - Ces alertes peuvent prendre plusieurs formes : notifications mobiles, par SMS ou par e-mail.
   - De plus, un tableau de bord centralise la vue d'ensemble des systèmes et de l'hygiène des cuisines.
   - Des rapports automatisés et périodiques peuvent également être utilisés (notamment pour les autorités).
   
   - Il faut faire très attention aux faux positifs et faux négatifs, car ils peuvent entrainer des pertes de confiance dans l'application.
-    On pourrait ajouter par exemple: un niveau de confiance à chaque alerte, donné par l'IA. On les analyserait ensuite et ferait apprendre à l'IA.
+    On pourrait ajouter par exemple : un niveau de confiance à chaque alerte, donné par l'IA. On les analyserait ensuite et ferait apprendre à l'IA.
 
 En résumé, l’application assure un pilotage intelligent, un contrôle et une analyse intelligente, automatisée et pratique pour les utilisateurs.
 Elle vise à garantir l'application des principes de la réglementation HACCP, pour alléger la charge de travail du personnel et renforcer la conformité sanitaire.
@@ -91,7 +91,7 @@ Elle vise à garantir l'application des principes de la réglementation HACCP, p
 
 L’application présente un solide potentiel de ROI, car elle répond à un besoin largement répandu en France.
 
-On compte environ 800 cuisines centrales en France : des établissements qui produisent des plats en grande quantité, livrés sur plusieurs sites
+On compte environ 800 cuisines centrales en France : des établissements qui produisent des plats en grande quantité, livrés sur plusieurs sites.
 
 Mais on dénombre au total près de 90 000 restaurants collectifs (écoles, hôpitaux, EHPAD, entreprises, etc.). Ce sont toutes des cuisines collectives. C'est un terme générique désignant toute structure proposant des repas  "hors du foyer" pour une collectivité.
 
@@ -114,9 +114,9 @@ Nous basons ces calculs sur le coût de nos capteurs (environ 25€ par capteur,
 
 Pour une petite cuisine, 5 ou 6 capteurs devraient suffir, mais cela peut monter à 10 pour une cuisine moyenne et même 20 pour une grande cuisine centrale. Ainsi, cela fait monter le coût de fabrication d'un pack, qui inclut également plusieurs tablettes (selon la volonté de l'établissement), des répéteurs si certains capteurs sont dans des chambres froides et que les ondes ne passent pas très bien, ainsi qu'un serveur local centralisant toutes les données et enregistrant, notamment en cas de coupure avec internet.
 
-Nous estimons le coût de notre recherche & développement à environ **300 000 €** **sur 6 mois**  pour 4 développeurs (coût employeur de 75 000 €/an) et 1 chef de projet expérimenté + consultant métier/expert HACCP.
+Nous estimons le coût de notre recherche & développement à environ **300 000 €** **sur 6 mois** pour 4 développeurs (coût employeur de 75 000 €/an) et 1 chef de projet expérimenté + consultant métier/expert HACCP.
 
-Pour les cuisines centrales, avec 500€*12 mois + 1200 €, le **chiffre d'affaire serait de 7 200 €**.  
+Pour les cuisines centrales, avec 500€*12 mois + 1200 €, le **chiffre d'affaires serait de 7 200 €**.  
 Environ 42 cuisines centrales suffiraient à couvrir le coût R&D.
 Pour les cuisines moyennes, le **CA serait de 3 500 €**. Avec 86 clients, nous pouvons amortir la R&D. Il faudrait 334 petites cuisines pour cela.
 
@@ -202,7 +202,7 @@ colonnes: fonctionnalités
 
 ---
 
-#### Enseignements pour notre projet (plus value du projet)
+#### Enseignements pour notre projet (plus-value du projet)
 
 L’étude des solutions existantes met en évidence plusieurs opportunités d’amélioration :
 
@@ -420,10 +420,10 @@ Toutes les prestations doivent respecter les exigences fonctionnelles définies 
 
 Diagramme RACI des parties du projet et des étapes
 
-R: Responsible = Celui qui Réalise la tâche
-A: Accountable = Décisionnaire, approuve le résultat
-C: Consulted = Consulté, doit donner son avis (expert)
-I: Informed = Tenu au courant de toutes les avancées
+R : Responsible = Celui qui Réalise la tâche
+A : Accountable = Décisionnaire, approuve le résultat
+C : Consulted = Consulté, doit donner son avis (expert)
+I : Informed = Tenu au courant de toutes les avancées
 
 | Tâche                                              | Administration et direction | Equipe de développement | Sous traitant: capteurs, matériel et installation | Gestionnaire de cuisine | Cuisiniers |
 | -------------------------------------------------- | --------------------------- | ----------------------- | ------------------------------------------------- | ----------------------- | ---------- |
@@ -449,15 +449,15 @@ I: Informed = Tenu au courant de toutes les avancées
 
 
 #### 1.2.7 Caractère confidentiel s'il y a lieu
-Les données de ce projet peuvent être sensibles car elles incluent notamment des données précises sur l'environnement, les actions et procédures effectuées, la traçabilité des denrées et certaines informations sur le personnel.
-Nous utilisons également certaines données de santé, ex: accident en contact avec la nourriture sera journalisé et noté. Nous souhaitons en inclure d'autres, comme les restrictions alimentaires.
+Les données de ce projet peuvent être sensibles, car elles incluent notamment des données précises sur l'environnement, les actions et procédures effectuées, la traçabilité des denrées et certaines informations sur le personnel.
+Nous utilisons également certaines données de santé, ex : accident en contact avec la nourriture sera journalisé et noté. Nous souhaitons en inclure d'autres, comme les restrictions alimentaires.
 À ce titre, nous devons pour ces données respecter l'article 4 du RGPD et être validé comme Hébergeur de Données de Santé (HDS).
 
-En globalité, toutes les données qui incluent des données sur les utilisateurs doivent être soumises au RGPD, c'est-à-dire:
+En globalité, toutes les données qui incluent des données sur les utilisateurs doivent être soumises au RGPD, c'est-à-dire :
 Permettre l'accès, la modification et la suppression des données de chacun. Et informer sur chaque donnée enregistrée, les raisons de cette sauvegarde, et demander le consentement de l'utilisateur.
 
-À propos du projet en lui même, cela est un projet lourd et complexe à réaliser, il demande une lourde Recherche & Développement. Nous pensons que notre projet technique pourrait alors être sujet au dépôt d'un brevet si celui-ci est suffisamment innovant. Et d'une protection de droit d'auteur de l'application.
-À propos du projet en lui même, cela est un projet lourd et complexe à réaliser, il demande une lourde Recherche & Développement. Nous pensons que notre projet technique pourrait alors être sujet dépôt d'un brevet si celui-ci est suffisamment innovant. Et d'une protection de droit d'auteur de l'application.
+À propos du projet en lui-même, cela est un projet lourd et complexe à réaliser, il demande une lourde Recherche & Développement. Nous pensons que notre projet technique pourrait alors être sujet au dépôt d'un brevet si celui-ci est suffisamment innovant. Et d'une protection de droit d'auteur de l'application.
+À propos du projet en lui-même, cela est un projet lourd et complexe à réaliser, il demande une lourde Recherche & Développement. Nous pensons que notre projet technique pourrait alors être sujet dépôt d'un brevet si celui-ci est suffisamment innovant. Et d'une protection de droit d'auteur de l'application.
 
 
 ##### Protection des données personnelles (RGPD)
@@ -498,7 +498,7 @@ Pour protéger la propriété intellectuelle liée à l'application HACCP, les m
 
 - **Brevets** : Déposer des brevets pour les innovations techniques et fonctionnelles de l'application, si applicable.
 - **Droits d'auteur** : Protéger le code source, les interfaces utilisateur, et les documents associés par des droits d'auteur.
-- **Accords de confidentialité**: Faire signer des accords de confidentialité aux employés, partenaires et prestataires pour protéger les informations sensibles et la propriété intellectuelle.
+- **Accords de confidentialité** : Faire signer des accords de confidentialité aux employés, partenaires et prestataires pour protéger les informations sensibles et la propriété intellectuelle.
 
 ##### Sécurité physique et logique
 
@@ -651,7 +651,7 @@ L’application devra fonctionner dans des contextes **avec ou sans connexion In
 
 L’application sera utilisée par :
 - Des **agents de cuisine**/ **chef de cuisine**, avec peu de temps disponible et parfois peu formés au numérique.
-- Des **responsable HACCP**, plus à l’aise avec les outils, mais exigeant des données synthétiques claires.
+- Des **responsables HACCP**, plus à l’aise avec les outils, mais exigeant des données synthétiques claires.
 - Éventuellement des **inspecteurs ou autorités sanitaires**, avec besoin d’accès ponctuel, sécurisé et en lecture seule.
 
 La conception devra donc proposer :
@@ -668,7 +668,7 @@ La conception devra donc proposer :
 - *coefficient de pondération (de 1 à 5) : selon la valeur, l’importance de la fonction*
 - *critère d’appréciation : comment sera apprécié le succès de la réalisation d’une fonction (« doit rendre le résultat correct en moins de x sec. »)*
 - *niveau d’un critère d’appréciation (« x de 1 à 3 sec. Acceptables »)*
-- *niveau de flexibilité (« 90% dans l’intervalle, 10% à 1 sec. au delà »)*
+- *niveau de flexibilité (« 90% dans l’intervalle, 10% à 1 sec. au-delà »)*
 *On peut regrouper les fonctions dans le __tableau fonctionnel__ selon ces critères puis détailler chacune des fonctions dans les sous-sections suivantes*
 
 ### 2.1 Fonctions de service et de contrainte
@@ -739,7 +739,7 @@ Trois catégories de données sont collectées via capteurs IoT et interfaces nu
 - Temps de réponse : < 3 secondes pour l’affichage d’une alerte.
 - Fiabilité des capteurs : précision ±0,5°C, taux de transmission >98%.
 - Accessibilité : interface utilisable avec gants, multilingue.
-*(Niveaux souhaités mais révisables)*
+*(Niveaux souhaités, mais révisables)*
 
 - Temps de réponse : < 3 secondes pour l'affichage d'une alerte
 - Fiabilité des capteurs : précision ±0,5°C, taux de transmission >98%
@@ -801,7 +801,7 @@ Outre les fonctions principales indispensables au respect des règles HACCP, l�
 Selon le PMS, l'IA donne les actions correctives
 3. Mode hors-ligne avec synchronisation différée : Garantie fonctionnement continu sans connexion. Enregistrement local des données, synchronisation automatique dès connexion, notifications échec/conflit. Bénéfice : Fiabilité accrue en environnements à faible connectivité
 4. Personnalisation des indicateurs et de l’interface : Adapter l'application au contexte métier spécifique (école, EHPAD, hôpital). Choix des seuils critiques, personnalisation catégories (zones, aliments, nettoyage), affichage sur-mesure tableau de bord. Bénéfice : Pertinence accrue, meilleure appropriation
-5. Documentation contextuelle : Accès immédiat aux informations réglementaires/techniques (CE 852/2004, guides HACCP). Bouton d'aide/info-bulle, liens vers réglementation, mises à jour en ligne possibles. Bénéfice : Autonomie renforcée, cohérence réglementaire facilitée
+5. Documentation contextuelle : Accès immédiat aux informations réglementaires/techniques (CE 852/2004, guides HACCP). Bouton d'aide/infobulle, liens vers réglementation, mises à jour en ligne possibles. Bénéfice : Autonomie renforcée, cohérence réglementaire facilitée
 
 ---
 
@@ -853,7 +853,7 @@ Selon le PMS, l'IA donne les actions correctives
 
 - **Objectif** : Fournir un accès immédiat à des informations réglementaires ou techniques selon l’écran affiché.
 - **Fonctionnement** :
-    - Bouton d’aide ou info-bulle sur chaque écran.
+    - Bouton d’aide ou infobulle sur chaque écran.
     - Liens vers extraits de réglementation (CE 852/2004, guides HACCP).
     - Mises à jour possibles en ligne.
 - **Bénéfice** : Autonomie renforcée des utilisateurs, cohérence réglementaire facilitée.
@@ -866,14 +866,14 @@ Ces fonctions complémentaires contribueront à faire de l’application un **v�
 ##### 2.1.2.2 Critères d’appréciation et les niveaux qui les caractérisent 
 *(Niveaux dont l’obtention est imposée)*
 
-*(Niveaux souhaités mais révisables)*
+*(Niveaux souhaités, mais révisables)*
 #### 2.1.3 Contraintes 
 Le développement de l’application mobile de suivi HACCP devra strictement respecter le règlement (CE) n°852/2004 relatif à l’hygiène des denrées alimentaires, applicable à toutes les étapes de la chaîne agroalimentaire . Cela implique la mise en place de procédures fondées sur l’analyse des dangers et la maîtrise des points critiques (HACCP), la tenue de guides de bonnes pratiques d’hygiène (notamment pour les entreprises de petite taille), ainsi que la conservation réglementaire des enregistrements : un an pour les relevés des CCP tels que les températures, et trois ans pour les documents liés au nettoyage, à la traçabilité et aux audits. Par ailleurs, conformément au règlement (CE) n°178/2002, l’exploitant est responsable de la sécurité alimentaire et doit assurer une traçabilité complète “de l’amont vers l’aval”, avec réactivité en cas de retrait ou de rappel de lots. L’utilisation de codes-barres, QR Codes ou RFID sera nécessaire pour enregistrer systématiquement lors de chaque scan l’origine, le numéro de lot et la date de péremption des produits.
 
 Sur le plan de la protection des données, l’application devra être conforme au RGPD(UE)2016/679. Les données collectées (identifiants, rôle, historiques de saisie) seront traitées uniquement dans un cadre clairement défini (suivi HACCP, audits, alertes), reposant sur les principes de licéité, transparence, limitation des finalités et minimisation . Les utilisateurs devront recevoir une information complète dès l’installation et donner leur consentement explicite. Ils auront également la possibilité d’exercer aisément leurs droits d’accès, de rectification, d’effacement, de portabilité, d’opposition et de limitation. L’architecture devra intégrer la protection dès la conception (privacy by design) avec chiffrement AES‑256 des données au repos et TLS1.2+ des échanges. La pseudonymisation, reconnue comme mesure de sécurité efficace, devra être mise en œuvre pour les exports à destination des audits . En outre, toute violation de données présentant un risque devra être notifiée à la CNIL dans un délai maximal de 72heures après constatation, avec explication des motifs en cas de retard, et documentée conformément à l’article 33 du RGPD. Enfin, l’application devra tenir à jour un registre des traitements, précisant finalités, catégories de données et mesures de sécurité, pour être prête en cas de contrôle par la CNIL.
 
 ## 3. Cadre de réponse
-*__Diagramme de classes métiers__ : à base de classes métiers (des concepts indépendants de la programmation, avec des attributs mais sans méthodes, ainsi que des relations entre les concepts sur les agissements des classes métiers les unes sur les autres)*
+*__Diagramme de classes métiers__ : à base de classes métiers (des concepts indépendants de la programmation, avec des attributs, mais sans méthodes, ainsi que des relations entre les concepts sur les agissements des classes métiers les unes sur les autres)*
 
 *Synthèse des jalons : __tables synthétiques des jalons__ du projet.*
 ### 3.1 *Pour chaque fonction : fonction 1*
@@ -1121,9 +1121,9 @@ Cette estimation pourra évoluer selon les sites pilotes (surface, nombre de cha
 
 
 #### 3.3.2 Options et variantes proposées non retenues au cahier des charges
-### Solutions envisagées mais non retenues
+### Solutions envisagées, mais non retenues
 
-Dans le cadre de l’étude de faisabilité, plusieurs options technologiques et fonctionnelles ont été envisagées mais finalement écartées pour la version initiale du projet. Voici les principales solutions non retenues et les raisons de leur exclusion :
+Dans le cadre de l’étude de faisabilité, plusieurs options technologiques et fonctionnelles ont été envisagées, mais finalement écartées pour la version initiale du projet. Voici les principales solutions non retenues et les raisons de leur exclusion :
 
 #### 1. Capteurs longue portée LoRaWAN
 
@@ -1143,7 +1143,7 @@ Dans le cadre de l’étude de faisabilité, plusieurs options technologiques et
 #### 4. Reconnaissance vocale pour la saisie des données
 
 - **Description** : Intégration d’un module de saisie vocale pour faciliter l’enregistrement des tâches ou des alertes.
-- **Raison du rejet** : Fiabilité insuffisante en environnement bruyant (cuisine), complexité technique, coût de développement et d’intégration élevé pour un gain limité.
+- **Raison du rejet** : Fiabilité insuffisante en environnement bruyant (cuisine), complexité technique, coût de développement et d’intégration élevée pour un gain limité.
 
 #### 5. Intégration de la blockchain pour la traçabilité
 
@@ -1391,8 +1391,8 @@ Passer temporairement en mode dégradé en bloquant les nouvelles saisies non ur
 
 
 ## 5 Annexe
-*Le planning ne fait pas partie de la norme car sa décomposition n’importe pas au client à cette phase du projet. Il n’est alors intéressé que par les jalons qui ponctuent la réalisation des différentes fonctionnalités.
-Nous placerons donc le __diagrammes de Gantt__ ici.*
+*Le planning ne fait pas partie de la norme, car sa décomposition n’importe pas au client à cette phase du projet. Il n’est alors intéressé que par les jalons qui ponctuent la réalisation des différentes fonctionnalités.
+Nous placerons donc le __diagramme de Gantt__ ici.*
 
 Le diagramme de Gantt ci-dessous présente le **planning prévisionnel du développement de l’application mobile HACCP**, en lien avec les objectifs du projet définis dans ce cahier des charges.
 
@@ -1410,7 +1410,7 @@ Le planning est structuré autour de **dix grandes étapes**, depuis l’analyse
 - Les phases de tests et d’ajustements,
 - La livraison du prototype.
 
-Certaines tâches sont parallélisables, tandis que d’autres suivent des **dépendances logiques** (par exemple: les tests ne peuvent être effectués qu’après le développement des modules).
+Certaines tâches sont parallélisables, tandis que d’autres suivent des **dépendances logiques** (par exemple : les tests ne peuvent être effectués qu’après le développement des modules).
 
 Ce diagramme constitue un outil essentiel pour le **pilotage du projet**, en assurant une vision globale de son avancement, et en facilitant la coordination entre les membres de l’équipe.
 
