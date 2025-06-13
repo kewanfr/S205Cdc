@@ -359,7 +359,7 @@ Dans le cadre de ce projet, certaines tâches seront confiées à des prestatair
     - Fonctionnalités principales : saisie du PMS, collecte de données, alertes, tableau de bord, lecture et création des étiquettes
     - Fonctionnalités complémentaires : historique, mode hors-ligne, personnalisation
 - Intégration d’un système de gestion des utilisateurs et des droits d’accès
-- Implémentation de mécanismes de synchronisation des données (local ↔ cloud)
+- Implémentation de mécanismes de synchronisation des données (local <-> cloud)
 - Mise en place d’un serveur local pour la centralisation des données et le fonctionnement en mode dégradé
 - Développement d’algorithmes d’analyse prédictive et de détection des anomalies
 - Ressources nécessaires à une évolution du produit en cas de problème avec le prestataire (documentation technique, code source, etc.)
@@ -369,7 +369,7 @@ Dans le cadre de ce projet, certaines tâches seront confiées à des prestatair
     - Capteurs de température, humidité, ouverture de porte ou présence
     - Boîtiers robustes, étanches, résistants aux graisses et aux basses températures
 
-    - Autonomie minimale de 6 mois, connectivité BLE, RF 433 MHz, WiFi ou autres protocoles adaptés
+    - Autonomie minimale de 6 mois, connectivité BLE, RF 433 MHz ou autres protocoles adaptés
         - Prévoir un remplacement facile des piles ou batteries si nécessaire, avec une seconde batterie pour les capteurs critiques
             Permettant de ne pas perdre de données durant le remplacement de la pile.
         - Prévoir un système de notification pour alerter l'utilisateur lorsque la pile est faible.
