@@ -693,46 +693,67 @@ Il servira de base pour la conception détaillée de l’architecture logicielle
 #### 2.1.1 Fonctions de service principales 
 Ce sont les fonctions qui constituent la raison d'être du produit.
 ##### 2.1.1.1 Collecte des données
-La collecte des données est une fonction centrale de l’application, visant à garantir le respect des normes HACCP à travers une surveillance continue et automatisée. Trois grandes catégories de données sont collectées à l’aide de capteurs IoT et d’interfaces numériques.
+---
 
-L’application collecte automatiquement les températures, l’humidité et la traçabilité via des capteurs IoT (BLE/WiFi). Les questionnaires intégrés permettent de suivre les pratiques du personnel. Toutes les données sont centralisées et analysées pour générer des alertes en temps réel.
+##### a- Collecte automatique des données environnementales
 
-**1. Données environnementales :**
-- Température des enceintes froides (réfrigérateurs, congélateurs).
-- Humidité ambiante dans les cuisines et zones de stockage.
-- Conditions de ventilation ou d’atmosphère si nécessaire (extension possible).
-- Données recueillies automatiquement via des capteurs BLE/WiFi, installés sur site.
+- Intégration de capteurs IoT (température, humidité, présence humaine).
+- Capteurs autonomes fonctionnant en BLE et RF433 selon l’environnement.
+- Support de plages extrêmes : de –40 °C à +100 °C.
+- Fonctionnement en mode hors-ligne avec stockage local sur 7 à 125 jours.
+- Transmission sécurisée via passerelles vers tablette ou serveur local.
 
-**2. Données opérationnelles :**
-- Traçabilité des aliments à l’aide de codes-barres ou étiquettes RFID (lot, date, origine, DLC).
-- Détection de l’exécution des protocoles de nettoyage via capteurs de présence/mouvement ou validation manuelle sur tablette.
-- Informations associées à des points critiques (CCP) de la méthode HACCP.
+---
 
-**3. Données comportementales :**
-- Réponses à des questionnaires intégrés (respect des procédures, formation du personnel).
-- Auto-évaluations des responsables HACCP.
-- Suivi de la sensibilisation à l’hygiène (score individuel ou équipe).
+##### b- Collecte des données opérationnelles
 
-**4. Transmission aux autorités sanitaires :**
-- **Génération des rapports :** L’application génère automatiquement des rapports périodiques (hebdomadaires, mensuels) à partir des données collectées. Les rapports peuvent également être générés manuellement pour des périodes spécifiques ou des événements particuliers. Les rapports sont générés dans des formats standardisés (PDF, CSV) conformes aux exigences des autorités sanitaires.
-- **Transmission sécurisée :** Les rapports sont chiffrés avant transmission pour garantir la confidentialité des données. Utilisation de protocoles sécurisés (HTTPS, SFTP) pour la transmission des rapports. Les autorités sanitaires sont authentifiées avant de pouvoir accéder aux rapports.
-- **Traçabilité et audit :** Toutes les transmissions de rapports sont journalisées pour assurer la traçabilité. L’application envoie un accusé de réception une fois le rapport transmis avec succès. Les utilisateurs peuvent consulter l’historique des transmissions pour vérifier que les rapports ont bien été envoyés et reçus.
-- **Conformité réglementaire :** Les rapports générés respectent les normes HACCP et les exigences des autorités sanitaires.
+- Lecture de codes-barres ou RFID (traçabilité des lots).
+- Association automatique des relevés avec les produits suivis.
+- Historique horodaté des événements HACCP critiques.
 
-**Méthodes de collecte :**
-- Automatisée pour les capteurs environnementaux et certains capteurs opérationnels.
-- Semi-automatique ou manuelle (via l’application) pour les aspects comportementaux.
-- Fonctionnement possible hors-ligne avec journalisation locale, puis synchronisation serveur.
+---
 
-L’ensemble de ces données est centralisé, analysé en temps réel ou différé, et utilisé pour générer des alertes, des indicateurs de conformité, et des rapports exportables pour les autorités sanitaires.
+##### c- Collecte des données comportementales
 
-Trois catégories de données sont collectées via capteurs IoT et interfaces numériques
+- Intégration de questionnaires d’auto-évaluation (formation, hygiène).
+- Saisie directe sur tablette en zone de travail.
+- Génération de scores de conformité par utilisateur ou poste.
 
-- Données environnementales : Température (enceintes froides), humidité ambiante, conditions de ventilation (extension possible). Recueillies automatiquement via capteurs BLE/WiFi
-- Données opérationnelles : Traçabilité aliments (codes-barres, RFID), détection protocoles nettoyage (capteurs présence/mouvement ou validation manuelle), informations points critiques (CCP)
-- Données comportementales : Réponses questionnaires intégrés (procédures, formation), auto-évaluations, suivi sensibilisation hygiène
-- Méthodes de collecte : Automatisée (capteurs), Semi-automatique/manuelle (application). Fonctionnement possible hors-ligne avec journalisation locale, puis synchronisation
-- L'ensemble des données est centralisé, analysé (temps réel/différé), utilisé pour générer alertes, indicateurs conformité, rapports exportables
+---
+
+##### d- Détection et alertes en temps réel
+
+- Détection de dépassement de seuils (ex. : température > 4 °C).
+- Système d’alerte immédiate : push, notification visuelle et sonore.
+- Historique des alertes et des actions correctives associées.
+
+---
+
+##### e- Tableau de bord HACCP
+
+- Visualisation synthétique des données (graphiques, codes couleur).
+- Affichage responsive compatible gants / environnement humide.
+- Export PDF automatique des rapports de conformité.
+- Filtres par zone, date, niveau de risque, type de donnée.
+
+---
+
+##### f- Synchronisation des données
+
+- Mode hors-ligne natif : stockage temporaire chiffré (AES-256).
+- Synchronisation automatique différée vers le serveur dès retour réseau.
+- Compatibilité API (MQTT / REST) pour serveurs locaux ou cloud.
+
+---
+
+##### g- Sécurité des données et conformité RGPD
+
+- Chiffrement des données locales et réseau (AES-256).
+- Gestion des accès par profils (agent, responsable HACCP, auditeur).
+- Consentement explicite requis à la première utilisation.
+- Journalisation complète des accès et des modifications.
+
+---
 
 ##### 2.1.1.2 Critères d’appréciation et les niveaux qui les caractérisent 
 *(Niveaux dont l’obtention est imposée)*
