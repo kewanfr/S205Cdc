@@ -370,10 +370,10 @@ Dans le cadre de ce projet, certaines tâches seront confiées à des prestatair
     - Boîtiers robustes, étanches, résistants aux graisses et aux basses températures
 
     - Autonomie minimale de 6 mois, connectivité BLE, RF 433 MHz ou autres protocoles adaptés
-        - Prévoir un remplacement facile des piles ou batteries si nécessaire, avec une seconde batterie pour les capteurs critiques
-            Permettant de ne pas perdre de données durant le remplacement de la pile.
-        - Prévoir un système de notification pour alerter l'utilisateur lorsque la pile est faible.
-        - Prévoir des piles ou batteries également pour les capteurs branchés sur secteur, afin de garantir la continuité de l'historique 
+        - Prévoir un remplacement facile des batteries (rechargeable) si nécessaire, avec une seconde batterie pour les capteurs critiques
+            Permettant de ne pas perdre de données durant le remplacement de la batterie.
+        - Prévoir un système de notification pour alerter l'utilisateur lorsque la batterie est faible.
+        - Prévoir des batteries également pour les capteurs branchés sur secteur, afin de garantir la continuité de l'historique 
             en cas de coupure de courant.
     - Capteurs adaptés aux conditions extrêmes (températures de -40 °C à +100 °C, humidité élevée, atmosphère chargée en graisses)
     - Il faut trouver et prévoir une solution technique pour les zones blanches (chambres froides, sous-sols, etc.) où la connectivité est limitée.
@@ -407,7 +407,7 @@ Dans le cadre de ce projet, certaines tâches seront confiées à des prestatair
 - Documentation technique complète (utilisation, maintenance, RGPD)
 - Accompagnement à l’installation de l’application sur terminaux mobiles
 
-#### Options (selon budget)
+#### Options 
 - Développement d’une interface web d’administration centralisée
 - Maintenance corrective sur 3 mois après livraison
 - Ajout de capteurs supplémentaires ou évolutions logicielles futures
