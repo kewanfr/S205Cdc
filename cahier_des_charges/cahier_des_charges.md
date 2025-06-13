@@ -5,7 +5,7 @@
 ## Entête
 - Groupe de TD : 4
 - Date de démarrage : 28 mai 2025 15h
-- Version : 0.10.1
+- Version : 1.0
 - Destinataire : EL MAMOUNI Saïd
 
 
@@ -65,6 +65,8 @@ Ses objectifs sont :
 - Nous devons implémenter une IA et des algorithmes
   - Capables d'analyser les données collectées, de détecter toute anomalie ou dérive, et de prévenir les gestionnaires en cas de non-conformité.
   - L'IA doit apprendre des tendances et des règles, et suggérer des actions préventives pour éviter les problèmes critiques.
+  - Elle apprend constamment des données saisies par les utilisateurs, des alertes et des incidents passés. Lorsque'elle propose une alerte avec une solution, 
+    elle doit aussi indiquer un niveau de confiance, que l'utilisateur pourra valider ou non, ce qui permet son apprentissage.
   - L'objectif est d'anticiper les incidents avant qu'ils ne se produisent, ou de les gérer au plus tôt.
   - Elle utilise pour cela les informations saisies dans le PMS. Elle apprend constamment.
 
@@ -89,7 +91,7 @@ Elle vise à garantir l'application des principes de la réglementation HACCP, p
 
 #### 1.1.2 Espérance de retour sur investissement
 
-L’application présente un solide potentiel de ROI, car elle répond à un besoin largement répandu en France.
+L’application présente un solide potentiel de ROI (Retour sur Investissement), car elle répond à un besoin largement répandu en France.
 
 On compte environ 800 cuisines centrales en France : des établissements qui produisent des plats en grande quantité, livrés sur plusieurs sites.
 
@@ -112,7 +114,8 @@ On peut différencier les cuisines centrales et les restaurants collectifs, selo
 
 Nous basons ces calculs sur le coût de nos capteurs (environ 25€ par capteur, si on sous traite la fabrication). Ainsi, l'idée est de fournir selon la taille du restaurant un certain nombre de capteurs. 
 
-Pour une petite cuisine, 5 ou 6 capteurs devraient suffir, mais cela peut monter à 10 pour une cuisine moyenne et même 20 pour une grande cuisine centrale. Ainsi, cela fait monter le coût de fabrication d'un pack, qui inclut également plusieurs tablettes (selon la volonté de l'établissement), des répéteurs si certains capteurs sont dans des chambres froides et que les ondes ne passent pas très bien, ainsi qu'un serveur local centralisant toutes les données et enregistrant, notamment en cas de coupure avec internet.
+Pour une petite cuisine, 5 ou 6 capteurs devraient suffir, mais cela peut monter à 10 pour une cuisine moyenne et même 20 pour une grande cuisine centrale.
+Ainsi, cela fait monter le coût de fabrication d'un pack, qui inclut également plusieurs tablettes (selon la volonté de l'établissement), des répéteurs si certains capteurs sont dans des chambres froides et que les ondes ne passent pas très bien, ainsi qu'un serveur local centralisant toutes les données et enregistrant, notamment en cas de coupure avec internet (un petit serveur tel un Raspberry Pi 4 devrait suffir et coute environ 40-70€).
 
 Nous estimons le coût de notre recherche & développement à environ **300 000 €** **sur 6 mois** pour 4 développeurs (coût employeur de 75 000 €/an) et 1 chef de projet expérimenté + consultant métier/expert HACCP.
 
@@ -189,16 +192,17 @@ colonnes: fonctionnalités
 
 #### Tableau comparatif
 
-| Critère                  | Traqfood | Eezytrace    | HACCP Facile |
-|--------------------------|----------|--------------|--------------|
-| Capteurs connectés       | oui      | oui          | non          |
-| Alertes automatiques     | oui      | oui          | non          |
-| Historique des actions   | oui      | oui          | non          |
-| Analyse prédictive / IA  | non      | non          | non          |
-| Mode hors-ligne          | non      | non          | oui  partiel |
-| Interface intuitive      | oui      | non          | oui          |
-| Personnalisation secteur | non      | oui  partiel | non          |
-| Coût                     | Moyen    | Élevé        | Faible       |
+| Critère                  | Traqfood | Eezytrace    | HACCP Facile | Nous  |
+| ------------------------ | -------- | ------------ | ------------ | ----- |
+| Capteurs connectés       | oui      | oui          | non          | OUI   |
+| Alertes automatiques     | oui      | oui          | non          | OUI   |
+| Historique des actions   | oui      | oui          | non          | OUI   |
+| Analyse prédictive / IA  | non      | non          | non          | OUI   |
+| Mode hors-ligne          | non      | non          | oui  partiel | OUI   |
+| Interface intuitive      | oui      | non          | oui          | OUI   |
+| Personnalisation secteur | non      | oui  partiel | non          | OUI   |
+| Coût                     | Moyen    | Élevé        | Faible       | Moyen |
+
 
 ---
 
@@ -304,7 +308,7 @@ Ces éléments différenciateurs permettront à notre solution de répondre de m
 - **Nimonik** – Plateforme EHS/Q internationale.  
   Gère les obligations légales et les normes ISO (14001, 45001), audits, veille réglementaire.  
   https://nimonik.com  
-  Tarifs : licence de base ~$2000/an, audits internes ~500$
+  Tarifs : licence de base environ $2000/an, audits internes environ 500$
 
 - **Quentic** – Plateforme allemande EHSQ/ESG.  
   Module ISO 14001 complet : documentation, indicateurs, audits, amélioration continue.  
@@ -399,6 +403,8 @@ Dans le cadre de ce projet, certaines tâches seront confiées à des prestatair
     - Authentification sécurisée
     - Gestion des accès utilisateurs
     - Chiffrement des données sensibles
+    - Journalisation des accès et des actions aux données utilisateurs
+    - Permettre aux utilisateurs de consulter, modifier et supprimer leurs données personnelles
 - Fourniture d’une documentation technique de conformité RGPD
 
 #### Livraison et documentation
@@ -421,8 +427,11 @@ Toutes les prestations doivent respecter les exigences fonctionnelles définies 
 Diagramme RACI des parties du projet et des étapes
 
 R : Responsible = Celui qui Réalise la tâche
+
 A : Accountable = Décisionnaire, approuve le résultat
+
 C : Consulted = Consulté, doit donner son avis (expert)
+
 I : Informed = Tenu au courant de toutes les avancées
 
 | Tâche                                              | Administration et direction | Equipe de développement | Sous traitant: capteurs, matériel et installation | Gestionnaire de cuisine | Cuisiniers |
@@ -456,8 +465,7 @@ Nous utilisons également certaines données de santé, ex : accident en contact
 En globalité, toutes les données qui incluent des données sur les utilisateurs doivent être soumises au RGPD, c'est-à-dire :
 Permettre l'accès, la modification et la suppression des données de chacun. Et informer sur chaque donnée enregistrée, les raisons de cette sauvegarde, et demander le consentement de l'utilisateur.
 
-À propos du projet en lui-même, cela est un projet lourd et complexe à réaliser, il demande une lourde Recherche & Développement. Nous pensons que notre projet technique pourrait alors être sujet au dépôt d'un brevet si celui-ci est suffisamment innovant. Et d'une protection de droit d'auteur de l'application.
-À propos du projet en lui-même, cela est un projet lourd et complexe à réaliser, il demande une lourde Recherche & Développement. Nous pensons que notre projet technique pourrait alors être sujet dépôt d'un brevet si celui-ci est suffisamment innovant. Et d'une protection de droit d'auteur de l'application.
+À propos du projet en lui-même, un projet lourd et complexe à réaliser, il demande une lourde Recherche & Développement. Nous pensons que notre projet technique pourrait alors être sujet au dépôt d'un brevet si celui-ci est suffisamment innovant. Et d'une protection de droit d'auteur de l'application.
 
 
 ##### Protection des données personnelles (RGPD)
@@ -518,7 +526,7 @@ Pour assurer la conformité aux réglementations et aux politiques de sécurité
 
 - **Audit interne** : Réaliser des audits internes réguliers pour vérifier la conformité aux politiques de sécurité et de confidentialité.
 - **Audit externe** : Faire appel à des auditeurs externes pour évaluer la conformité aux réglementations et aux bonnes pratiques en matière de sécurité et de confidentialité.
-- **Certifications** : Obtenir des certifications pertinentes (ISO 27001, HDS, etc.) pour démontrer la conformité aux normes de sécurité et de confidentialité.
+- **Certifications** : Obtenir des certifications pertinentes (ISO 27001: sécurité des systèmes d'information, HDS: Hebergeur de Données de Santé, etc.) pour démontrer la conformité aux normes de sécurité et de confidentialité.
 ### 1.3 Énoncé du besoin 
 *(finalités du produit pour le futur utilisateur tel que prévu par le demandeur)*
 
@@ -569,8 +577,9 @@ L’application repose sur un réseau de capteurs connectés (IoT) pour la colle
 
 - **Zones blanches fréquentes** (chambres froides, sous-sols).
 - Besoin impératif d’un **mode hors-ligne stable**, avec **synchronisation automatique** dès retour réseau.
+  En cas de perte de connexion à internet, le serveur local enregistre les données. Et en cas de perte de connexion au serveur local, les capteurs enregistrent les données en local, avec une synchronisation automatique dès que la connexion est rétablie.
 - Choix de capteurs adaptés selon la zone :
-  - BLE (zones ouvertes, courte portée),
+  - BLE: Bluetooth Low Energy (zones ouvertes, courte portée),
   - RF433 (zones isolées ou métalliques).
 
 ##### Contraintes d’usage et utilisateurs
@@ -614,13 +623,13 @@ Les capteurs IoT, terminaux et modules doivent répondre à un ensemble de spéc
 | Technologie | Usage recommandé | Portée / Fiabilité | Autonomie | Débit |
 |-------------|------------------|---------------------|----------|--------|
 | BLE         | Zones proches, compatibilité mobile | 10–50m (obstacles sensibles) | Très bonne | Moyenne |
-| RF 433 MHz  | Chambres froides / métalliques | 50–100m (très bonne traversée) | Bonne | Faible |
+| RF 433 MHz  | Chambres froides / métalliques | 50–100m (très bonne traversée) - 10-50m en cas de "zone très isolée" | Bonne | Faible |
 
 ##### Sécurité, conformité et intégration
 
 - Chiffrement des données : **AES-128 / AES-256** selon modules.
 - Journalisation horodatée obligatoire pour audit HACCP.
-- API REST ou MQTT pour intégration avec serveurs cloud / locaux.
+- API REST ou MQTT (serveur Push Sub, pour des données en temps réel) pour intégration avec serveurs cloud / locaux.
 - Conformité aux directives CE 852/2004, CE 178/2002, RGPD.
 
 ####  Interfaces utilisateurs
@@ -768,17 +777,17 @@ Ce sont les fonctions qui constituent la raison d'être du produit.
 
 ##### Tableau fonctionnel récapitulatif
 
-| Fonction | Importance | Critère d'appréciation | Niveau d'appréciation | Niveau de flexibilité |
-|----------|------------|------------------------|-----------------------|----------------------|
-| FP1 : Collecte des données environnementales | 5 | Précision des capteurs | ±0.5°C | 95% dans l’intervalle, 5% à 1°C au delà |
-| FP2 : Collecte des données opérationnelles | 5 | Fiabilité des données | Taux de transmission >98% | 90% dans l’intervalle, 10% à 1% en dessous |
-| FP3 : Collecte des données comportementales | 4 | Complétude des réponses | >90% de complétude | 85% dans l’intervalle, 15% à 5% en dessous |
-| FP4 : Transmission aux autorités sanitaires | 5 | Temps de génération des rapports | < 5 secondes | 95% dans l’intervalle, 5% à 1 seconde au delà |
-| FC1 : Tutoriels et rappels intégrés | 3 | Temps de réponse pour afficher un tutoriel | < 2 secondes | 90% dans l’intervalle, 10% à 3 secondes |
-| FC2 : Historique des alertes et actions correctives | 4 | Temps de réponse pour afficher l'historique | < 3 secondes | 90% dans l’intervalle, 10% à 4 secondes |
-| FC3 : Mode hors-ligne avec synchronisation différée | 4 | Temps de synchronisation après reconnexion | < 10 secondes | 90% dans l’intervalle, 10% à 15 secondes |
-| FC4 : Personnalisation des indicateurs et de l’interface | 3 | Temps de réponse pour appliquer les personnalisations | < 2 secondes | 90% dans l’intervalle, 10% à 3 secondes |
-| FC5 : Documentation contextuelle | 3 | Temps de réponse pour afficher la documentation | < 2 secondes | 90% dans l’intervalle, 10% à 3 secondes |
+| Fonction                                                 | Importance | Critère d'appréciation                                | Niveau d'appréciation     | Niveau de flexibilité                         |
+| -------------------------------------------------------- | ---------- | ----------------------------------------------------- | ------------------------- | --------------------------------------------- |
+| FP1 : Collecte des données environnementales             | 5          | Précision des capteurs                                | ±0.5°C                    | 95% dans l’intervalle, 5% à 1°C au delà       |
+| FP2 : Collecte des données opérationnelles               | 5          | Fiabilité des données                                 | Taux de transmission >98% | 90% dans l’intervalle, 10% à 1% en dessous    |
+| FP3 : Collecte des données comportementales              | 4          | Complétude des réponses                               | >90% de complétude        | 85% dans l’intervalle, 15% à 5% en dessous    |
+| FP4 : Transmission aux autorités sanitaires              | 5          | Temps de génération des rapports                      | < 5 secondes              | 95% dans l’intervalle, 5% à 1 seconde au delà |
+| FC1 : Tutoriels et rappels intégrés                      | 3          | Temps de réponse pour afficher un tutoriel            | < 2 secondes              | 90% dans l’intervalle, 10% à 3 secondes       |
+| FC2 : Historique des alertes et actions correctives      | 4          | Temps de réponse pour afficher l'historique           | < 3 secondes              | 90% dans l’intervalle, 10% à 4 secondes       |
+| FC3 : Mode hors-ligne avec synchronisation différée      | 4          | Temps de synchronisation après reconnexion            | < 10 secondes             | 90% dans l’intervalle, 10% à 15 secondes      |
+| FC4 : Personnalisation des indicateurs et de l’interface | 3          | Temps de réponse pour appliquer les personnalisations | < 2 secondes              | 90% dans l’intervalle, 10% à 3 secondes       |
+| FC5 : Documentation contextuelle                         | 3          | Temps de réponse pour afficher la documentation       | < 2 secondes              | 90% dans l’intervalle, 10% à 3 secondes       |
 
 #### 2.1.2 Fonctions de service complémentaires 
 L’analyse comparative des solutions HACCP actuelles a permis d’identifier plusieurs fonctions de service dites complémentaires. Celles-ci ne sont pas toujours présentes, mais peuvent représenter une **valeur ajoutée stratégique** pour améliorer l’utilisabilité, l’autonomie du personnel et la personnalisation de l’application. Voici une synthèse des fonctions complémentaires observées chez trois outils majeurs du marché.
@@ -887,7 +896,21 @@ Ces fonctions complémentaires contribueront à faire de l’application un **v�
 ##### 2.1.2.2 Critères d’appréciation et les niveaux qui les caractérisent 
 *(Niveaux dont l’obtention est imposée)*
 
+- Temps de réponse pour afficher un tutoriel : < 5 secondes.
+- Temps de réponse pour afficher l’historique des alertes : < 5 secondes.
+- Temps de synchronisation après reconnexion : < 10 secondes.
+- Temps de réponse pour appliquer les personnalisations : < 15 secondes.
+- Temps de réponse pour afficher la documentation : < 10 secondes.
+
+
 *(Niveaux souhaités, mais révisables)*
+
+- Temps de réponse pour afficher un tutoriel : < 2 secondes.
+- Temps de réponse pour afficher l’historique des alertes : < 3 secondes.
+- Temps de synchronisation après reconnexion : < 5 secondes.
+- Temps de réponse pour appliquer les personnalisations : < 10 secondes.
+- Temps de réponse pour afficher la documentation : < 8 secondes.
+
 #### 2.1.3 Contraintes 
 Le développement de l’application mobile de suivi HACCP devra strictement respecter le règlement (CE) n°852/2004 relatif à l’hygiène des denrées alimentaires, applicable à toutes les étapes de la chaîne agroalimentaire . Cela implique la mise en place de procédures fondées sur l’analyse des dangers et la maîtrise des points critiques (HACCP), la tenue de guides de bonnes pratiques d’hygiène (notamment pour les entreprises de petite taille), ainsi que la conservation réglementaire des enregistrements : un an pour les relevés des CCP tels que les températures, et trois ans pour les documents liés au nettoyage, à la traçabilité et aux audits. Par ailleurs, conformément au règlement (CE) n°178/2002, l’exploitant est responsable de la sécurité alimentaire et doit assurer une traçabilité complète “de l’amont vers l’aval”, avec réactivité en cas de retrait ou de rappel de lots. L’utilisation de codes-barres, QR Codes ou RFID sera nécessaire pour enregistrer systématiquement lors de chaque scan l’origine, le numéro de lot et la date de péremption des produits.
 
@@ -1031,13 +1054,13 @@ Cette architecture permet un contrôle rigoureux, automatisé et intelligent du 
 
 | Fonction             | Jalon (date/étape)               | Modalité de contrôle         |
 |----------------------|----------------------------------|------------------------------|
-| Collecte des données | Prototype capteurs (Semaine 3)   | Test de collecte automatisée |
-| Tableau de bord      | Maquette validée (Semaine 5)     | Test utilisateur             |
-| Alertes              | Système opérationnel (Semaine 6) | Simulation d’anomalie        |
-| Synchronisation      | Démo hors-ligne (Semaine 7)      | Test de coupure réseau       |
-| RGPD                 | Audit conformité (Semaine 8)     | Vérification documentation   |
+| Collecte des données | Prototype capteurs (Semaine 5)   | Test de collecte automatisée |
+| Tableau de bord      | Maquette validée (Semaine 7)     | Test utilisateur             |
+| Alertes              | Système opérationnel (Semaine 8) | Simulation d’anomalie        |
+| Synchronisation      | Démo hors-ligne (Semaine 9)      | Test de coupure réseau       |
+| RGPD                 | Audit conformité (Semaine 10)     | Vérification documentation   |
 
-### 3.2 *Pour chaque fonction : fonction 2*
+### 3.2
 
 #### 3.2.1 Solution proposée
 
@@ -1113,19 +1136,18 @@ la version de base de l’application HACCP repose sur un déploiement fonctionn
 
 #####  Estimation des coûts – Matériel et services (HT)
 
-| Équipement / service                         | Qté | Prix unitaire (€ HT) | Coût total (€ HT) | Références / Remarques |
-|---------------------------------------------|-----|----------------------|--------------------|-------------------------|
-| **Capteurs (T°, H°, présence)**             | 7   | 25                   | 175€              | Estimation basée sur capteurs BLE / RF 433 sur [AliExpress](https://fr.aliexpress.com/item/1005004905171281.html) |
-| **Lecteur RFID / code-barres**              | 1   | 90                   | 90€               | Lecteur fixe ou mobile standard |
-| **Passerelles RF433**                       | 2   | 19                   | 38€               | Sonoff RF Bridge R2 : [Domotique-store.fr](https://www.domotique-store.fr/domotique/types-d-objets/objets-connectes/gateways-passerelles/6598-sonoff-rf-bridge-r2-passerelle-433mhz-wifi.html) |
-| **Batteries rechargeables**                 | 7   | 5                    | 35€               | Batterie Li-ion / CR2032 rechargeables |
-| **Chargeurs (USB)**                         | 2   | 15                   | 30€               | Chargeurs doubles ou stations |
-| **Tablettes / smartphones durcis**          | 2   | 249,90               | 499,80€           | Crosscall Core-M5 : [crosscall.com](https://www.crosscall.com/fr/produit/core-m5/) |
-| **Serveur local / mini-PC (type Raspberry)**| 1   | 200                  | 200€              | Serveur local, stockage sécurisé |
-| **Installation initiale**                   | 1   | 300                  | 300€              | Pose capteurs, appairage, test |
-| **Maintenance annuelle (estimée)**          | 1   | 200                  | 200€              | Contrôle, support, remplacement |
-
-| **TOTAL ESTIMÉ HT**                         |     |                      | **1567,80€**     | Sans coûts de développement logiciel |
+| Équipement / service                         | Qté | Prix unitaire (€ HT) | Coût total (€ HT) | Références / Remarques                                                                                                                                                                         |
+| -------------------------------------------- | --- | -------------------- | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Capteurs (T°, H°, présence)**              | 7   | 25                   | 175€              | Estimation basée sur capteurs BLE / RF 433 sur [AliExpress](https://fr.aliexpress.com/item/1005004905171281.html)                                                                              |
+| **Lecteur RFID / code-barres**               | 1   | 90                   | 90€               | Lecteur fixe ou mobile standard                                                                                                                                                                |
+| **Passerelles RF433**                        | 2   | 19                   | 38€               | Sonoff RF Bridge R2 : [Domotique-store.fr](https://www.domotique-store.fr/domotique/types-d-objets/objets-connectes/gateways-passerelles/6598-sonoff-rf-bridge-r2-passerelle-433mhz-wifi.html) |
+| **Batteries rechargeables**                  | 14  | 5                    | 70€               | Batterie Li-ion / CR2032 rechargeables                                                                                                                                                         |
+| **Chargeurs (USB)**                          | 2   | 15                   | 30€               | Chargeurs doubles ou stations                                                                                                                                                                  |
+| **Tablettes / smartphones durcis**           | 2   | 249,90               | 499,80€           | Crosscall Core-M5 : [crosscall.com](https://www.crosscall.com/fr/produit/core-m5/)                                                                                                             |
+| **Serveur local / mini-PC (type Raspberry)** | 1   | 200                  | 200€              | Serveur local, stockage sécurisé                                                                                                                                                               |
+| **Installation initiale**                    | 1   | 300                  | 300€              | Pose capteurs, appairage, test                                                                                                                                                                 |
+| **Maintenance annuelle (estimée)**           | 1   | 200                  | 200€              | Contrôle, support, remplacement                                                                                                                                                                |
+| **TOTAL ESTIMÉ HT**                          |     |                      | **1608,80€**      | Sans coûts de développement logiciel                                                                                                                                                           |
 
 ---
 
@@ -1442,28 +1464,28 @@ Ce diagramme constitue un outil essentiel pour le **pilotage du projet**, en ass
 #### Répartition du travail
 
 ### Alex
-| Tâche                                  | Section             | Durée estimée |     |
-| -------------------------------------- | ------------------- | ------------- | --- |
-| Etude des applications existantes      | 1.2.3 / 1.2.5 (LLM) | 2h            |     |
-| Synthèse comparative outils HACCP      | 1.2.3 / 2.1.2 (LLM) | 1h            |     |
-| Rédaction fonctions complémentaires    | 2.1.2.1             | 1h30          |     |
-| Diagramme de cas d'utilisation         | 2.1                 | 2h            |     |
-| Proposition de l'UX du tableau de bord | 3.2 / 3.3.5         | 1h            |     |
-| Diagramme de Gantt                     | 5 Annexe            | 1h30          |     |
+| Tâche                                  | Section             | Durée estimée |
+| -------------------------------------- | ------------------- | ------------- |
+| Etude des applications existantes      | 1.2.3 / 1.2.5 (LLM) | 2h            |
+| Synthèse comparative outils HACCP      | 1.2.3 / 2.1.2 (LLM) | 1h            |
+| Rédaction fonctions complémentaires    | 2.1.2.1             | 1h30          |
+| Diagramme de cas d'utilisation         | 2.1                 | 2h            |
+| Proposition de l'UX du tableau de bord | 3.2 / 3.3.5         | 1h            |
+| Diagramme de Gantt                     | 5 Annexe            | 1h30          |
 
 
 ### Kéwan
 
-| Tâche                                                                                       | Section        | Durée estimée |     |
-| ------------------------------------------------------------------------------------------- | -------------- | ------------- | --- |
-| Rédaction des finalités                                                                     | 1.1.1          | 1h            |     |
-| "espérance de retour sur investissement" (ROI) et modèle économique                         | 1.1.2          | 1h            |     |
-| Situation du projet par rapport aux autres projets de l’entreprise                          | 1.2.1          | 15min         |     |
-| Suites prévues                                                                              | 1.2.4          | 2h            |     |
-| Analyse des autres applications (même sujet et sujets voisins) avec LLMs                    | 1.2.2 et 1.2.3 | 30min         |     |
-| Parties concernées par le déroulement du projet et ses résultats (demandeurs, utilisateurs) | 1.2.6          | 1h            |     |
-| Caractère confidentiel s'il y a lieu                                                        | 1.2.7          | 30min         |     |
-| Énoncé du besoin                                                                            | 1.3            | 30min         |     |
+| Tâche                                                                                       | Section        | Durée estimée |
+| ------------------------------------------------------------------------------------------- | -------------- | ------------- |
+| Rédaction des finalités                                                                     | 1.1.1          | 1h            |
+| "espérance de retour sur investissement" (ROI) et modèle économique                         | 1.1.2          | 1h            |
+| Situation du projet par rapport aux autres projets de l’entreprise                          | 1.2.1          | 15min         |
+| Suites prévues                                                                              | 1.2.4          | 2h            |
+| Analyse des autres applications (même sujet et sujets voisins) avec LLMs                    | 1.2.2 et 1.2.3 | 30min         |
+| Parties concernées par le déroulement du projet et ses résultats (demandeurs, utilisateurs) | 1.2.6          | 1h            |
+| Caractère confidentiel s'il y a lieu                                                        | 1.2.7          | 30min         |
+| Énoncé du besoin                                                                            | 1.3            | 30min         |
 
 
 ### Pacôme
@@ -1486,6 +1508,6 @@ Ce diagramme constitue un outil essentiel pour le **pilotage du projet**, en ass
 | Application du RGPD à l'HACCP (utilisation de l'IA comme support avec les résumés légaux générés précédemment comme "bibliothèque") | 1.2.3,1.2.7,2.1.1.1    | 2h            |
 | Rédaction contraintes réglementaires (basé sur les précédents résumé fait par les IA)                                              | 2.1.3                  | 1h            |
 | Transmission aux autorités sanitaires                                                                                              | 2.1.1.1, 2.1.2.2       | 1h            |
-| Tableau fonctionnel (règles & containtes)                                                                                          | 2.1.2.2                | 1h            |
+| Tableau fonctionnel (règles & containtes)                                                                                          | 2.1.1.2                | 1h            |
 | Analyse des risques RGPD (LLM)                                                                                                     | 4.1, 4.2               | 2h            |
 | Matrice de criticité                                                                                                               | 4.3                    | 1h            |
