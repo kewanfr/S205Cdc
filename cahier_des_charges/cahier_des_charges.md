@@ -5,7 +5,7 @@
 ## Entête
 - Groupe de TD : 4
 - Date de démarrage : 28 mai 2025 15h
-- Version : 0.9.1
+- Version : 0.10.0
 - Destinataire : EL MAMOUNI Saïd
 
 
@@ -87,7 +87,7 @@ Ses objectifs sont:
 En résumé, l’application assure un pilotage intelligent, un contrôle et une analyse intelligente, automatisée et pratique pour les utilisateurs.
 Elle vise à garantir l'application des principes de la réglementation HACCP, pour alléger la charge de travail du personnel et renforcer la conformité sanitaire.
 
-#### 1\.1.2 Espérance de retour sur investissement
+#### 1.1.2 Espérance de retour sur investissement
 
 L’application présente un solide potentiel de ROI, car elle répond à un besoin largement répandu en France.
 
@@ -106,9 +106,9 @@ Nous nous occupons de la maintenance, de la mise à jour et de l'assistance tech
 
 On peut différencier les cuisines centrales et les restaurants collectifs, selon leur taille.
 
-\- On peut proposer pour les grandes cuisines centrales (+ de 500 repas/jour) un forfait aux alentours de 500 €/mois. Avec un coût de migration ou installation de 1 200 €   
-\- Pour les cuisines moyennes (entre 100 et 300 repas/jour), l'abonnement pourrait être à 200-300€ / mois. Avec un coût de départ de 500 €.  
-\- Pour les petites cuisines (50 repas/jour), l'abonnement pourrait être à 50€ / mois. Avec un coût de départ de 300 €.
+- On peut proposer pour les grandes cuisines centrales (+ de 500 repas/jour) un forfait aux alentours de 500 €/mois. Avec un coût de migration ou installation de 1 200 €   
+- Pour les cuisines moyennes (entre 100 et 300 repas/jour), l'abonnement pourrait être à 200-300€ / mois. Avec un coût de départ de 500 €.  
+- Pour les petites cuisines (50 repas/jour), l'abonnement pourrait être à 50€ / mois. Avec un coût de départ de 300 €.
 
 Nous basons ces calculs sur le coût de nos capteurs (environ 25€ par capteur, si on sous traite la fabrication). Ainsi, l'idée est de fournir selon la taille du restaurant un certain nombre de capteurs. 
 
@@ -116,7 +116,7 @@ Pour une petite cuisine, 5 ou 6 capteurs devraient suffir, mais cela peut monter
 
 Nous estimons le coût de notre recherche & développement à environ **300 000 €** **sur 6 mois**  pour 4 développeurs (coût employeur de 75 000 €/an) et 1 chef de projet expérimenté + consultant métier/expert HACCP.
 
-Pour les cuisines centrales, avec 500€\*12 mois + 1200 €, le **chiffre d'affaire serait de 7 200 €**.  
+Pour les cuisines centrales, avec 500€*12 mois + 1200 €, le **chiffre d'affaire serait de 7 200 €**.  
 Environ 42 cuisines centrales suffiraient à couvrir le coût R&D.
 Pour les cuisines moyennes, le **CA serait de 3 500 €**. Avec 86 clients, nous pouvons amortir la R&D. Il faudrait 334 petites cuisines pour cela.
 
@@ -130,9 +130,9 @@ Si l'on inclut le coût des capteurs et matériels. Les coûts pour une petite c
 
 Le résultat la première année serait de 79 070 €, puis de 522 320 € la deuxième année. Il faudrait environ 1 an et demi pour rembourser le coût R&D.
 
-### 1\.2 Contexte
+### 1.2 Contexte
 
-#### 1\.2.1 Situation du projet par rapport aux autres projets de l’entreprise
+#### 1.2.1 Situation du projet par rapport aux autres projets de l’entreprise
 
 Ce projet de Recherche et Développement s'inscrit dans une démarche scolaire d'innovation sur une entreprise fictive. Cette entreprise fictive a pour seul projet actuel de concevoir une application simplifiant la gestion de règles de HACCP dans des lieux de restauration, plus précisément dans des cuisines collectives.
 
@@ -140,7 +140,7 @@ On peut considérer ce projet comme pilote de la société fictive. L'objectif e
 C'est donc le premier projet, et initiateur de l'entreprise fictive, qui pourrait par la suite en développer d'autres.
 C'est un projet important pour cette entreprise, car il s'agira à la fois d'un essai technique des capacités technologiques de celle-ci, mais aussi d'une vitrine de son savoir faire.
 
-#### 1\.2.2 Études déjà effectuées
+#### 1.2.2 Études déjà effectuées
 
 Afin d’enrichir la conception de l’application mobile HACCP, une étude comparative de plusieurs solutions existantes sur le marché a été menée. Cette analyse a permis d’identifier les fonctionnalités courantes, les manques fréquents, ainsi que les opportunités d’innovation.
 
@@ -322,9 +322,9 @@ Ces éléments différenciateurs permettront à notre solution de répondre de m
   https://bluekango.com  
   Tarification personnalisée (intégré à suite QHSE/RSE).
 
-#### 1\.2.4 Suites prévues
+#### 1.2.4 Suites prévues
 
-Ce projet doit contenir plusieurs fonctionnalités essentielles telles que: 
+Ce projet doit contenir plusieurs fonctionnalités essentielles telles que : 
 - La collecte de données en temps réel via des capteurs IoT résistants, résilients, performants et adaptés aux environnements de cuisine collective.
 
 - Des opérations de maintenance prédictive pour les équipements de notre application, afin d'anticiper les pannes et garantir la continuité du service.
@@ -336,7 +336,7 @@ Ce projet doit contenir plusieurs fonctionnalités essentielles telles que:
 - Le suivi des actes de nettoyage et des relevés quotidiens d'informations, pour garantir le respect des normes HACCP.
 - La gestion de l'ouverture d'un produit, enregistrement de la date d'ouverture, de la date de péremption et des conditions de conservation (température, humidité, etc.).
 
-- Lors de la sortie d'un produit d'une zone avec une certaine température (ex: chambre froide), l'application doit vérifier que la température est conforme aux normes HACCP, et alerter en cas de non-conformité.
+- Lors de la sortie d'un produit d'une zone avec une certaine température (ex : chambre froide), l'application doit vérifier que la température est conforme aux normes HACCP, et alerter en cas de non-conformité.
     Ainsi que noter le temps de chaque étape de la préparation des aliments, pour garantir le respect des temps de cuisson et de refroidissement.
     Par exemple, ne pas rester + de 2h entre 5 °C et 60 °C / ne pas dépasser 2h entre la sortie du frigo et le passage à + de 60 °C.
 - Un serveur local dans l'établissement, centralisant les données et permettant un fonctionnement en mode dégradé, sans connexion internet.
@@ -383,7 +383,7 @@ Dans le cadre de ce projet, certaines tâches seront confiées à des prestatair
 - Personnalisation du firmware selon nos besoins :
     - Intervalle de mesure ajustable
     - Protocoles de communication compatibles avec l’application
-- Livraison sur site des capteurs:
+- Livraison sur site des capteurs :
     - Préparation des capteurs (configuration, tests de connectivité)
     - Installation physique dans les zones critiques (chambres froides, zones de préparation, etc.)
     - Vérification de la connectivité et des mesures
@@ -457,7 +457,68 @@ En globalité, toutes les données qui incluent des données sur les utilisateur
 Permettre l'accès, la modification et la suppression des données de chacun. Et informer sur chaque donnée enregistrée, les raisons de cette sauvegarde, et demander le consentement de l'utilisateur.
 
 À propos du projet en lui même, cela est un projet lourd et complexe à réaliser, il demande une lourde Recherche & Développement. Nous pensons que notre projet technique pourrait alors être sujet au dépôt d'un brevet si celui-ci est suffisamment innovant. Et d'une protection de droit d'auteur de l'application.
+À propos du projet en lui même, cela est un projet lourd et complexe à réaliser, il demande une lourde Recherche & Développement. Nous pensons que notre projet technique pourrait alors être sujet dépôt d'un brevet si celui-ci est suffisamment innovant. Et d'une protection de droit d'auteur de l'application.
 
+
+##### Protection des données personnelles (RGPD)
+- **Minimisation des données** : Seules les données strictement nécessaires au fonctionnement de l'application et au respect des normes HACCP seront collectées.
+- **Consentement** : Les utilisateurs devront donner leur consentement explicite pour la collecte et le traitement de leurs données personnelles.
+- **Droits des utilisateurs** : Les utilisateurs auront la possibilité d'exercer leurs droits d'accès, de rectification, d'effacement, de limitation du traitement, de portabilité et d'opposition.
+- **Durée de conservation** : Les données personnelles seront conservées uniquement pendant la durée nécessaire au respect des obligations légales et réglementaires.
+- **Sécurité des données** : Des mesures techniques et organisationnelles appropriées seront mises en place pour protéger les données personnelles contre la destruction accidentelle ou illicite, la perte, l'altération, la divulgation ou l'accès non autorisé.
+
+#####  Sécurité des données
+
+Pour garantir la sécurité des données collectées et traitées par l'application HACCP, les mesures suivantes seront mises en place :
+
+- **Chiffrement des données** : Les données sensibles seront chiffrées à la fois en transit et au repos.
+
+- **Authentification et autorisation** :
+  - **Authentification multi-facteurs (MFA)** : Mise en place d'une authentification multi-facteurs pour les accès sensibles.
+  - **Gestion des accès** : Attribution des droits d'accès en fonction des rôles et des responsabilités des utilisateurs (RBAC - Role-Based Access Control).
+	  - Journalisation des accès aux données personnelles pour éviter tout abus.
+
+- **Journalisation et audit** :
+  - **Journalisation des accès** : Enregistrement des accès aux données sensibles, avec horodatage et identification de l'utilisateur.
+  - **Audit régulier** : Réalisation d'audits réguliers pour vérifier la conformité aux politiques de sécurité et de confidentialité.
+
+##### Confidentialité des données de santé
+
+L'application HACCP pourrait être amenée à traiter des données de santé, notamment en ce qui concerne les allergies et les intolérances alimentaires.
+
+Dans ce cas, les mesures suivantes seront mises en place pour assurer la confidentialité de ces données :
+
+- **Conformité HDS** : Si l'application traite des données de santé, elle devra se conformer à la réglementation HDS (Hébergement de Données de Santé).
+- **Anonymisation et pseudonymisation** : Les données de santé seront anonymisées ou pseudonymisées autant que possible pour minimiser les risques de divulgation non autorisée.
+- **Accès restreint** : Seuls les utilisateurs autorisés auront accès aux données de santé, et ces accès seront strictement contrôlés et surveillés.
+
+##### Propriété intellectuelle
+
+Pour protéger la propriété intellectuelle liée à l'application HACCP, les mesures suivantes seront mises en place :
+
+- **Brevets** : Déposer des brevets pour les innovations techniques et fonctionnelles de l'application, si applicable.
+- **Droits d'auteur** : Protéger le code source, les interfaces utilisateur, et les documents associés par des droits d'auteur.
+- **Accords de confidentialité**: Faire signer des accords de confidentialité aux employés, partenaires et prestataires pour protéger les informations sensibles et la propriété intellectuelle.
+
+##### Sécurité physique et logique
+
+Pour garantir la sécurité physique et logique des données et des systèmes, les mesures suivantes seront mises en place :
+
+- **Sécurité physique** :
+  - **Accès contrôlé** : Limiter l'accès physique aux serveurs et aux équipements sensibles aux personnes autorisées.
+  - **Surveillance** : Mettre en place des systèmes de surveillance pour détecter et prévenir les accès non autorisés.
+
+- **Sécurité logique** :
+  - **Pare-feu et systèmes de détection d'intrusion** : Installer des pare-feu et des systèmes de détection d'intrusion pour protéger les réseaux et les systèmes contre les attaques.
+  - **Mises à jour de sécurité** : Appliquer régulièrement les mises à jour de sécurité pour corriger les vulnérabilités connues.
+
+##### Audit et conformité
+
+Pour assurer la conformité aux réglementations et aux politiques de sécurité et de confidentialité, les mesures suivantes seront mises en place :
+
+- **Audit interne** : Réaliser des audits internes réguliers pour vérifier la conformité aux politiques de sécurité et de confidentialité.
+- **Audit externe** : Faire appel à des auditeurs externes pour évaluer la conformité aux réglementations et aux bonnes pratiques en matière de sécurité et de confidentialité.
+- **Certifications** : Obtenir des certifications pertinentes (ISO 27001, HDS, etc.) pour démontrer la conformité aux normes de sécurité et de confidentialité.
 ### 1.3 Énoncé du besoin 
 *(finalités du produit pour le futur utilisateur tel que prévu par le demandeur)*
 
@@ -631,7 +692,7 @@ Il servira de base pour la conception détaillée de l’architecture logicielle
 
 #### 2.1.1 Fonctions de service principales 
 Ce sont les fonctions qui constituent la raison d'être du produit.
-##### Collecte des données
+##### 2.1.1.1 Collecte des données
 La collecte des données est une fonction centrale de l’application, visant à garantir le respect des normes HACCP à travers une surveillance continue et automatisée. Trois grandes catégories de données sont collectées à l’aide de capteurs IoT et d’interfaces numériques.
 
 L’application collecte automatiquement les températures, l’humidité et la traçabilité via des capteurs IoT (BLE/WiFi). Les questionnaires intégrés permettent de suivre les pratiques du personnel. Toutes les données sont centralisées et analysées pour générer des alertes en temps réel.
@@ -683,6 +744,20 @@ Trois catégories de données sont collectées via capteurs IoT et interfaces nu
 - Temps de réponse : < 3 secondes pour l'affichage d'une alerte
 - Fiabilité des capteurs : précision ±0,5°C, taux de transmission >98%
 - Accessibilité : interface utilisable avec gants, multilingue
+
+##### Tableau fonctionnel récapitulatif
+
+| Fonction | Importance | Critère d'appréciation | Niveau d'appréciation | Niveau de flexibilité |
+|----------|------------|------------------------|-----------------------|----------------------|
+| FP1 : Collecte des données environnementales | 5 | Précision des capteurs | ±0.5°C | 95% dans l’intervalle, 5% à 1°C au delà |
+| FP2 : Collecte des données opérationnelles | 5 | Fiabilité des données | Taux de transmission >98% | 90% dans l’intervalle, 10% à 1% en dessous |
+| FP3 : Collecte des données comportementales | 4 | Complétude des réponses | >90% de complétude | 85% dans l’intervalle, 15% à 5% en dessous |
+| FP4 : Transmission aux autorités sanitaires | 5 | Temps de génération des rapports | < 5 secondes | 95% dans l’intervalle, 5% à 1 seconde au delà |
+| FC1 : Tutoriels et rappels intégrés | 3 | Temps de réponse pour afficher un tutoriel | < 2 secondes | 90% dans l’intervalle, 10% à 3 secondes |
+| FC2 : Historique des alertes et actions correctives | 4 | Temps de réponse pour afficher l'historique | < 3 secondes | 90% dans l’intervalle, 10% à 4 secondes |
+| FC3 : Mode hors-ligne avec synchronisation différée | 4 | Temps de synchronisation après reconnexion | < 10 secondes | 90% dans l’intervalle, 10% à 15 secondes |
+| FC4 : Personnalisation des indicateurs et de l’interface | 3 | Temps de réponse pour appliquer les personnalisations | < 2 secondes | 90% dans l’intervalle, 10% à 3 secondes |
+| FC5 : Documentation contextuelle | 3 | Temps de réponse pour afficher la documentation | < 2 secondes | 90% dans l’intervalle, 10% à 3 secondes |
 
 #### 2.1.2 Fonctions de service complémentaires 
 L’analyse comparative des solutions HACCP actuelles a permis d’identifier plusieurs fonctions de service dites complémentaires. Celles-ci ne sont pas toujours présentes, mais peuvent représenter une **valeur ajoutée stratégique** pour améliorer l’utilisabilité, l’autonomie du personnel et la personnalisation de l’application. Voici une synthèse des fonctions complémentaires observées chez trois outils majeurs du marché.
@@ -915,13 +990,13 @@ La collecte automatique s’appuie sur les 7 sous-fonctions suivantes :
 Cette architecture permet un contrôle rigoureux, automatisé et intelligent du respect des normes HACCP, tout en restant simple à déployer et à maintenir.
 *__Jalon__ : date à laquelle la fonction doit être livrée.*
 
-#### 3\.1.2 Niveau atteint pour chaque critère d’appréciation de cette fonction et modalités de contrôle
+#### 3.1.2 Niveau atteint pour chaque critère d’appréciation de cette fonction et modalités de contrôle
 
 - **Temps de réponse** : < 3 secondes pour l’affichage d’une alerte (testé sur 10 scénarios).
 - **Fiabilité** : Précision des capteurs ±0,5°C, taux de transmission >98% (tests de validation sur 1 semaine).
 - **Accessibilité** : Interface utilisable avec gants, multilingue (tests utilisateurs en conditions réelles).
 
-#### 3\.1.3 Part du prix attribué à chaque fonction
+#### 3.1.3 Part du prix attribué à chaque fonction
 
 - **Collecte des données** : 30% du budget (capteurs, intégration IoT, stockage sécurisé).
 - **Tableau de bord** : 20% du budget (UX/UI, développement front-end, personnalisation).
@@ -931,7 +1006,7 @@ Cette architecture permet un contrôle rigoureux, automatisé et intelligent du 
 - **Documentation et tutoriels** : 5% du budget (contenus, intégration).
 - **Maintenance/évolutivité** : 10% du budget (support, mises à jour).
 
-#### 3\.1.4 Jalons associés
+#### 3.1.4 Jalons associés
 
 | Fonction             | Jalon (date/étape)               | Modalité de contrôle         |
 |----------------------|----------------------------------|------------------------------|
@@ -941,9 +1016,9 @@ Cette architecture permet un contrôle rigoureux, automatisé et intelligent du 
 | Synchronisation      | Démo hors-ligne (Semaine 7)      | Test de coupure réseau       |
 | RGPD                 | Audit conformité (Semaine 8)     | Vérification documentation   |
 
-### 3\.2 *Pour chaque fonction : fonction 2*
+### 3.2 *Pour chaque fonction : fonction 2*
 
-#### 3\.2.1 Solution proposée
+#### 3.2.1 Solution proposée
 
 Le tableau de bord est l’interface centrale de l’application. Il doit permettre aux gestionnaires et aux agents de cuisine de **visualiser rapidement l’état global de conformité HACCP**, de **réagir efficacement en cas de non-conformité**, et de **gérer les actions à entreprendre**.
 
@@ -1244,6 +1319,7 @@ Le module "tableau de bord" est au cœur de la **stratégie UX de l’applicatio
 <img src=img/profil_de_risque.png>
 ### 4.2 Prévision des défaillances
 *Table de défaillance pour chaque fonction de service avec un paragraphe commentant chaque défaillance et/ou chaque cause/effet/détection d’importance notable*
+
 | Fonction du produit              | Mode de défaillance                   | Effet de la défaillance                              | Causes possibles de la défaillance                   | Détection | Occurrence | Gravité | Criticité (D×O×G) |
 |----------------------------------|---------------------------------------|------------------------------------------------------|------------------------------------------------------|------------|-------------|----------|--------------------|
 | 1-Capteur IoT       | Capteur inactif                       | Non-détection d’un dépassement de seuil critique     | Batterie vide, signal coupé, défaut matériel         | 6          | 5           | 9        | 270                |
@@ -1369,7 +1445,6 @@ Ce diagramme constitue un outil essentiel pour le **pilotage du projet**, en ass
 | Énoncé du besoin                                                                            | 1.3            | 30min         |     |
 
 
-
 ### Pacôme
 
 | Tâche                                            | Section                   | Durée estimée |
@@ -1381,3 +1456,15 @@ Ce diagramme constitue un outil essentiel pour le **pilotage du projet**, en ass
 | Table de défaillance (technique)                 | 4.2                       | 1h            |
 | Matrice de criticité (technique)                 | 4.3                       | 50min         |
 | Solutions techniques (maintenance,modules) (LLM) | 3.3.4 / 3.3.5             | 1h            |
+
+### Chianti
+
+| Tâche                                                                                                                              | Section                | Durée estimée |
+|------------------------------------------------------------------------------------------------------------------------------------| ---------------------- | ------------- |
+| Analyse et résumé des sources légal et des annexes du sujet (LLM)                                                                  | dossier "resume_legal" | 1h            |
+| Application du RGPD à l'HACCP (utilisation de l'IA comme support avec les résumés légaux générés précédemment comme "bibliothèque") | 1.2.3,1.2.7,2.1.1.1    | 2h            |
+| Rédaction contraintes réglementaires (basé sur les précédents résumé fait par les IA)                                              | 2.1.3                  | 1h            |
+| Transmission aux autorités sanitaires                                                                                              | 2.1.1.1, 2.1.2.2       | 1h            |
+| Tableau fonctionnel (règles & containtes)                                                                                          | 2.1.2.2                | 1h            |
+| Analyse des risques RGPD (LLM)                                                                                                     | 4.1, 4.2               | 2h            |
+| Matrice de criticité                                                                                                               | 4.3                    | 1h            |
